@@ -1,29 +1,40 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-01-09 14:37:25.010344",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "batch_no",
   "heat_no",
   "o_a_no",
   "quantity",
   "remarks",
+  "naming_series",
   "column_break_bdpq",
+  "sales_order",
+  "grade",
+  "date",
   "product",
   "thickness_max",
   "total_weight_kg",
   "column_break_qled",
+  "sales_order_sheet",
+  "furnace",
   "product_description",
   "balance",
-  "srl"
+  "srl",
+  "section_break_ikcz",
+  "department_remark"
  ],
  "fields": [
   {
    "fieldname": "heat_no",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Heat No.",
+   "options": "Daily Heat Planning",
    "reqd": 1
   },
   {
@@ -87,14 +98,64 @@
    "fieldname": "srl",
    "fieldtype": "Int",
    "label": "Srl"
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Data",
+   "label": "Batch No."
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "furnace",
+   "fieldtype": "Link",
+   "label": "Furnace",
+   "options": "Furnace Master"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "label": "Grade",
+   "options": "Grade Master"
+  },
+  {
+   "fieldname": "sales_order_sheet",
+   "fieldtype": "Link",
+   "label": "Sales Order Sheet",
+   "options": "Sales Order Sheet"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "HTD -"
+  },
+  {
+   "fieldname": "section_break_ikcz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department_remark",
+   "fieldtype": "Small Text",
+   "label": "Department Remark"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-15 14:47:31.704834",
+ "modified": "2025-03-06 11:53:17.246620",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Heat Treatment Details Entry",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

@@ -1,18 +1,24 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-01-09 15:11:44.232332",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "section_break_vlh0",
+  "naming_series",
   "company",
   "customer",
-  "heat_no",
+  "daily_heat_planning",
+  "heat_number",
   "date",
   "customer_name",
   "grade",
+  "sales_order",
+  "sales_order_sheet",
   "po_details",
+  "test_certification_details",
   "remarks",
   "column_break_jrdz",
   "test_specification",
@@ -25,7 +31,9 @@
   "deg_bend_test",
   "sensitizing_treatment_yesno",
   "end_cust",
-  "amended_from"
+  "amended_from",
+  "section_break_tawa",
+  "department_remark"
  ],
  "fields": [
   {
@@ -43,12 +51,6 @@
    "fieldtype": "Link",
    "label": "Customer",
    "options": "Customer"
-  },
-  {
-   "fieldname": "heat_no",
-   "fieldtype": "Link",
-   "label": "Heat No",
-   "options": "Pouring"
   },
   {
    "fieldname": "date",
@@ -142,12 +144,57 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "sales_order_sheet",
+   "fieldtype": "Link",
+   "label": "Sales Order Sheet",
+   "options": "Sales Order Sheet"
+  },
+  {
+   "fieldname": "test_certification_details",
+   "fieldtype": "Table",
+   "label": "I G C T Practice E Test Certification Details",
+   "options": "I G C T Practice E Test Certification Details"
+  },
+  {
+   "fieldname": "daily_heat_planning",
+   "fieldtype": "Link",
+   "label": "Daily Heat Planning",
+   "options": "Daily Heat Planning"
+  },
+  {
+   "fetch_from": "daily_heat_planning.heat_no",
+   "fieldname": "heat_number",
+   "fieldtype": "Data",
+   "label": "Heat Number"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "IGCT -"
+  },
+  {
+   "fieldname": "section_break_tawa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department_remark",
+   "fieldtype": "Small Text",
+   "label": "Department Remark"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-01-15 14:47:31.081705",
+ "modified": "2025-03-06 11:56:29.683981",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "I G C T Practice E Test Certification",

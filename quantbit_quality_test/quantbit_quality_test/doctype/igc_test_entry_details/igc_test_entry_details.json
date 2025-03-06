@@ -14,10 +14,14 @@
   "test_temp",
   "length",
   "width",
-  "column_break_wvwv",
   "height",
+  "area",
+  "start_on",
+  "end_on",
+  "column_break_wvwv",
   "expose_time_hrs",
   "gravity_gmccdensity",
+  "test_result",
   "weight_gms_section",
   "initial",
   "final",
@@ -40,9 +44,10 @@
   },
   {
    "fieldname": "test_as_per",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Test As Per "
+   "label": "Test As Per ",
+   "options": "IGC Practice Test Details"
   },
   {
    "fieldname": "specimen_size_mm_section",
@@ -50,24 +55,28 @@
    "label": "Specimen Size (mm)"
   },
   {
+   "fetch_from": "test_as_per.test_standard",
    "fieldname": "test_standard",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Test Standard"
   },
   {
+   "fetch_from": "test_as_per.test_temp",
    "fieldname": "test_temp",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Test Temp"
   },
   {
+   "fetch_from": "test_as_per.length",
    "fieldname": "length",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Length"
   },
   {
+   "fetch_from": "test_as_per.width",
    "fieldname": "width",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -78,6 +87,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "test_as_per.height",
    "fieldname": "height",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -100,19 +110,19 @@
   },
   {
    "fieldname": "initial",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Initial"
   },
   {
    "fieldname": "final",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Final"
   },
   {
    "fieldname": "loss",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Loss"
   },
@@ -128,21 +138,44 @@
   },
   {
    "fieldname": "unit",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Unit"
+   "label": "Unit",
+   "options": "UOM"
   },
   {
    "fieldname": "rate_of_corrosion__unit",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Rate Of Corrosion / Unit"
+  },
+  {
+   "fetch_from": "test_as_per.area",
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area"
+  },
+  {
+   "fieldname": "start_on",
+   "fieldtype": "Datetime",
+   "label": "Start On"
+  },
+  {
+   "fieldname": "end_on",
+   "fieldtype": "Datetime",
+   "label": "End On"
+  },
+  {
+   "fieldname": "test_result",
+   "fieldtype": "Select",
+   "label": "Test Result",
+   "options": "\nPass\nFail"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-01-15 14:47:31.397753",
+ "modified": "2025-03-04 17:58:41.505694",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "IGC Test Entry Details",

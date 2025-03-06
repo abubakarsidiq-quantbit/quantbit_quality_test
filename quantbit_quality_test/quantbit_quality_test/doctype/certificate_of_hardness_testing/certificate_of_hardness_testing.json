@@ -1,17 +1,28 @@
 {
- "_liked_by": "[\"mayuresh.bhosale@erpdata.in\"]",
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-01-09 14:42:13.949965",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "company",
+  "naming_series",
+  "column_break_gjej",
+  "grade",
+  "column_break_qjor",
+  "heat_no",
+  "column_break_vcmz",
+  "sales_order",
+  "column_break_jhlq",
+  "sales_order_sheet",
   "section_break_qdzy",
   "report_no",
   "column_break_whpw",
   "date",
-  "amended_from"
+  "amended_from",
+  "section_break_hdus",
+  "department_remark"
  ],
  "fields": [
   {
@@ -47,15 +58,71 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "label": "Grade",
+   "options": "Grade Master"
+  },
+  {
+   "fieldname": "heat_no",
+   "fieldtype": "Link",
+   "label": "Heat No",
+   "options": "Daily Heat Planning"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "sales_order_sheet",
+   "fieldtype": "Link",
+   "label": "Sales Order Sheet",
+   "options": "Sales Order Sheet"
+  },
+  {
+   "fieldname": "column_break_gjej",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_qjor",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vcmz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jhlq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "CHT -"
+  },
+  {
+   "fieldname": "section_break_hdus",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department_remark",
+   "fieldtype": "Small Text",
+   "label": "Department Remark"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-01-15 14:47:31.501131",
+ "modified": "2025-03-06 11:54:02.348744",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Certificate Of Hardness Testing",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

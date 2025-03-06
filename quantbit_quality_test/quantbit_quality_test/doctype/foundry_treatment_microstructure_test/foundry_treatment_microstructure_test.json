@@ -16,10 +16,13 @@
   "pouring_id",
   "column_break_trpy",
   "heat_date",
+  "heat_no",
   "column_break_wzo3",
   "heat_number",
+  "sales_order",
   "column_break_c9sz",
   "grade",
+  "sales_order_sheet",
   "section_break_hoa8",
   "treatment_details",
   "lab_supervisor_details_section",
@@ -28,7 +31,9 @@
   "inspector_name",
   "remark_section",
   "remark",
-  "amended_from"
+  "amended_from",
+  "section_break_kmff",
+  "department_remark"
  ],
  "fields": [
   {
@@ -157,12 +162,39 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "heat_no",
+   "fieldtype": "Link",
+   "label": "Heat No",
+   "options": "Daily Heat Planning"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "sales_order_sheet",
+   "fieldtype": "Link",
+   "label": "Sales Order Sheet",
+   "options": "Sales Order Sheet"
+  },
+  {
+   "fieldname": "section_break_kmff",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department_remark",
+   "fieldtype": "Small Text",
+   "label": "Department Remark"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-11-30 11:00:36.711800",
+ "modified": "2025-03-06 11:57:53.030457",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Foundry Treatment Microstructure Test",
