@@ -1,31 +1,42 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-01-09 15:11:44.232332",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "section_break_vlh0",
   "company",
-  "customer",
-  "heat_no",
-  "date",
   "customer_name",
-  "grade",
+  "sales_order",
+  "start_on",
+  "test_specification",
   "po_details",
+  "test_certification_details",
   "remarks",
   "column_break_jrdz",
-  "test_specification",
-  "boiling_specification",
-  "start_on",
+  "customer",
+  "daily_heat_planning",
+  "sales_order_sheet",
   "end_on",
-  "boiling_duration",
+  "boiling_specification",
   "former_die_for_bend_test",
-  "format_no",
   "deg_bend_test",
-  "sensitizing_treatment_yesno",
   "end_cust",
-  "amended_from"
+  "amended_from",
+  "column_break_cadh",
+  "grade",
+  "heat_number",
+  "date",
+  "naming_series",
+  "boiling_duration",
+  "format_no",
+  "sensitizing_treatment_yesno",
+  "section_break_hnkk",
+  "remark",
+  "section_break_tawa",
+  "department_remark"
  ],
  "fields": [
   {
@@ -33,27 +44,47 @@
    "fieldtype": "Section Break"
   },
   {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "IGCT -"
+  },
+  {
    "fieldname": "company",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Company",
-   "options": "Company"
+   "options": "Company",
+   "reqd": 1
   },
   {
    "fieldname": "customer",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer"
+   "options": "Customer",
+   "reqd": 1
   },
   {
-   "fieldname": "heat_no",
+   "fieldname": "daily_heat_planning",
    "fieldtype": "Link",
-   "label": "Heat No",
-   "options": "Pouring"
+   "in_list_view": 1,
+   "label": "Daily Heat Planning",
+   "options": "Daily Heat Planning",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "daily_heat_planning.heat_no",
+   "fieldname": "heat_number",
+   "fieldtype": "Data",
+   "label": "Heat Number",
+   "reqd": 1
   },
   {
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "Date"
+   "label": "Date",
+   "reqd": 1
   },
   {
    "fetch_from": "customer.customer_name",
@@ -65,13 +96,35 @@
    "fieldname": "grade",
    "fieldtype": "Link",
    "label": "Grade",
-   "options": "Grade Master"
+   "options": "Grade Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sales Order",
+   "options": "Sales Order",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_order_sheet",
+   "fieldtype": "Link",
+   "label": "Sales Order Sheet",
+   "options": "Sales Order Sheet",
+   "reqd": 1
   },
   {
    "fieldname": "po_details",
    "fieldtype": "Table",
    "label": "PO Details",
    "options": "PO Details"
+  },
+  {
+   "fieldname": "test_certification_details",
+   "fieldtype": "Table",
+   "label": "I G C T Practice E Test Certification Details",
+   "options": "I G C T Practice E Test Certification Details"
   },
   {
    "fieldname": "remarks",
@@ -130,7 +183,7 @@
   {
    "fieldname": "end_cust",
    "fieldtype": "Link",
-   "label": "End Cust",
+   "label": "End Custmer",
    "options": "Customer"
   },
   {
@@ -142,15 +195,39 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "section_break_hnkk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Text Editor",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "section_break_tawa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department_remark",
+   "fieldtype": "Table",
+   "label": "Department Remark",
+   "options": "Sales Order Department Remark"
+  },
+  {
+   "fieldname": "column_break_cadh",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-01-20 10:15:58.720825",
+ "modified": "2025-03-07 17:06:59.709361",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "I G C T Practice E Test Certification",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

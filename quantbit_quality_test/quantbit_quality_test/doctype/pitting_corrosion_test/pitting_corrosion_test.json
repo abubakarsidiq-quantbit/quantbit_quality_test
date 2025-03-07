@@ -1,20 +1,29 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-01-10 14:41:24.359774",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "section_break_9vrq",
   "company",
-  "report_no",
-  "temp",
   "customer",
+  "sales_order_sheet",
+  "daily_heat_planning",
+  "start_time",
   "column_break_axgk",
   "posting_date",
-  "heat_no",
-  "duration",
   "customer_name",
+  "sales_order",
+  "heat_no",
+  "end_time",
+  "column_break_vtfa",
+  "grade",
+  "temp",
+  "report_no",
+  "naming_series",
+  "duration",
   "section_break_eiia",
   "pitting_corrosion_details",
   "column_break_gcru",
@@ -29,7 +38,11 @@
   "accpt_crit",
   "samp_prep",
   "end_cust",
-  "amended_from"
+  "amended_from",
+  "section_break_dkmp",
+  "remark",
+  "section_break_ckog",
+  "department_remark"
  ],
  "fields": [
   {
@@ -39,8 +52,10 @@
   {
    "fieldname": "company",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Company",
-   "options": "Company"
+   "options": "Company",
+   "reqd": 1
   },
   {
    "fieldname": "report_no",
@@ -49,14 +64,16 @@
   },
   {
    "fieldname": "temp",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Temp"
   },
   {
    "fieldname": "customer",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer"
+   "options": "Customer",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_axgk",
@@ -65,24 +82,28 @@
   {
    "fieldname": "posting_date",
    "fieldtype": "Date",
-   "label": "Posting Date"
+   "label": "Posting Date",
+   "reqd": 1
   },
   {
+   "fetch_from": "daily_heat_planning.heat_no",
    "fieldname": "heat_no",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "label": "Heat No.",
-   "options": "Pouring"
+   "reqd": 1
   },
   {
    "fieldname": "duration",
    "fieldtype": "Data",
-   "label": "Duration"
+   "label": "Duration",
+   "read_only": 1
   },
   {
    "fetch_from": "customer.customer_name",
    "fieldname": "customer_name",
    "fieldtype": "Data",
-   "label": "Customer Name"
+   "label": "Customer Name",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_ecxe",
@@ -161,15 +182,85 @@
    "fieldtype": "Table",
    "label": "Pitting Multiple Temp",
    "options": "Pitting Multiple Temp Details"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "label": "Grade",
+   "options": "Grade Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_order_sheet",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sales Order Sheet",
+   "options": "Sales Order Sheet",
+   "reqd": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "PCT -"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Datetime",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Datetime",
+   "label": "End Time"
+  },
+  {
+   "fieldname": "daily_heat_planning",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Daily Heat Planning",
+   "options": "Daily Heat Planning",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ckog",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department_remark",
+   "fieldtype": "Table",
+   "label": "Department Remark",
+   "options": "Sales Order Department Remark"
+  },
+  {
+   "fieldname": "column_break_vtfa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_dkmp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Text Editor",
+   "label": "Remark"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-01-11 14:45:54.653238",
+ "modified": "2025-03-07 16:31:24.758873",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Pitting Corrosion Test",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

@@ -44,7 +44,7 @@
    "fieldname": "srl",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Srl"
+   "label": "Serial No"
   },
   {
    "fieldname": "product",
@@ -61,13 +61,13 @@
    "fieldname": "cast_srl",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Cast Srl"
+   "label": "Cast Serial No"
   },
   {
    "fieldname": "qty",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Qty"
+   "label": "Quantity"
   },
   {
    "default": "0",
@@ -79,7 +79,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-01-15 14:47:30.583266",
+ "modified": "2025-03-07 16:30:32.823458",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "MTC Product Details Part - A",

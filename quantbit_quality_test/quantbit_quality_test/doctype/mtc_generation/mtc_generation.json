@@ -1,20 +1,25 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-01-09 18:10:09.058077",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
+  "mtc_generation",
   "section_break_l7tb",
   "company",
+  "grade",
   "tc_no",
   "customer",
   "column_break_tfvz",
   "posting_date",
+  "sales_order",
   "tc_type",
-  "grp",
   "column_break_vbgf",
   "heat_no",
+  "sales_order_sheet",
   "heading",
   "dc_no",
   "section_break_gcvj",
@@ -30,18 +35,8 @@
   "section_break_vmna",
   "ht_details",
   "section_break_uhmu",
-  "remark_1",
-  "remark_3",
-  "remark_5",
-  "remark_7",
-  "remark_9",
+  "remarks_details",
   "edition",
-  "column_break_tqet",
-  "remark_2",
-  "remark_4",
-  "remark_6",
-  "remark_8",
-  "remark_10",
   "section_break_hcit",
   "column_break_lbjl",
   "remark",
@@ -52,6 +47,8 @@
   "column_break_uciz",
   "end_cust",
   "for_ibr_1",
+  "section_break_kefu",
+  "department_remark",
   "tab_break_ldeb",
   "section_break_fsgw",
   "data_shwu",
@@ -84,8 +81,10 @@
   {
    "fieldname": "company",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Company",
-   "options": "Company"
+   "options": "Company",
+   "reqd": 1
   },
   {
    "fieldname": "tc_no",
@@ -105,7 +104,9 @@
   {
    "fieldname": "posting_date",
    "fieldtype": "Date",
-   "label": "Posting Date"
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
   },
   {
    "fieldname": "tc_type",
@@ -113,18 +114,15 @@
    "label": "TC Type"
   },
   {
-   "fieldname": "grp",
-   "fieldtype": "Select",
-   "label": "GRP"
-  },
-  {
    "fieldname": "column_break_vbgf",
    "fieldtype": "Column Break"
   },
   {
    "fieldname": "heat_no",
-   "fieldtype": "Data",
-   "label": "Heat No"
+   "fieldtype": "Link",
+   "label": "Heat No",
+   "options": "Daily Heat Planning",
+   "reqd": 1
   },
   {
    "fieldname": "heading",
@@ -143,7 +141,7 @@
   {
    "fieldname": "mtc_product_details_part_a",
    "fieldtype": "Table",
-   "label": "MTC Product Details Part - A",
+   "label": "MTC Product Details",
    "options": "MTC Product Details Part - A"
   },
   {
@@ -196,63 +194,9 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "remark_1",
-   "fieldtype": "Data",
-   "label": "Remark 1"
-  },
-  {
-   "fieldname": "remark_3",
-   "fieldtype": "Data",
-   "label": "Remark 3"
-  },
-  {
-   "fieldname": "remark_5",
-   "fieldtype": "Data",
-   "label": "Remark 5"
-  },
-  {
-   "fieldname": "remark_7",
-   "fieldtype": "Data",
-   "label": "Remark 7"
-  },
-  {
-   "fieldname": "remark_9",
-   "fieldtype": "Data",
-   "label": "Remark 9"
-  },
-  {
    "fieldname": "edition",
    "fieldtype": "Data",
    "label": "Edition"
-  },
-  {
-   "fieldname": "column_break_tqet",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "remark_2",
-   "fieldtype": "Data",
-   "label": "Remark 2"
-  },
-  {
-   "fieldname": "remark_4",
-   "fieldtype": "Data",
-   "label": "Remark 4"
-  },
-  {
-   "fieldname": "remark_6",
-   "fieldtype": "Data",
-   "label": "Remark 6"
-  },
-  {
-   "fieldname": "remark_8",
-   "fieldtype": "Data",
-   "label": "Remark 8"
-  },
-  {
-   "fieldname": "remark_10",
-   "fieldtype": "Data",
-   "label": "Remark 10"
   },
   {
    "fieldname": "section_break_hcit",
@@ -265,7 +209,7 @@
   },
   {
    "fieldname": "remark",
-   "fieldtype": "Small Text",
+   "fieldtype": "Text Editor",
    "label": "Remark"
   },
   {
@@ -293,7 +237,7 @@
   {
    "fieldname": "end_cust",
    "fieldtype": "Data",
-   "label": "End Cust"
+   "label": "End Customer"
   },
   {
    "fieldname": "for_ibr_1",
@@ -413,19 +357,71 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "MTC Generation Part - A",
+   "options": "MTC Generation",
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Grade",
+   "options": "Grade Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sales Order",
+   "options": "Sales Order",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_order_sheet",
+   "fieldtype": "Link",
+   "label": "Sales Order Sheet",
+   "options": "Sales Order Sheet",
+   "reqd": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "MTCG -"
+  },
+  {
+   "fieldname": "mtc_generation",
+   "fieldtype": "Select",
+   "label": "MTC Generation",
+   "options": "\nHeat Wise\nDC Wise\nItem Wise"
+  },
+  {
+   "fieldname": "remarks_details",
+   "fieldtype": "Table",
+   "label": "Remarks Details",
+   "options": "Remarks Details"
+  },
+  {
+   "fieldname": "section_break_kefu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department_remark",
+   "fieldtype": "Table",
+   "label": "Department Remark",
+   "options": "Sales Order Department Remark"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-01-15 14:47:30.328403",
+ "modified": "2025-03-07 17:01:06.432648",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
- "name": "MTC Generation Part - A",
+ "name": "MTC Generation",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

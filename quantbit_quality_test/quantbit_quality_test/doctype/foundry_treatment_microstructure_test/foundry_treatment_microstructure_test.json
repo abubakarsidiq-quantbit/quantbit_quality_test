@@ -16,10 +16,13 @@
   "pouring_id",
   "column_break_trpy",
   "heat_date",
+  "heat_no",
   "column_break_wzo3",
   "heat_number",
+  "sales_order",
   "column_break_c9sz",
   "grade",
+  "sales_order_sheet",
   "section_break_hoa8",
   "treatment_details",
   "lab_supervisor_details_section",
@@ -28,7 +31,9 @@
   "inspector_name",
   "remark_section",
   "remark",
-  "amended_from"
+  "amended_from",
+  "section_break_kmff",
+  "department_remark"
  ],
  "fields": [
   {
@@ -58,7 +63,8 @@
    "default": "Today",
    "fieldname": "posting_date",
    "fieldtype": "Date",
-   "label": "Posting Date"
+   "label": "Posting Date",
+   "reqd": 1
   },
   {
    "fieldname": "pouring_entry_details_section",
@@ -84,6 +90,12 @@
    "read_only": 1
   },
   {
+   "fieldname": "heat_no",
+   "fieldtype": "Link",
+   "label": "Heat No",
+   "options": "Daily Heat Planning"
+  },
+  {
    "fieldname": "column_break_wzo3",
    "fieldtype": "Column Break"
   },
@@ -92,19 +104,33 @@
    "fieldname": "heat_number",
    "fieldtype": "Data",
    "label": "Heat Number",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_c9sz",
    "fieldtype": "Column Break"
   },
   {
-   "fetch_from": "pouring_id.grade",
    "fieldname": "grade",
    "fieldtype": "Link",
    "label": "Grade",
    "options": "Grade Master",
-   "read_only": 1
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_order_sheet",
+   "fieldtype": "Link",
+   "label": "Sales Order Sheet",
+   "options": "Sales Order Sheet",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_hoa8",
@@ -158,12 +184,22 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "section_break_kmff",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department_remark",
+   "fieldtype": "Table",
+   "label": "Department Remark",
+   "options": "Sales Order Department Remark"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-01-20 10:09:37.491207",
+ "modified": "2025-03-07 17:22:00.098363",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Foundry Treatment Microstructure Test",

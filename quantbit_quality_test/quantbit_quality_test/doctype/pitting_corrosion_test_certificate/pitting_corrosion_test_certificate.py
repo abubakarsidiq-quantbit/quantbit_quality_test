@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class MTCGenerationPartA(Document):
+class PittingCorrosionTestCertificate(Document):
 	pass

@@ -7,23 +7,25 @@
  "engine": "InnoDB",
  "field_order": [
   "heat_no",
-  "item",
-  "test_location",
+  "mpdp_no",
   "oa_no",
   "column_break_uefl",
   "srl",
-  "mpdp_no",
   "rt_no",
+  "column_break_nzic",
+  "item",
+  "test_location",
   "section_break_syyg",
   "reading_1",
-  "reading_2",
-  "reading_3",
   "reading_4",
-  "column_break_kexo",
-  "reading_5",
-  "reading_6",
   "reading_7",
-  "reading_8"
+  "column_break_kexo",
+  "reading_2",
+  "reading_5",
+  "reading_8",
+  "column_break_vtsy",
+  "reading_3",
+  "reading_6"
  ],
  "fields": [
   {
@@ -60,7 +62,7 @@
    "fieldname": "srl",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Srl"
+   "label": "Serial No"
   },
   {
    "fieldname": "mpdp_no",
@@ -124,12 +126,20 @@
    "fieldname": "reading_8",
    "fieldtype": "Data",
    "label": "Reading 8"
+  },
+  {
+   "fieldname": "column_break_nzic",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vtsy",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-01-15 14:47:29.746764",
+ "modified": "2025-03-07 16:32:54.913345",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Positive Material Identification Details",

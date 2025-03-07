@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-03 14:28:06.885048",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bend_test",
+  "shear_area",
+  "test_result",
+  "column_break_qxkn",
+  "bend_deg",
+  "madrilla_dia"
+ ],
+ "fields": [
+  {
+   "fieldname": "bend_test",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bend Test"
+  },
+  {
+   "fieldname": "shear_area",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Shear Area"
+  },
+  {
+   "fieldname": "test_result",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test Result"
+  },
+  {
+   "fieldname": "column_break_qxkn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bend_deg",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Bend Degree"
+  },
+  {
+   "fieldname": "madrilla_dia",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Madrilla Diameter"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-07 15:59:39.146128",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "Mechanical Test Result Entry Test Temperature Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,24 +1,39 @@
 {
- "_liked_by": "[\"mayuresh.bhosale@erpdata.in\"]",
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-01-09 14:42:13.949965",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "company",
+  "naming_series",
+  "column_break_gjej",
+  "grade",
+  "column_break_qjor",
+  "heat_no",
+  "column_break_vcmz",
+  "sales_order",
+  "column_break_jhlq",
+  "sales_order_sheet",
   "section_break_qdzy",
   "report_no",
   "column_break_whpw",
   "date",
+  "section_break_qbof",
+  "remark",
+  "section_break_hdus",
+  "department_remark",
   "amended_from"
  ],
  "fields": [
   {
    "fieldname": "company",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Company",
-   "options": "Company"
+   "options": "Company",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_qdzy",
@@ -36,7 +51,80 @@
   {
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "Date"
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Grade",
+   "options": "Grade Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "heat_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Heat No",
+   "options": "Daily Heat Planning",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sales Order",
+   "options": "Sales Order",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_order_sheet",
+   "fieldtype": "Link",
+   "label": "Sales Order Sheet",
+   "options": "Sales Order Sheet",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_gjej",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_qjor",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vcmz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jhlq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "CHT -"
+  },
+  {
+   "fieldname": "section_break_hdus",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department_remark",
+   "fieldtype": "Table",
+   "label": "Department Remark",
+   "options": "Sales Order Department Remark"
+  },
+  {
+   "fieldname": "section_break_qbof",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Text Editor",
+   "label": "Remark"
   },
   {
    "fieldname": "amended_from",
@@ -52,10 +140,11 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-01-15 14:47:31.501131",
+ "modified": "2025-03-07 16:26:10.479116",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Certificate Of Hardness Testing",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
