@@ -95,7 +95,7 @@
    "fieldname": "grade",
    "fieldtype": "Link",
    "label": "Grade",
-   "options": "Grade"
+   "options": "Grade Master"
   },
   {
    "fetch_from": "customer.customer_name",

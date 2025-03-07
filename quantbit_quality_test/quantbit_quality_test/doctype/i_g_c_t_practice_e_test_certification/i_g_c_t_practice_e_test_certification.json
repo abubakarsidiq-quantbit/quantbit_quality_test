@@ -67,7 +67,7 @@
    "fieldname": "grade",
    "fieldtype": "Link",
    "label": "Grade",
-   "options": "Grade"
+   "options": "Grade Master"
   },
   {
    "fieldname": "po_details",
