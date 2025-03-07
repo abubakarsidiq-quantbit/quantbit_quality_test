@@ -1,21 +1,23 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-01-09 14:34:40.804109",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "company",
   "grade",
+  "sales_order",
+  "naming_series",
   "column_break_tzuf",
+  "daily_heat_planning",
   "heat_no",
+  "sales_order_sheet",
   "section_break_zako",
   "table_swwu",
-  "section_break_izgb",
-  "start_on",
-  "end_on",
-  "column_break_xzgt",
-  "areacm\u00b2"
+  "section_break_hovt",
+  "department_remark"
  ],
  "fields": [
   {
@@ -35,10 +37,10 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "daily_heat_planning.heat_no",
    "fieldname": "heat_no",
-   "fieldtype": "Link",
-   "label": "Heat No.",
-   "options": "Pouring"
+   "fieldtype": "Data",
+   "label": "Heat No."
   },
   {
    "fieldname": "section_break_zako",
@@ -47,38 +49,50 @@
   {
    "fieldname": "table_swwu",
    "fieldtype": "Table",
+   "label": "IGC Test Entry Details",
    "options": "IGC Test Entry Details"
   },
   {
-   "fieldname": "section_break_izgb",
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "sales_order_sheet",
+   "fieldtype": "Link",
+   "label": "Sales Order Sheet",
+   "options": "Sales Order Sheet"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "IGC -"
+  },
+  {
+   "fieldname": "daily_heat_planning",
+   "fieldtype": "Link",
+   "label": "Daily Heat Planning",
+   "options": "Daily Heat Planning"
+  },
+  {
+   "fieldname": "section_break_hovt",
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "start_on",
-   "fieldtype": "Datetime",
-   "label": "Start On"
-  },
-  {
-   "fieldname": "end_on",
-   "fieldtype": "Datetime",
-   "label": "End On"
-  },
-  {
-   "fieldname": "column_break_xzgt",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "areacm\u00b2",
-   "fieldtype": "Data",
-   "label": "Area(cm\u00b2)"
+   "fieldname": "department_remark",
+   "fieldtype": "Small Text",
+   "label": "Department Remark"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-15 18:36:23.369886",
+ "modified": "2025-03-06 11:55:52.812275",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "IGC Test Result Entry",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

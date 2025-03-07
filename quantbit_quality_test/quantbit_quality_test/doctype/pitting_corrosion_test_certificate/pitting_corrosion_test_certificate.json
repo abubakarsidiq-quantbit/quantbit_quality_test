@@ -1,0 +1,218 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-03-04 15:20:54.874567",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "heat_no",
+  "naming_series",
+  "column_break_dhnz",
+  "start_on",
+  "column_break_kvsr",
+  "end_on",
+  "section_break_axmi",
+  "entry_date",
+  "column_break_gjyp",
+  "test_temp_deg_cen",
+  "column_break_smge",
+  "test_solution",
+  "section_break_wdut",
+  "duration_hrs",
+  "area",
+  "column_break_fkrn",
+  "specimen_size_1_mm",
+  "initial_wt_gms",
+  "column_break_yfvw",
+  "specimen_size_2_mm",
+  "final_wt_gms",
+  "column_break_dtaz",
+  "specimen_size_3_mm",
+  "loss_in_wt",
+  "section_break_llmh",
+  "observation",
+  "column_break_vhwp",
+  "observation_",
+  "column_break_bwvr",
+  "surface_finish_grit",
+  "section_break_mmeq",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "heat_no",
+   "fieldtype": "Link",
+   "label": "Heat No",
+   "options": "Daily Heat Planning"
+  },
+  {
+   "fieldname": "column_break_dhnz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_on",
+   "fieldtype": "Datetime",
+   "label": "Start On"
+  },
+  {
+   "fieldname": "column_break_kvsr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_on",
+   "fieldtype": "Datetime",
+   "label": "End On"
+  },
+  {
+   "fieldname": "section_break_axmi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "entry_date",
+   "fieldtype": "Date",
+   "label": "Entry Date"
+  },
+  {
+   "fieldname": "test_temp_deg_cen",
+   "fieldtype": "Float",
+   "label": "Test Temp (Deg Cen)"
+  },
+  {
+   "fieldname": "test_solution",
+   "fieldtype": "Data",
+   "label": "Test Solution"
+  },
+  {
+   "fieldname": "column_break_gjyp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_smge",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_wdut",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "duration_hrs",
+   "fieldtype": "Float",
+   "label": "Duration (hrs)"
+  },
+  {
+   "fieldname": "specimen_size_1_mm",
+   "fieldtype": "Float",
+   "label": "Specimen Size 1 (mm)"
+  },
+  {
+   "fieldname": "specimen_size_2_mm",
+   "fieldtype": "Float",
+   "label": "Specimen Size 2 (mm)"
+  },
+  {
+   "fieldname": "specimen_size_3_mm",
+   "fieldtype": "Float",
+   "label": "Specimen Size 3 (mm)"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Float",
+   "label": "Area"
+  },
+  {
+   "fieldname": "initial_wt_gms",
+   "fieldtype": "Float",
+   "label": "Initial Wt (gms)"
+  },
+  {
+   "fieldname": "final_wt_gms",
+   "fieldtype": "Float",
+   "label": "Final Wt (gms)"
+  },
+  {
+   "fieldname": "loss_in_wt",
+   "fieldtype": "Float",
+   "label": "Loss In Wt"
+  },
+  {
+   "fieldname": "observation",
+   "fieldtype": "Data",
+   "label": "Observation"
+  },
+  {
+   "fieldname": "observation_",
+   "fieldtype": "Data",
+   "label": "Observation @"
+  },
+  {
+   "fieldname": "column_break_fkrn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_yfvw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_dtaz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_llmh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "surface_finish_grit",
+   "fieldtype": "Float",
+   "label": "Surface Finish Grit"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_vhwp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_bwvr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_mmeq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "PCTC -"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-04 15:49:27.475875",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "Pitting Corrosion Test Certificate",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

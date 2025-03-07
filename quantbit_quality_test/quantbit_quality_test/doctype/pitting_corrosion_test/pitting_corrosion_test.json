@@ -1,20 +1,28 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-01-10 14:41:24.359774",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "section_break_9vrq",
   "company",
-  "report_no",
+  "grade",
+  "sales_order",
+  "daily_heat_planning",
   "temp",
+  "report_no",
   "customer",
+  "naming_series",
   "column_break_axgk",
   "posting_date",
-  "heat_no",
-  "duration",
+  "sales_order_sheet",
   "customer_name",
+  "heat_no",
+  "start_time",
+  "end_time",
+  "duration",
   "section_break_eiia",
   "pitting_corrosion_details",
   "column_break_gcru",
@@ -29,7 +37,9 @@
   "accpt_crit",
   "samp_prep",
   "end_cust",
-  "amended_from"
+  "amended_from",
+  "section_break_ckog",
+  "department_remark"
  ],
  "fields": [
   {
@@ -49,7 +59,7 @@
   },
   {
    "fieldname": "temp",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Temp"
   },
   {
@@ -68,10 +78,10 @@
    "label": "Posting Date"
   },
   {
+   "fetch_from": "daily_heat_planning.heat_no",
    "fieldname": "heat_no",
-   "fieldtype": "Link",
-   "label": "Heat No.",
-   "options": "Pouring"
+   "fieldtype": "Data",
+   "label": "Heat No."
   },
   {
    "fieldname": "duration",
@@ -161,15 +171,65 @@
    "fieldtype": "Table",
    "label": "Pitting Multiple Temp",
    "options": "Pitting Multiple Temp Details"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "label": "Grade",
+   "options": "Grade Master"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "sales_order_sheet",
+   "fieldtype": "Link",
+   "label": "Sales Order Sheet",
+   "options": "Sales Order Sheet"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "PCT -"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Datetime",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Datetime",
+   "label": "End Time"
+  },
+  {
+   "fieldname": "daily_heat_planning",
+   "fieldtype": "Link",
+   "label": "Daily Heat Planning",
+   "options": "Daily Heat Planning"
+  },
+  {
+   "fieldname": "section_break_ckog",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department_remark",
+   "fieldtype": "Small Text",
+   "label": "Department Remark"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-01-11 14:45:54.653238",
+ "modified": "2025-03-06 12:00:26.596979",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Pitting Corrosion Test",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

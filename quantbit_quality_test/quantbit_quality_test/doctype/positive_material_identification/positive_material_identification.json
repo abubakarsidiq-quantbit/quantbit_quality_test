@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-01-11 15:02:42.346471",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -8,12 +9,14 @@
   "section_break_ptgj",
   "company",
   "customer",
+  "naming_series",
   "column_break_yrsi",
   "posting_date",
   "customer_name",
   "column_break_fohf",
   "grade",
-  "amended_from",
+  "sales_order",
+  "sales_order_sheet",
   "section_break_hawv",
   "positive_material_identification_details",
   "section_break_vgsc",
@@ -29,7 +32,10 @@
   "column_break_dcds",
   "po_std",
   "for_tpi",
-  "project"
+  "project",
+  "section_break_mmpg",
+  "department_remark",
+  "amended_from"
  ],
  "fields": [
   {
@@ -72,16 +78,6 @@
    "fieldtype": "Link",
    "label": "Grade",
    "options": "Grade"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Positive Material Identification",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
   },
   {
    "fieldname": "section_break_hawv",
@@ -128,6 +124,7 @@
    "label": "PO Grade"
   },
   {
+   "default": "Instrument",
    "fieldname": "instrument_type",
    "fieldtype": "Data",
    "label": "Instrument Type"
@@ -160,15 +157,53 @@
    "fieldname": "project",
    "fieldtype": "Data",
    "label": "Project"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "sales_order_sheet",
+   "fieldtype": "Link",
+   "label": "Sales Order Sheet",
+   "options": "Sales Order Sheet"
+  },
+  {
+   "fieldname": "section_break_mmpg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department_remark",
+   "fieldtype": "Small Text",
+   "label": "Department Remark"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Positive Material Identification",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "PMI -"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-01-15 14:47:29.579137",
+ "modified": "2025-03-06 12:51:29.181203",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Positive Material Identification",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

@@ -1,0 +1,151 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-01-09 14:39:18.001658",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ogkl",
+  "heat_no",
+  "naming_series",
+  "column_break_tcxc",
+  "daily_heat_planning",
+  "column_break_240z",
+  "grade",
+  "column_break_lvqp",
+  "sales_order",
+  "column_break_iidy",
+  "sales_order_sheet",
+  "column_break_akoi",
+  "anals_date",
+  "section_break_juwh",
+  "chemical_result_entry_details",
+  "amended_from",
+  "department_remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ogkl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "daily_heat_planning.heat_no",
+   "fieldname": "heat_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Heat No.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_tcxc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Grade",
+   "options": "Grade Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_240z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Table MultiSelect",
+   "label": "Sales Order",
+   "options": "Order Details"
+  },
+  {
+   "fieldname": "column_break_lvqp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_order_sheet",
+   "fieldtype": "Link",
+   "label": "Sales Order Sheet",
+   "options": "Sales Order Sheet"
+  },
+  {
+   "fieldname": "column_break_iidy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "anals_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Analysis Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_juwh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "chemical_result_entry_details",
+   "fieldtype": "Table",
+   "label": "Chemical Result Entry Details",
+   "options": "Chemical Result Entry Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Chemicle Result Entry",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "CRE -"
+  },
+  {
+   "fieldname": "daily_heat_planning",
+   "fieldtype": "Link",
+   "label": "Daily Heat Planning",
+   "options": "Daily Heat Planning"
+  },
+  {
+   "fieldname": "column_break_akoi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department_remark",
+   "fieldtype": "Small Text",
+   "label": "Department Remark"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-03-06 11:55:24.472140",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "Chemicle Result Entry",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

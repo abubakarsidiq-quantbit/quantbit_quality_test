@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-28 14:31:29.755588",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pouring_no",
+  "column_break_pjm6",
+  "sales_order"
+ ],
+ "fields": [
+  {
+   "fieldname": "pouring_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pouring No"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sales Order"
+  },
+  {
+   "fieldname": "column_break_pjm6",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-02-28 14:35:10.100781",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "I G C T Practice E Test Certification Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

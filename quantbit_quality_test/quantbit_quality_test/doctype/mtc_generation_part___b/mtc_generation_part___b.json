@@ -1,11 +1,13 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-01-10 10:35:53.654899",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "section_break_l7tb",
+  "naming_series",
   "company",
   "tc_no",
   "customer",
@@ -413,19 +415,26 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "MTC Generation Part - A",
+   "options": "MTC Generation",
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "MTCB -"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-01-15 14:47:30.145155",
+ "modified": "2025-03-05 20:45:00.447305",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "MTC Generation Part - B",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
