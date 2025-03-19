@@ -30,7 +30,6 @@
   "maximum",
   "column_break_znyl",
   "memo_details",
-  "column_break_tmca",
   "section_break_imoi",
   "product_details",
   "section_break_hgck",
@@ -131,11 +130,6 @@
   {
    "fieldname": "column_break_znyl",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_tmca",
-   "fieldtype": "Column Break",
-   "hidden": 1
   },
   {
    "fieldname": "memo_details",
