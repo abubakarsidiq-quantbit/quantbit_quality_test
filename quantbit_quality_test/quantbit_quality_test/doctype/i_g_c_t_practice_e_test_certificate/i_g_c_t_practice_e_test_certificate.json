@@ -321,6 +321,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
+<<<<<<< HEAD
 <<<<<<< HEAD:quantbit_quality_test/quantbit_quality_test/doctype/i_g_c_t_practice_e_test_certification/i_g_c_t_practice_e_test_certification.json
  "modified": "2025-03-06 11:56:29.683981",
  "modified_by": "Administrator",
@@ -328,6 +329,9 @@
  "name": "I G C T Practice E Test Certification",
 =======
  "modified": "2025-03-13 10:34:07.721528",
+=======
+ "modified": "2025-03-19 12:27:58.291345",
+>>>>>>> 2cc6a1b (Update)
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "I G C T Practice E Test Certificate",

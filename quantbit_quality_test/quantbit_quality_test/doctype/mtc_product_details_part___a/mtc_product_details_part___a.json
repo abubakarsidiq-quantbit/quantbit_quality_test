@@ -79,7 +79,11 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
+<<<<<<< HEAD
  "modified": "2025-01-15 14:47:30.583266",
+=======
+ "modified": "2025-03-19 12:27:56.158778",
+>>>>>>> 2cc6a1b (Update)
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "MTC Product Details Part - A",
