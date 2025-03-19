@@ -1,0 +1,157 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-13 16:55:30.102356",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_details_section",
+  "o_a_no",
+  "column_break_jifq",
+  "o_a__srl",
+  "column_break_jfxd",
+  "srl",
+  "column_break_xfqu",
+  "heat_no",
+  "column_break_ptiu",
+  "product",
+  "column_break_dxzb",
+  "description",
+  "column_break_bodv",
+  "qty",
+  "column_break_dhya",
+  "dp_nos",
+  "column_break_hhaw",
+  "max_thick",
+  "column_break_ywst",
+  "cast_srl",
+  "column_break_onim",
+  "findings",
+  "column_break_wvrb",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_details_section",
+   "fieldtype": "Section Break",
+   "label": "Product Details"
+  },
+  {
+   "fieldname": "o_a_no",
+   "fieldtype": "Data",
+   "label": "O A No"
+  },
+  {
+   "fieldname": "column_break_jifq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "o_a__srl",
+   "fieldtype": "Data",
+   "label": "O A  Srl"
+  },
+  {
+   "fieldname": "column_break_jfxd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "srl",
+   "fieldtype": "Data",
+   "label": "Srl"
+  },
+  {
+   "fieldname": "column_break_xfqu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "heat_no",
+   "fieldtype": "Data",
+   "label": "Heat No"
+  },
+  {
+   "fieldname": "column_break_ptiu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Data",
+   "label": "Product"
+  },
+  {
+   "fieldname": "column_break_dxzb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_bodv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "column_break_dhya",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dp_nos",
+   "fieldtype": "Data",
+   "label": "DP Nos"
+  },
+  {
+   "fieldname": "column_break_hhaw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "max_thick",
+   "fieldtype": "Data",
+   "label": "Max Thick"
+  },
+  {
+   "fieldname": "column_break_ywst",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cast_srl",
+   "fieldtype": "Data",
+   "label": "Cast Srl"
+  },
+  {
+   "fieldname": "column_break_onim",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "findings",
+   "fieldtype": "Data",
+   "label": "Findings"
+  },
+  {
+   "fieldname": "column_break_wvrb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-19 12:13:49.121082",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "Dye Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

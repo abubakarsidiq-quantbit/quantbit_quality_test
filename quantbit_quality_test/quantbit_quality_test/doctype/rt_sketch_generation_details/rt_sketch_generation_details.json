@@ -1,0 +1,160 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-13 17:25:24.895326",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "film_srl",
+  "no_of_expo",
+  "design",
+  "sfdmm",
+  "sourcereport",
+  "length",
+  "column_break_godn",
+  "source_location",
+  "thickugmm",
+  "essential_wire_hole_type",
+  "fodmm",
+  "type",
+  "ug",
+  "column_break_rusf",
+  "no_of_films",
+  "thickreport",
+  "location",
+  "source",
+  "width",
+  "technique"
+ ],
+ "fields": [
+  {
+   "fieldname": "film_srl",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Film Srl"
+  },
+  {
+   "fieldname": "no_of_expo",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "No Of Expo"
+  },
+  {
+   "fieldname": "design",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Design"
+  },
+  {
+   "fieldname": "sfdmm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SFD(mm)"
+  },
+  {
+   "fieldname": "sourcereport",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Source(Report)"
+  },
+  {
+   "fieldname": "length",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Length"
+  },
+  {
+   "fieldname": "column_break_godn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "source_location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Source Location"
+  },
+  {
+   "fieldname": "thickugmm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Thick(UG)(MM)"
+  },
+  {
+   "fieldname": "essential_wire_hole_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Essential Wire/ Hole Type"
+  },
+  {
+   "fieldname": "fodmm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "FOD(mm)"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type"
+  },
+  {
+   "fieldname": "ug",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ug"
+  },
+  {
+   "fieldname": "column_break_rusf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "no_of_films",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "No Of Films"
+  },
+  {
+   "fieldname": "thickreport",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Thick(Report)"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Source"
+  },
+  {
+   "fieldname": "width",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Width"
+  },
+  {
+   "fieldname": "technique",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Technique"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-19 12:18:46.704428",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "RT Sketch Generation Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

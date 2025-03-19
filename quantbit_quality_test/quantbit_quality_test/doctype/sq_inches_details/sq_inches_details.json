@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-13 17:13:55.575371",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ok_ir",
+  "co_1",
+  "column_break_gxzn",
+  "repair_ir",
+  "co_2"
+ ],
+ "fields": [
+  {
+   "fieldname": "ok_ir",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ok IR"
+  },
+  {
+   "fieldname": "co_1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CO 1"
+  },
+  {
+   "fieldname": "column_break_gxzn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "repair_ir",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Repair IR"
+  },
+  {
+   "fieldname": "co_2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CO 2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-19 12:25:39.498856",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "Sq Inches Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

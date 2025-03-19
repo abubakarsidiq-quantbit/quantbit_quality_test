@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-13 16:13:10.065448",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rt_no",
+  "grade",
+  "required_date",
+  "requirement",
+  "column_break_pbee",
+  "heat_no",
+  "approved_rss_no",
+  "sample_bulk",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "rt_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RT No"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Grade",
+   "options": "Grade Master"
+  },
+  {
+   "fieldname": "required_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Required Date"
+  },
+  {
+   "fieldname": "requirement",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Requirement"
+  },
+  {
+   "fieldname": "column_break_pbee",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "heat_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Heat No",
+   "options": "Daily Heat Planning"
+  },
+  {
+   "fieldname": "approved_rss_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Approved RSS No"
+  },
+  {
+   "fieldname": "sample_bulk",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Sample Bulk"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-19 12:16:18.839571",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "Radiography Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

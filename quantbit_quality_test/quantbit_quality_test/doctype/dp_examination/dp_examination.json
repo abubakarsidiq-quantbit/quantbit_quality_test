@@ -1,0 +1,396 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-13 16:14:27.820717",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "report_no",
+  "specification",
+  "custprocedure",
+  "cleaner_type_make",
+  "cleaner_batch",
+  "cleaner_life",
+  "penetrant_apply",
+  "surface_condn",
+  "temperature",
+  "light_intensity",
+  "column_break_xluz",
+  "dcno",
+  "grade",
+  "sppl_procedure",
+  "penetrant_type_make",
+  "penetrant_batch",
+  "penetrant_life",
+  "penetrant_remove",
+  "penetrant_time",
+  "test_method",
+  "stage_of_test",
+  "test_date",
+  "column_break_emkj",
+  "p_o_no",
+  "po_date",
+  "acceptance_std",
+  "developer_type_make",
+  "developer_batch",
+  "developer_life",
+  "lightning_equipment",
+  "developer_time",
+  "extent_of_exam",
+  "section_break_kilg",
+  "product_details",
+  "section_break_duem",
+  "test_side",
+  "penetrant_type",
+  "column_break_zuka",
+  "tested_by",
+  "exit_copy",
+  "column_break_etja",
+  "approved_by",
+  "column_break_lfxu",
+  "as_per",
+  "column_break_fcno",
+  "end_customer",
+  "section_break_iwel",
+  "atttch_file",
+  "column_break_fple",
+  "screen",
+  "column_break_ijra",
+  "printter",
+  "column_break_vkpk",
+  "file",
+  "column_break_kiss",
+  "sign",
+  "column_break_zext",
+  "exit",
+  "column_break_edno",
+  "report",
+  "column_break_kcvu",
+  "clear"
+ ],
+ "fields": [
+  {
+   "fieldname": "report_no",
+   "fieldtype": "Data",
+   "label": "Report No"
+  },
+  {
+   "fieldname": "specification",
+   "fieldtype": "Data",
+   "label": "Specification"
+  },
+  {
+   "fieldname": "custprocedure",
+   "fieldtype": "Data",
+   "label": "Cust.Procedure"
+  },
+  {
+   "fieldname": "cleaner_type_make",
+   "fieldtype": "Data",
+   "label": "Cleaner Type Make"
+  },
+  {
+   "fieldname": "cleaner_batch",
+   "fieldtype": "Data",
+   "label": "Cleaner Batch"
+  },
+  {
+   "fieldname": "cleaner_life",
+   "fieldtype": "Data",
+   "label": "Cleaner Life"
+  },
+  {
+   "fieldname": "penetrant_apply",
+   "fieldtype": "Data",
+   "label": "Penetrant Apply"
+  },
+  {
+   "fieldname": "surface_condn",
+   "fieldtype": "Data",
+   "label": "Surface Condn."
+  },
+  {
+   "fieldname": "temperature",
+   "fieldtype": "Data",
+   "label": "Temperature"
+  },
+  {
+   "fieldname": "light_intensity",
+   "fieldtype": "Int",
+   "label": "Light Intensity"
+  },
+  {
+   "fieldname": "column_break_xluz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dcno",
+   "fieldtype": "Datetime",
+   "label": "D.C.No"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade"
+  },
+  {
+   "fieldname": "sppl_procedure",
+   "fieldtype": "Data",
+   "label": "SPPL Procedure"
+  },
+  {
+   "fieldname": "penetrant_type_make",
+   "fieldtype": "Data",
+   "label": "Penetrant Type Make"
+  },
+  {
+   "fieldname": "penetrant_batch",
+   "fieldtype": "Data",
+   "label": "Penetrant Batch"
+  },
+  {
+   "fieldname": "penetrant_life",
+   "fieldtype": "Data",
+   "label": "Penetrant Life"
+  },
+  {
+   "fieldname": "penetrant_remove",
+   "fieldtype": "Data",
+   "label": "Penetrant Remove"
+  },
+  {
+   "fieldname": "penetrant_time",
+   "fieldtype": "Data",
+   "label": "Penetrant Time"
+  },
+  {
+   "fieldname": "test_method",
+   "fieldtype": "Data",
+   "label": "Test Method"
+  },
+  {
+   "fieldname": "stage_of_test",
+   "fieldtype": "Data",
+   "label": "Stage of Test"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date"
+  },
+  {
+   "fieldname": "column_break_emkj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "p_o_no",
+   "fieldtype": "Data",
+   "label": "P O No"
+  },
+  {
+   "fieldname": "po_date",
+   "fieldtype": "Date",
+   "label": "Po Date"
+  },
+  {
+   "fieldname": "acceptance_std",
+   "fieldtype": "Data",
+   "label": "Acceptance Std"
+  },
+  {
+   "fieldname": "developer_type_make",
+   "fieldtype": "Data",
+   "label": "Developer Type Make"
+  },
+  {
+   "fieldname": "developer_batch",
+   "fieldtype": "Data",
+   "label": "Developer Batch"
+  },
+  {
+   "fieldname": "developer_life",
+   "fieldtype": "Data",
+   "label": "Developer Life"
+  },
+  {
+   "fieldname": "lightning_equipment",
+   "fieldtype": "Data",
+   "label": "Lightning Equipment"
+  },
+  {
+   "fieldname": "developer_time",
+   "fieldtype": "Data",
+   "label": "Developer Time"
+  },
+  {
+   "fieldname": "extent_of_exam",
+   "fieldtype": "Data",
+   "label": "Extent of Exam"
+  },
+  {
+   "fieldname": "section_break_kilg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "product_details",
+   "fieldtype": "Link",
+   "label": "Product Details",
+   "options": "Dye Table"
+  },
+  {
+   "fieldname": "section_break_duem",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "test_side",
+   "fieldtype": "Data",
+   "label": "Test Side"
+  },
+  {
+   "fieldname": "penetrant_type",
+   "fieldtype": "Data",
+   "label": "Penetrant Type"
+  },
+  {
+   "fieldname": "column_break_zuka",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested By"
+  },
+  {
+   "fieldname": "exit_copy",
+   "fieldtype": "Button",
+   "label": "Exit Copy"
+  },
+  {
+   "fieldname": "column_break_etja",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved By"
+  },
+  {
+   "fieldname": "column_break_lfxu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "as_per",
+   "fieldtype": "Data",
+   "label": "As per"
+  },
+  {
+   "fieldname": "column_break_fcno",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_customer",
+   "fieldtype": "Data",
+   "label": "End Customer"
+  },
+  {
+   "fieldname": "section_break_iwel",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "atttch_file",
+   "fieldtype": "Attach",
+   "label": "Atttch File"
+  },
+  {
+   "fieldname": "column_break_fple",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "screen",
+   "fieldtype": "Check",
+   "label": "Screen "
+  },
+  {
+   "fieldname": "column_break_ijra",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "printter",
+   "fieldtype": "Check",
+   "label": "Printter"
+  },
+  {
+   "fieldname": "column_break_vkpk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "file",
+   "fieldtype": "Check",
+   "label": "File "
+  },
+  {
+   "fieldname": "column_break_kiss",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "sign",
+   "fieldtype": "Check",
+   "label": "Sign"
+  },
+  {
+   "fieldname": "column_break_zext",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "exit",
+   "fieldtype": "Button",
+   "label": "Exit"
+  },
+  {
+   "fieldname": "column_break_edno",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "report",
+   "fieldtype": "Button",
+   "label": "Report"
+  },
+  {
+   "fieldname": "column_break_kcvu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "clear",
+   "fieldtype": "Button",
+   "label": "Clear"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-19 12:17:17.764312",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "DP Examination",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

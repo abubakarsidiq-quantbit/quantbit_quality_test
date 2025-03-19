@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-17 13:30:16.204063",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "mpdp_no_for_rt_no",
+  "column_break_qhlw",
+  "mpdprt_no",
+  "column_break_ewtb",
+  "area_of_coverage",
+  "column_break_awus",
+  "entry_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "mpdp_no_for_rt_no",
+   "fieldtype": "Data",
+   "label": "MP/DP No for RT No"
+  },
+  {
+   "fieldname": "column_break_qhlw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mpdprt_no",
+   "fieldtype": "Data",
+   "label": "MP/DP/RT No"
+  },
+  {
+   "fieldname": "column_break_ewtb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "area_of_coverage",
+   "fieldtype": "Data",
+   "label": "Area of Coverage"
+  },
+  {
+   "fieldname": "column_break_awus",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "entry_date",
+   "fieldtype": "Date",
+   "label": "Entry Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-19 12:12:45.860844",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "Child2",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

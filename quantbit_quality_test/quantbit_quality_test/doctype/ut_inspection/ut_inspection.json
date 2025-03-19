@@ -1,0 +1,271 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-17 10:08:13.590878",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "report_id",
+  "date",
+  "customer",
+  "section_break_inxv",
+  "specification",
+  "customer_proc_ref",
+  "equipment_make",
+  "testmethod",
+  "technique",
+  "equipment_calibration",
+  "prob_size",
+  "complant_used",
+  "sub_contractor",
+  "column_break_piji",
+  "acceptance_standard",
+  "sppl_procedure",
+  "stage_of_test",
+  "surface_condition",
+  "calibration_standard",
+  "amplitude",
+  "frequency",
+  "data_egli",
+  "sub_contractor_ref",
+  "section_break_xscs",
+  "product_details",
+  "section_break_muus",
+  "area_coverage",
+  "agency",
+  "approved",
+  "column_break_cipi",
+  "observation",
+  "result",
+  "ecust",
+  "column_break_qlrh",
+  "sign",
+  "seal",
+  "clear",
+  "exit",
+  "report",
+  "column_break_esxl"
+ ],
+ "fields": [
+  {
+   "fieldname": "report_id",
+   "fieldtype": "Data",
+   "label": "Report ID"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "label": "Customer"
+  },
+  {
+   "fieldname": "section_break_inxv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "specification",
+   "fieldtype": "Data",
+   "label": "Specification"
+  },
+  {
+   "fieldname": "customer_proc_ref",
+   "fieldtype": "Data",
+   "label": "Customer Proc. Ref."
+  },
+  {
+   "fieldname": "equipment_make",
+   "fieldtype": "Data",
+   "label": "Equipment Make"
+  },
+  {
+   "fieldname": "testmethod",
+   "fieldtype": "Data",
+   "label": "Testmethod"
+  },
+  {
+   "fieldname": "technique",
+   "fieldtype": "Data",
+   "label": "Technique"
+  },
+  {
+   "fieldname": "equipment_calibration",
+   "fieldtype": "Data",
+   "label": "Equipment Calibration"
+  },
+  {
+   "fieldname": "prob_size",
+   "fieldtype": "Data",
+   "label": "Prob Size"
+  },
+  {
+   "fieldname": "complant_used",
+   "fieldtype": "Data",
+   "label": "Complant used"
+  },
+  {
+   "fieldname": "sub_contractor",
+   "fieldtype": "Data",
+   "label": "Sub Contractor"
+  },
+  {
+   "fieldname": "column_break_piji",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "acceptance_standard",
+   "fieldtype": "Data",
+   "label": "Acceptance Standard"
+  },
+  {
+   "fieldname": "sppl_procedure",
+   "fieldtype": "Data",
+   "label": "SPPL Procedure"
+  },
+  {
+   "fieldname": "stage_of_test",
+   "fieldtype": "Data",
+   "label": "Stage of Test"
+  },
+  {
+   "fieldname": "surface_condition",
+   "fieldtype": "Data",
+   "label": "Surface Condition"
+  },
+  {
+   "fieldname": "calibration_standard",
+   "fieldtype": "Data",
+   "label": "Calibration Standard"
+  },
+  {
+   "fieldname": "amplitude",
+   "fieldtype": "Data",
+   "label": "Amplitude"
+  },
+  {
+   "fieldname": "frequency",
+   "fieldtype": "Data",
+   "label": "Frequency"
+  },
+  {
+   "fieldname": "data_egli",
+   "fieldtype": "Data",
+   "label": "Scanning"
+  },
+  {
+   "fieldname": "sub_contractor_ref",
+   "fieldtype": "Data",
+   "label": "Sub Contractor Ref"
+  },
+  {
+   "fieldname": "section_break_xscs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "product_details",
+   "fieldtype": "Link",
+   "label": "Product Details",
+   "options": "UT Inspection Product"
+  },
+  {
+   "fieldname": "section_break_muus",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "area_coverage",
+   "fieldtype": "Data",
+   "label": "Area Coverage"
+  },
+  {
+   "fieldname": "agency",
+   "fieldtype": "Data",
+   "label": "Agency"
+  },
+  {
+   "fieldname": "approved",
+   "fieldtype": "Data",
+   "label": "Approved"
+  },
+  {
+   "fieldname": "column_break_cipi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "observation",
+   "fieldtype": "Data",
+   "label": "Observation"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Data",
+   "label": "Result"
+  },
+  {
+   "fieldname": "ecust",
+   "fieldtype": "Data",
+   "label": "E.Cust"
+  },
+  {
+   "fieldname": "column_break_qlrh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "sign",
+   "fieldtype": "Check",
+   "label": "Sign"
+  },
+  {
+   "default": "0",
+   "fieldname": "seal",
+   "fieldtype": "Check",
+   "label": "Seal"
+  },
+  {
+   "fieldname": "clear",
+   "fieldtype": "Button",
+   "label": "Clear"
+  },
+  {
+   "fieldname": "exit",
+   "fieldtype": "Button",
+   "label": "Exit"
+  },
+  {
+   "fieldname": "report",
+   "fieldtype": "Button",
+   "label": "Report"
+  },
+  {
+   "fieldname": "column_break_esxl",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-19 12:15:06.623259",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "UT Inspection",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

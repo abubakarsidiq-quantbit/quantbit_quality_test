@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-13 17:07:54.510675",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "internal_reshoot_sq_inch",
+  "positive_sq_inch",
+  "remarks",
+  "column_break_vzqq",
+  "customer_reshoot_sq_inch",
+  "negative_sq_inch",
+  "film_review"
+ ],
+ "fields": [
+  {
+   "fieldname": "internal_reshoot_sq_inch",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Internal ReShoot Sq Inch"
+  },
+  {
+   "fieldname": "positive_sq_inch",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Positive Sq Inch"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_vzqq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_reshoot_sq_inch",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer ReShoot Sq Inch"
+  },
+  {
+   "fieldname": "negative_sq_inch",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Negative Sq Inch"
+  },
+  {
+   "default": "0",
+   "fieldname": "film_review",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Film Review"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-19 12:25:39.601745",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "Evaluation Entry Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
