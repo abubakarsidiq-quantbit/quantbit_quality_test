@@ -62,17 +62,6 @@ class MechanicalTestResultEntry(Document):
 
 		self.no_of_tests = (last_entry or 0) + 1
 
-<<<<<<< HEAD
-	@frappe.whitelist()
-	def update_remark(self):
-		if self.sales_order_sheet:
-			sales_order_sheet = frappe.get_doc("Sales Order Sheet", self.sales_order_sheet)
-
-			remarks_list = [strip_html(row.remark) for row in sales_order_sheet.department_remark]
-
-			self.department_remark = "\n".join(remarks_list) if remarks_list else ""
-		
-=======
 
 #fetch department remark from sales order sheet
 
@@ -91,5 +80,4 @@ class MechanicalTestResultEntry(Document):
 					"remark": row.remark
 				})
 
->>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
  

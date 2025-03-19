@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class IGCTPracticeETestCertificate(Document):
+class IGCTPracticeETestCertification(Document):
 	pass

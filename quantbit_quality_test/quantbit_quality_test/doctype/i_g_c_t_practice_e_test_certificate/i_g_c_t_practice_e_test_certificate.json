@@ -115,21 +115,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "daily_heat_planning",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Daily Heat Planning",
-   "options": "Daily Heat Planning",
-   "reqd": 1
-  },
-  {
-   "fetch_from": "daily_heat_planning.heat_no",
-   "fieldname": "heat_number",
-   "fieldtype": "Data",
-   "label": "Heat Number",
-   "reqd": 1
-  },
-  {
    "fieldname": "sales_order",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -138,11 +123,9 @@
    "reqd": 1
   },
   {
-   "fieldname": "sales_order_sheet",
-   "fieldtype": "Link",
-   "label": "Sales Order Sheet",
-   "options": "Sales Order Sheet",
-   "reqd": 1
+   "fieldname": "start_on",
+   "fieldtype": "Datetime",
+   "label": "Start On"
   },
   {
    "fieldname": "test_specification",
@@ -150,8 +133,28 @@
    "label": "Test Specification"
   },
   {
+   "fieldname": "boiling_specification",
+   "fieldtype": "Data",
+   "label": "Boiling Specification"
+  },
+  {
    "fieldname": "column_break_jrdz",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "daily_heat_planning",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Daily Heat Planning",
+   "options": "Daily Heat Planning",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_order_sheet",
+   "fieldtype": "Link",
+   "label": "Sales Order Sheet",
+   "options": "Sales Order Sheet",
+   "reqd": 1
   },
   {
    "fieldname": "end_on",
@@ -165,23 +168,20 @@
    "options": "Customer"
   },
   {
-   "fieldname": "boiling_specification",
-   "fieldtype": "Data",
-   "label": "Boiling Specification"
-  },
-  {
    "fieldname": "deg_bend_test",
    "fieldtype": "Data",
    "label": "Deg. Bend Test"
   },
   {
-   "fieldname": "start_on",
-   "fieldtype": "Datetime",
-   "label": "Start On"
-  },
-  {
    "fieldname": "column_break_cadh",
    "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "daily_heat_planning.heat_no",
+   "fieldname": "heat_number",
+   "fieldtype": "Data",
+   "label": "Heat Number",
+   "reqd": 1
   },
   {
    "fieldname": "boiling_duration",
@@ -264,7 +264,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-19 12:27:58.291345",
+ "modified": "2025-03-19 13:35:34.099022",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "I G C T Practice E Test Certificate",

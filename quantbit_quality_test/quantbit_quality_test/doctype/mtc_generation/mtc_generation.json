@@ -384,39 +384,25 @@
   {
    "fieldname": "grade",
    "fieldtype": "Link",
-<<<<<<< HEAD
-   "label": "Grade",
-   "options": "Grade Master"
-=======
    "in_list_view": 1,
    "label": "Grade",
    "options": "Grade Master",
    "reqd": 1
->>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   },
   {
    "fieldname": "sales_order",
    "fieldtype": "Link",
-<<<<<<< HEAD
-   "label": "Sales Order",
-   "options": "Sales Order"
-=======
    "in_list_view": 1,
    "label": "Sales Order",
    "options": "Sales Order",
    "reqd": 1
->>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   },
   {
    "fieldname": "sales_order_sheet",
    "fieldtype": "Link",
    "label": "Sales Order Sheet",
-<<<<<<< HEAD
-   "options": "Sales Order Sheet"
-=======
    "options": "Sales Order Sheet",
    "reqd": 1
->>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   },
   {
    "fieldname": "naming_series",
@@ -442,32 +428,14 @@
   },
   {
    "fieldname": "department_remark",
-<<<<<<< HEAD
-   "fieldtype": "Small Text",
-   "label": "Department Remark"
-=======
    "fieldtype": "Table",
    "label": "Department Remark",
    "options": "Sales Order Department Remark"
->>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
- "modified": "2025-03-06 11:59:52.340879",
-=======
- "modified": "2025-03-19 11:28:52.067135",
->>>>>>> 7cfdec3 (Update quantity Form)
-=======
- "modified": "2025-03-19 12:27:55.464575",
->>>>>>> 2cc6a1b (Update)
-=======
- "modified": "2025-03-19 12:27:55.464575",
->>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "MTC Generation",

@@ -8,10 +8,7 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
-<<<<<<< HEAD
-=======
   "column_break_mpvh",
->>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   "test_name",
   "section_break_iyeh",
   "company",
@@ -27,10 +24,7 @@
   "grade",
   "sales_order_sheet",
   "customer_name",
-<<<<<<< HEAD
-=======
   "section_break_elpl",
->>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   "remarks",
   "section_break_ljyr",
   "test_method",
@@ -244,8 +238,6 @@
    "fieldtype": "Table",
    "label": "Department Remark",
    "options": "Sales Order Department Remark"
-<<<<<<< HEAD
-=======
   },
   {
    "fieldname": "section_break_elpl",
@@ -254,17 +246,12 @@
   {
    "fieldname": "column_break_mpvh",
    "fieldtype": "Column Break"
->>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
-<<<<<<< HEAD
- "modified": "2025-03-19 12:27:55.215239",
-=======
  "modified": "2025-03-19 12:38:36.480369",
->>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Micro FE and Micro Test",

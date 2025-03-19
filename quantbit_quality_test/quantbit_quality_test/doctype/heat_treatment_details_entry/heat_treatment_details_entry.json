@@ -29,11 +29,8 @@
   "product_description",
   "balance",
   "srl",
-<<<<<<< HEAD
-=======
   "section_break_wjyn",
   "remark",
->>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   "section_break_ikcz",
   "department_remark",
   "amended_from"
@@ -107,11 +104,7 @@
   {
    "fieldname": "srl",
    "fieldtype": "Int",
-<<<<<<< HEAD
-   "label": "Srl"
-=======
    "label": "Serial No"
->>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   },
   {
    "fieldname": "batch_no",
@@ -122,12 +115,8 @@
    "default": "Today",
    "fieldname": "date",
    "fieldtype": "Date",
-<<<<<<< HEAD
-   "label": "Date"
-=======
    "label": "Date",
    "reqd": 1
->>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   },
   {
    "fieldname": "furnace",
@@ -139,23 +128,15 @@
    "fieldname": "sales_order",
    "fieldtype": "Link",
    "label": "Sales Order",
-<<<<<<< HEAD
-   "options": "Sales Order"
-=======
    "options": "Sales Order",
    "reqd": 1
->>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   },
   {
    "fieldname": "grade",
    "fieldtype": "Link",
    "label": "Grade",
-<<<<<<< HEAD
-   "options": "Grade Master"
-=======
    "options": "Grade Master",
    "reqd": 1
->>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   },
   {
    "fieldname": "sales_order_sheet",
@@ -175,10 +156,6 @@
   },
   {
    "fieldname": "department_remark",
-<<<<<<< HEAD
-   "fieldtype": "Small Text",
-   "label": "Department Remark"
-=======
    "fieldtype": "Table",
    "label": "Department Remark",
    "options": "Sales Order Department Remark"
@@ -220,22 +197,11 @@
   {
    "fieldname": "column_break_arwt",
    "fieldtype": "Column Break"
->>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
-<<<<<<< HEAD
-<<<<<<< HEAD
- "modified": "2025-03-06 11:53:17.246620",
-=======
- "modified": "2025-03-19 12:27:56.803166",
->>>>>>> 2cc6a1b (Update)
-=======
- "modified": "2025-03-19 12:27:56.803166",
->>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
- "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Heat Treatment Details Entry",
  "naming_rule": "By \"Naming Series\" field",

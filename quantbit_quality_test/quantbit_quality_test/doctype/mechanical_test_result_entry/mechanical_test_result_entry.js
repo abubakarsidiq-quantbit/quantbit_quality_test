@@ -129,9 +129,6 @@ frappe.ui.form.on("Mechanical Test Result Entry", {
     }
 });
 
-<<<<<<< HEAD
-
-=======
 frappe.ui.form.on("Mechanical Test Result Entry", {
 	grade: function(frm) {
 
@@ -262,4 +259,3 @@ frappe.ui.form.on("Mechanical Test Result Entry", {
                 frm.set_value("department_remark", ""); 
             }
 });
->>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce

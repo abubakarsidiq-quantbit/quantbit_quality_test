@@ -22,7 +22,6 @@ class ChemicleResultEntry(Document):
 					"maximum": row.internal_maximum
 				})
 
-<<<<<<< HEAD
 	@frappe.whitelist()
 	def update_remark(self):
 		if self.sales_order_sheet:
@@ -33,9 +32,6 @@ class ChemicleResultEntry(Document):
 			self.department_remark = "\n".join(remarks_list) if remarks_list else ""
 
 
-=======
-#filter applied to sales order according to heat no
->>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
 	@frappe.whitelist()
 	def get_sales_orders(self):
 		sales_orders = frappe.get_all(
@@ -50,8 +46,6 @@ class ChemicleResultEntry(Document):
 
 #fetch department remark from sales order sheet
 
-<<<<<<< HEAD
-=======
 	@frappe.whitelist()
 	def update_dept_remark(self):
 		if self.sales_order_sheet:
@@ -66,4 +60,3 @@ class ChemicleResultEntry(Document):
 					"department": row.department,
 					"remark": row.remark
 				})
->>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
