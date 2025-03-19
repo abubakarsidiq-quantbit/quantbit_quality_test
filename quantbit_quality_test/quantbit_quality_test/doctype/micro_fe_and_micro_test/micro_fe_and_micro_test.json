@@ -8,6 +8,7 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
+  "column_break_mpvh",
   "test_name",
   "section_break_iyeh",
   "company",
@@ -23,6 +24,7 @@
   "grade",
   "sales_order_sheet",
   "customer_name",
+  "section_break_elpl",
   "remarks",
   "section_break_ljyr",
   "test_method",
@@ -236,12 +238,20 @@
    "fieldtype": "Table",
    "label": "Department Remark",
    "options": "Sales Order Department Remark"
+  },
+  {
+   "fieldname": "section_break_elpl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_mpvh",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-19 12:27:55.215239",
+ "modified": "2025-03-19 12:38:36.480369",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Micro FE and Micro Test",

@@ -19,8 +19,7 @@
   "sales_order_sheet",
   "section_break_hmop",
   "table_orgi",
-  "column_break_lyho",
-  "table_tlig",
+  "alloy_content_weight_percent",
   "section_break_hawv",
   "positive_material_identification_details",
   "section_break_vgsc",
@@ -219,20 +218,16 @@
    "options": "Memo Details"
   },
   {
-   "fieldname": "column_break_lyho",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "table_tlig",
+   "fieldname": "alloy_content_weight_percent",
    "fieldtype": "Table",
-   "label": "Alloy, Content Weight Participation",
+   "label": "Alloy Content Weight Percent",
    "options": "Elements"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-19 12:27:54.870826",
+ "modified": "2025-03-19 12:35:17.225650",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Positive Material Identification",

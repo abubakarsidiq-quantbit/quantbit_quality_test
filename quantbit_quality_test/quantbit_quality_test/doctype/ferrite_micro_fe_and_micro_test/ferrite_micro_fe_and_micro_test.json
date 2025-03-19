@@ -7,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
+  "column_break_uvmk",
   "test_name",
   "section_break_iyeh",
   "company",
@@ -22,6 +23,7 @@
   "grade",
   "sales_order_sheet",
   "customer_name",
+  "section_break_gvzh",
   "remarks",
   "section_break_ljyr",
   "equip_srl",
@@ -235,12 +237,20 @@
    "fieldtype": "Table",
    "label": "Department Remark",
    "options": "Sales Order Department Remark"
+  },
+  {
+   "fieldname": "section_break_gvzh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_uvmk",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-19 12:27:55.344437",
+ "modified": "2025-03-19 12:38:16.355447",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Ferrite Micro FE And Micro Test",

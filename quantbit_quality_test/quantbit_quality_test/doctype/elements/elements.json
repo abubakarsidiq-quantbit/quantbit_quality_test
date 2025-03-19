@@ -6,7 +6,6 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "elements",
   "column_break_ocmj",
   "c1",
   "column_break_ngkv",
@@ -26,17 +25,14 @@
  ],
  "fields": [
   {
-   "fieldname": "elements",
-   "fieldtype": "Data",
-   "label": "Elements"
-  },
-  {
    "fieldname": "column_break_ocmj",
    "fieldtype": "Column Break"
   },
   {
+   "columns": 1,
    "fieldname": "c1",
    "fieldtype": "Float",
+   "in_list_view": 1,
    "label": "C1"
   },
   {
@@ -44,8 +40,10 @@
    "fieldtype": "Column Break"
   },
   {
+   "columns": 1,
    "fieldname": "c2",
    "fieldtype": "Float",
+   "in_list_view": 1,
    "label": "C2"
   },
   {
@@ -53,8 +51,10 @@
    "fieldtype": "Column Break"
   },
   {
+   "columns": 1,
    "fieldname": "c3",
    "fieldtype": "Float",
+   "in_list_view": 1,
    "label": "C3"
   },
   {
@@ -62,8 +62,10 @@
    "fieldtype": "Column Break"
   },
   {
+   "columns": 1,
    "fieldname": "c4",
    "fieldtype": "Float",
+   "in_list_view": 1,
    "label": "C4"
   },
   {
@@ -71,8 +73,10 @@
    "fieldtype": "Column Break"
   },
   {
+   "columns": 1,
    "fieldname": "c5",
    "fieldtype": "Float",
+   "in_list_view": 1,
    "label": "C5"
   },
   {
@@ -80,8 +84,10 @@
    "fieldtype": "Column Break"
   },
   {
+   "columns": 1,
    "fieldname": "c6",
    "fieldtype": "Float",
+   "in_list_view": 1,
    "label": "C6"
   },
   {
@@ -89,8 +95,10 @@
    "fieldtype": "Column Break"
   },
   {
+   "columns": 1,
    "fieldname": "c7",
    "fieldtype": "Float",
+   "in_list_view": 1,
    "label": "C7"
   },
   {
@@ -98,15 +106,17 @@
    "fieldtype": "Column Break"
   },
   {
+   "columns": 1,
    "fieldname": "c8",
    "fieldtype": "Float",
+   "in_list_view": 1,
    "label": "C8"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-03-19 12:27:54.994181",
+ "modified": "2025-03-19 12:40:39.040591",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Elements",
