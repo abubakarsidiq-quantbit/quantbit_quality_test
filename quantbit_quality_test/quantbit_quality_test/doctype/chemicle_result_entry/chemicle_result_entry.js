@@ -30,6 +30,7 @@ frappe.ui.form.on('Chemicle Result Entry',{
     },
 });
 
+<<<<<<< HEAD
 frappe.ui.form.on('Chemicle Result Entry', {
     sales_order_sheet: function(frm) {
         frm.call({
@@ -48,6 +49,8 @@ frappe.ui.form.on('Chemicle Result Entry', {
     }
 });
 
+=======
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
 
 frappe.ui.form.on('Chemicle Result Entry',{
     daily_heat_planning: function(frm) { 
@@ -75,3 +78,24 @@ frappe.ui.form.on('Chemicle Result Entry',{
 });
 
 
+<<<<<<< HEAD
+=======
+frappe.ui.form.on('Chemicle Result Entry', {
+    sales_order_sheet: function(frm) {
+
+        frm.clear_table("department_remark");
+        frm.refresh_field("department_remark");
+    
+                frm.call({
+                method: "update_dept_remark",  
+                doc: frm.doc  
+            });
+        
+            frm.refresh_field("department_remark");
+    },
+
+    before_submit: function(frm) {
+                frm.set_value("department_remark", ""); 
+            }
+    });
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce

@@ -2,6 +2,7 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on("Heat Treatment Details Entry", {
+<<<<<<< HEAD
         sales_order_sheet: function(frm) {
             frm.call({
                 method: "update_remark",
@@ -17,4 +18,22 @@ frappe.ui.form.on("Heat Treatment Details Entry", {
         before_save: function(frm) {
             frm.set_value("department_remark", ""); // Clear remarks before saving
         }
+=======
+    sales_order_sheet: function(frm) {
+
+        frm.clear_table("department_remark");
+        frm.refresh_field("department_remark");
+    
+                frm.call({
+                method: "update_dept_remark",  
+                doc: frm.doc  
+            });
+        
+            frm.refresh_field("department_remark");
+       },
+
+         before_submit: function(frm) {
+                frm.set_value("department_remark", ""); 
+            }
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
     });

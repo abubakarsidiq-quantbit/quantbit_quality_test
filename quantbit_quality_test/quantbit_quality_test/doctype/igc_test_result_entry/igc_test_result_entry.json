@@ -22,6 +22,11 @@
   "sales_order_sheet",
   "section_break_zako",
   "table_swwu",
+<<<<<<< HEAD
+=======
+  "section_break_qscv",
+  "remark",
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   "section_break_hovt",
   "department_remark",
   "amended_from"
@@ -30,14 +35,18 @@
   {
    "fieldname": "company",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Company",
-   "options": "Company"
+   "options": "Company",
+   "reqd": 1
   },
   {
    "fieldname": "grade",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Grade",
-   "options": "Grade Master"
+   "options": "Grade Master",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_tzuf",
@@ -47,7 +56,12 @@
    "fetch_from": "daily_heat_planning.heat_no",
    "fieldname": "heat_no",
    "fieldtype": "Data",
+<<<<<<< HEAD
    "label": "Heat No."
+=======
+   "label": "Heat No.",
+   "reqd": 1
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   },
   {
    "fieldname": "section_break_zako",
@@ -62,14 +76,26 @@
   {
    "fieldname": "sales_order",
    "fieldtype": "Link",
+<<<<<<< HEAD
    "label": "Sales Order",
    "options": "Sales Order"
+=======
+   "in_list_view": 1,
+   "label": "Sales Order",
+   "options": "Sales Order",
+   "reqd": 1
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   },
   {
    "fieldname": "sales_order_sheet",
    "fieldtype": "Link",
    "label": "Sales Order Sheet",
+<<<<<<< HEAD
    "options": "Sales Order Sheet"
+=======
+   "options": "Sales Order Sheet",
+   "reqd": 1
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   },
   {
    "fieldname": "naming_series",
@@ -80,8 +106,15 @@
   {
    "fieldname": "daily_heat_planning",
    "fieldtype": "Link",
+<<<<<<< HEAD
    "label": "Daily Heat Planning",
    "options": "Daily Heat Planning"
+=======
+   "in_list_view": 1,
+   "label": "Daily Heat Planning",
+   "options": "Daily Heat Planning",
+   "reqd": 1
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   },
   {
    "fieldname": "section_break_hovt",
@@ -89,18 +122,81 @@
   },
   {
    "fieldname": "department_remark",
+<<<<<<< HEAD
    "fieldtype": "Small Text",
    "label": "Department Remark"
+=======
+   "fieldtype": "Table",
+   "label": "Department Remark",
+   "options": "Sales Order Department Remark"
+  },
+  {
+   "fieldname": "section_break_qscv",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Text Editor",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "test_standard",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Test Standard",
+   "options": "IGC Practice Test Details"
+  },
+  {
+   "fetch_from": "test_standard.test_standard",
+   "fieldname": "test_method",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Test Method"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "IGC Test Result Entry",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "company_details_section",
+   "fieldtype": "Section Break",
+   "label": "Company Details"
+  },
+  {
+   "fieldname": "column_break_fpqo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "section_break_uhyy",
+   "fieldtype": "Section Break"
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
 <<<<<<< HEAD
+<<<<<<< HEAD
  "modified": "2025-03-06 11:55:52.812275",
 =======
  "modified": "2025-03-19 12:27:57.650860",
 >>>>>>> 2cc6a1b (Update)
+=======
+ "modified": "2025-03-19 12:27:57.650860",
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "IGC Test Result Entry",

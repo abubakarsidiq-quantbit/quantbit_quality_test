@@ -7,6 +7,10 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
+<<<<<<< HEAD
+=======
+  "column_break_uvmk",
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   "test_name",
   "section_break_iyeh",
   "company",
@@ -22,6 +26,7 @@
   "grade",
   "sales_order_sheet",
   "customer_name",
+  "section_break_gvzh",
   "remarks",
   "section_break_ljyr",
   "equip_srl",
@@ -37,10 +42,27 @@
   "column_break_rgoa",
   "for_tpi",
   "amended_from",
+<<<<<<< HEAD
+=======
+  "section_break_gfgv",
+  "remark",
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   "section_break_frjo",
   "department_remark"
  ],
  "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "FMMT -"
+  },
+  {
+   "fieldname": "test_name",
+   "fieldtype": "Select",
+   "label": "Test Name",
+   "options": "\nFerrite Micro FE\nMicro Test"
+  },
   {
    "fieldname": "section_break_iyeh",
    "fieldtype": "Section Break"
@@ -48,8 +70,18 @@
   {
    "fieldname": "company",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Company",
-   "options": "Company"
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "heat_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Heat No",
+   "options": "Daily Heat Planning",
+   "reqd": 1
   },
   {
    "fieldname": "report_no",
@@ -59,7 +91,7 @@
   {
    "fieldname": "test_equip",
    "fieldtype": "Select",
-   "label": "Test Equip"
+   "label": "Test Equipment"
   },
   {
    "fieldname": "column_break_fxaa",
@@ -68,9 +100,25 @@
   {
    "fieldname": "date_xlie",
    "fieldtype": "Date",
+<<<<<<< HEAD
    "label": "Posting Date"
   },
   {
+=======
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sales Order",
+   "options": "Sales Order",
+   "reqd": 1
+  },
+  {
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
    "fetch_from": "sales_order.customer",
    "fieldname": "customer",
    "fieldtype": "Link",
@@ -80,7 +128,7 @@
   {
    "fieldname": "end_cust",
    "fieldtype": "Data",
-   "label": "End Cust"
+   "label": "End Customer"
   },
   {
    "fieldname": "column_break_xccb",
@@ -90,7 +138,15 @@
    "fieldname": "grade",
    "fieldtype": "Link",
    "label": "Grade",
-   "options": "Grade Master"
+   "options": "Grade Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_order_sheet",
+   "fieldtype": "Link",
+   "label": "Sales Order Sheet",
+   "options": "Sales Order Sheet",
+   "reqd": 1
   },
   {
    "fetch_from": "customer.customer_name",
@@ -100,7 +156,11 @@
   },
   {
    "fieldname": "remarks",
+<<<<<<< HEAD
    "fieldtype": "Small Text",
+=======
+   "fieldtype": "Text Editor",
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
    "label": "Remarks"
   },
   {
@@ -176,6 +236,7 @@
    "search_index": 1
   },
   {
+<<<<<<< HEAD
    "fieldname": "heat_no",
    "fieldtype": "Link",
    "label": "Heat No",
@@ -204,6 +265,15 @@
    "fieldtype": "Select",
    "label": "Test Name",
    "options": "\nFerrite Micro FE\nMicro Test"
+=======
+   "fieldname": "section_break_gfgv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Text Editor",
+   "label": "Remark"
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   },
   {
    "fieldname": "section_break_frjo",
@@ -211,14 +281,32 @@
   },
   {
    "fieldname": "department_remark",
+<<<<<<< HEAD
    "fieldtype": "Small Text",
    "label": "Department Remark"
+=======
+   "fieldtype": "Table",
+   "label": "Department Remark",
+   "options": "Sales Order Department Remark"
+  },
+  {
+   "fieldname": "section_break_gvzh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_uvmk",
+   "fieldtype": "Column Break"
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
+<<<<<<< HEAD
  "modified": "2025-03-06 11:57:07.122981",
+=======
+ "modified": "2025-03-19 12:38:16.355447",
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Ferrite Micro FE And Micro Test",

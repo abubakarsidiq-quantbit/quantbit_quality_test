@@ -43,6 +43,7 @@ frappe.ui.form.on("Pitting Corrosion Test", {
 
 frappe.ui.form.on("Pitting Corrosion Test", {
     sales_order_sheet: function(frm) {
+<<<<<<< HEAD
         frm.call({
             method: "update_remark",
             doc: frm.doc,
@@ -58,3 +59,21 @@ frappe.ui.form.on("Pitting Corrosion Test", {
         frm.set_value("department_remark", ""); 
     }
 });
+=======
+
+        frm.clear_table("department_remark");
+        frm.refresh_field("department_remark");
+    
+                frm.call({
+                method: "update_dept_remark",  
+                doc: frm.doc  
+            });
+        
+            frm.refresh_field("department_remark");
+       },
+
+         before_submit: function(frm) {
+                frm.set_value("department_remark", ""); 
+            }
+    });
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce

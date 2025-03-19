@@ -19,6 +19,7 @@ class IGCTestResultEntry(Document):
 		final_listed = [r["sales_order"] for r in sales_orders]
 		return final_listed
 	
+<<<<<<< HEAD
 
 	@frappe.whitelist()
 	def update_remark(self):
@@ -29,3 +30,37 @@ class IGCTestResultEntry(Document):
 
 			self.department_remark = "\n".join(remarks_list) if remarks_list else ""
 
+=======
+#fetch department remark from sales order sheet
+
+	@frappe.whitelist()
+	def update_dept_remark(self):
+		if self.sales_order_sheet:
+			department_remarks = frappe.get_all(
+				'Sales Order Department Remark', 
+				filters={'parent': self.sales_order_sheet}, 
+				fields=['po_serial_number', 'department', 'remark']  
+			)
+			for row in department_remarks:
+				self.append("department_remark", {
+					"po_serial_number": row.po_serial_number,
+					"department": row.department,
+					"remark": row.remark
+				})
+
+
+#fetch the data in IGC Test Entry Details from test standard
+	@frappe.whitelist()
+	def get_test_standard(self):
+		if self.test_standard:
+			result = frappe.get_doc("IGC Practice Test Details", self.test_standard)
+
+			self.append("table_swwu", {
+				"test_standard": result.test_standard,
+				"test_temp": result.test_temp,
+				"length": result.length,
+				"width":result.width,
+				"area":result.area,
+				"height":result.height
+			})
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce

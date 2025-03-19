@@ -37,6 +37,11 @@
   "section_break_awry",
   "hardness_details",
   "amended_from",
+<<<<<<< HEAD
+=======
+  "section_break_kfws",
+  "remark",
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   "section_break_ccyt",
   "department_remark"
  ],
@@ -48,8 +53,10 @@
   {
    "fieldname": "company",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Company",
-   "options": "Company"
+   "options": "Company",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_pzal",
@@ -59,7 +66,8 @@
    "fetch_from": "daily_heat_planning.heat_no",
    "fieldname": "heat_no",
    "fieldtype": "Data",
-   "label": "Heat No."
+   "label": "Heat No.",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_qoye",
@@ -68,7 +76,12 @@
   {
    "fieldname": "no_of_tests",
    "fieldtype": "Int",
+<<<<<<< HEAD
    "label": "No. Of Tests"
+=======
+   "label": "No. Of Tests",
+   "read_only": 1
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   },
   {
    "fieldname": "column_break_udjf",
@@ -77,8 +90,10 @@
   {
    "fieldname": "grade",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Grade",
-   "options": "Grade Master"
+   "options": "Grade Master",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_lmki",
@@ -88,7 +103,8 @@
    "fetch_from": "grade.standard",
    "fieldname": "standard",
    "fieldtype": "Data",
-   "label": "Standard"
+   "label": "Standard",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_hjok",
@@ -117,7 +133,12 @@
    "fieldname": "sales_order",
    "fieldtype": "Table MultiSelect",
    "label": "Sales Order",
+<<<<<<< HEAD
    "options": "Order Details"
+=======
+   "options": "Order Details",
+   "reqd": 1
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   },
   {
    "fieldname": "column_break_mehf",
@@ -127,7 +148,12 @@
    "fieldname": "sales_order_sheet",
    "fieldtype": "Link",
    "label": "Sales Order Sheet",
+<<<<<<< HEAD
    "options": "Sales Order Sheet"
+=======
+   "options": "Sales Order Sheet",
+   "reqd": 1
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   },
   {
    "fieldname": "column_break_6639",
@@ -178,8 +204,15 @@
   {
    "fieldname": "daily_heat_planning",
    "fieldtype": "Link",
+<<<<<<< HEAD
    "label": "Daily Heat Planning",
    "options": "Daily Heat Planning"
+=======
+   "in_list_view": 1,
+   "label": "Daily Heat Planning",
+   "options": "Daily Heat Planning",
+   "reqd": 1
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   },
   {
    "fieldname": "section_break_ccyt",
@@ -187,18 +220,56 @@
   },
   {
    "fieldname": "department_remark",
+<<<<<<< HEAD
    "fieldtype": "Small Text",
    "label": "Department Remark"
+=======
+   "fieldtype": "Table",
+   "label": "Department Remark",
+   "options": "Sales Order Department Remark"
+  },
+  {
+   "fieldname": "section_break_kfws",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Text Editor",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "company_details_section",
+   "fieldtype": "Section Break",
+   "label": "Company Details"
+  },
+  {
+   "fieldname": "column_break_gwli",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "column_break_ntmy",
+   "fieldtype": "Column Break"
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
 <<<<<<< HEAD
+<<<<<<< HEAD
  "modified": "2025-03-06 12:34:51.065976",
 =======
  "modified": "2025-03-19 12:27:58.138248",
 >>>>>>> 2cc6a1b (Update)
+=======
+ "modified": "2025-03-19 12:27:58.138248",
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Mechanical Test Result Entry",

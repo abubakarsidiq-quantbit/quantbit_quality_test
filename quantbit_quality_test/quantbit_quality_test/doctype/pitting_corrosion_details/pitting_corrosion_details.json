@@ -24,7 +24,7 @@
    "fieldname": "srl_1",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Srl"
+   "label": "Serial No"
   },
   {
    "fieldname": "column_break_zutx",
@@ -40,7 +40,7 @@
    "fieldname": "srl_2",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Srl "
+   "label": "Serial No"
   },
   {
    "default": "0",
@@ -54,10 +54,14 @@
  "istable": 1,
  "links": [],
 <<<<<<< HEAD
+<<<<<<< HEAD
  "modified": "2025-01-15 14:47:30.019543",
 =======
  "modified": "2025-03-19 12:27:56.942034",
 >>>>>>> 2cc6a1b (Update)
+=======
+ "modified": "2025-03-19 12:27:56.942034",
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Pitting Corrosion Details",

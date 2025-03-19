@@ -48,8 +48,15 @@
   {
    "fieldname": "heat_no",
    "fieldtype": "Link",
+<<<<<<< HEAD
    "label": "Heat No",
    "options": "Daily Heat Planning"
+=======
+   "in_list_view": 1,
+   "label": "Heat No",
+   "options": "Daily Heat Planning",
+   "reqd": 1
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   },
   {
    "fieldname": "column_break_dhnz",
@@ -228,10 +235,14 @@
  "is_submittable": 1,
  "links": [],
 <<<<<<< HEAD
+<<<<<<< HEAD
  "modified": "2025-03-04 15:49:27.475875",
 =======
  "modified": "2025-03-19 12:27:55.883221",
 >>>>>>> 2cc6a1b (Update)
+=======
+ "modified": "2025-03-19 12:27:55.883221",
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Pitting Corrosion Test Certificate",

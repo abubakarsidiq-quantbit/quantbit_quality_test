@@ -63,7 +63,8 @@
    "default": "Today",
    "fieldname": "posting_date",
    "fieldtype": "Date",
-   "label": "Posting Date"
+   "label": "Posting Date",
+   "reqd": 1
   },
   {
    "fieldname": "pouring_entry_details_section",
@@ -89,6 +90,12 @@
    "read_only": 1
   },
   {
+   "fieldname": "heat_no",
+   "fieldtype": "Link",
+   "label": "Heat No",
+   "options": "Daily Heat Planning"
+  },
+  {
    "fieldname": "column_break_wzo3",
    "fieldtype": "Column Break"
   },
@@ -97,19 +104,33 @@
    "fieldname": "heat_number",
    "fieldtype": "Data",
    "label": "Heat Number",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_c9sz",
    "fieldtype": "Column Break"
   },
   {
-   "fetch_from": "pouring_id.grade",
    "fieldname": "grade",
    "fieldtype": "Link",
    "label": "Grade",
    "options": "Grade Master",
-   "read_only": 1
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_order_sheet",
+   "fieldtype": "Link",
+   "label": "Sales Order Sheet",
+   "options": "Sales Order Sheet",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_hoa8",
@@ -165,6 +186,7 @@
    "search_index": 1
   },
   {
+<<<<<<< HEAD
    "fieldname": "heat_no",
    "fieldtype": "Link",
    "label": "Heat No",
@@ -183,23 +205,35 @@
    "options": "Sales Order Sheet"
   },
   {
+=======
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
    "fieldname": "section_break_kmff",
    "fieldtype": "Section Break"
   },
   {
    "fieldname": "department_remark",
+<<<<<<< HEAD
    "fieldtype": "Small Text",
    "label": "Department Remark"
+=======
+   "fieldtype": "Table",
+   "label": "Department Remark",
+   "options": "Sales Order Department Remark"
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
 <<<<<<< HEAD
+<<<<<<< HEAD
  "modified": "2025-03-06 11:57:53.030457",
 =======
  "modified": "2025-03-19 12:27:56.031201",
 >>>>>>> 2cc6a1b (Update)
+=======
+ "modified": "2025-03-19 12:27:56.031201",
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Foundry Treatment Microstructure Test",

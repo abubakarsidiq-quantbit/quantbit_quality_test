@@ -12,10 +12,16 @@
   "column_break_vcup",
   "posting_date",
   "section_break_ogkl",
+<<<<<<< HEAD
   "heat_no",
   "naming_series",
   "column_break_tcxc",
   "daily_heat_planning",
+=======
+  "daily_heat_planning",
+  "column_break_tcxc",
+  "heat_no",
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   "column_break_240z",
   "grade",
   "column_break_lvqp",
@@ -27,6 +33,10 @@
   "section_break_juwh",
   "chemical_result_entry_details",
   "amended_from",
+<<<<<<< HEAD
+=======
+  "remark",
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   "department_remark"
  ],
  "fields": [
@@ -62,7 +72,12 @@
    "fieldname": "sales_order",
    "fieldtype": "Table MultiSelect",
    "label": "Sales Order",
+<<<<<<< HEAD
    "options": "Order Details"
+=======
+   "options": "Order Details",
+   "reqd": 1
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   },
   {
    "fieldname": "column_break_lvqp",
@@ -72,7 +87,12 @@
    "fieldname": "sales_order_sheet",
    "fieldtype": "Link",
    "label": "Sales Order Sheet",
+<<<<<<< HEAD
    "options": "Sales Order Sheet"
+=======
+   "options": "Sales Order Sheet",
+   "reqd": 1
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   },
   {
    "fieldname": "column_break_iidy",
@@ -115,7 +135,12 @@
    "fieldname": "daily_heat_planning",
    "fieldtype": "Link",
    "label": "Daily Heat Planning",
+<<<<<<< HEAD
    "options": "Daily Heat Planning"
+=======
+   "options": "Daily Heat Planning",
+   "reqd": 1
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   },
   {
    "fieldname": "column_break_akoi",
@@ -123,18 +148,54 @@
   },
   {
    "fieldname": "department_remark",
+<<<<<<< HEAD
    "fieldtype": "Small Text",
    "label": "Department Remark"
+=======
+   "fieldtype": "Table",
+   "label": "Department Remark",
+   "options": "Sales Order Department Remark"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Text Editor",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "company_details_section",
+   "fieldtype": "Section Break",
+   "label": "Company Details"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_vcup",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
 <<<<<<< HEAD
+<<<<<<< HEAD
  "modified": "2025-03-06 11:55:24.472140",
 =======
  "modified": "2025-03-19 12:27:57.887072",
 >>>>>>> 2cc6a1b (Update)
+=======
+ "modified": "2025-03-19 12:27:57.887072",
+>>>>>>> 1e876a7ddcf5d7f0bd3356265be634c5c2e7edce
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Chemicle Result Entry",

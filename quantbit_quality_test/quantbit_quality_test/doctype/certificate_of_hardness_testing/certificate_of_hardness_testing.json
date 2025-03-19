@@ -7,32 +7,34 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
-  "column_break_gjej",
-  "grade",
-  "column_break_qjor",
-  "heat_no",
-  "column_break_vcmz",
-  "sales_order",
-  "column_break_jhlq",
-  "sales_order_sheet",
-  "section_break_qdzy",
-  "report_no",
-  "column_break_whpw",
+  "section_break_xtav",
+  "company",
+  "column_break_ljfi",
   "date",
-  "amended_from",
+  "section_break_mptz",
+  "grade",
+  "column_break_gjej",
+  "heat_no",
+  "column_break_qjor",
+  "sales_order",
+  "column_break_vcmz",
+  "sales_order_sheet",
+  "column_break_oyku",
+  "report_no",
+  "section_break_qbof",
+  "remark",
   "section_break_hdus",
-  "department_remark"
+  "department_remark",
+  "amended_from"
  ],
  "fields": [
   {
    "fieldname": "company",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Company",
-   "options": "Company"
-  },
-  {
-   "fieldname": "section_break_qdzy",
-   "fieldtype": "Section Break"
+   "options": "Company",
+   "reqd": 1
   },
   {
    "fieldname": "report_no",
@@ -43,41 +45,39 @@
    "default": "Today",
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "Date"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Certificate Of Hardness Testing",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
+   "label": "Date",
+   "reqd": 1
   },
   {
    "fieldname": "grade",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Grade",
-   "options": "Grade Master"
+   "options": "Grade Master",
+   "reqd": 1
   },
   {
    "fieldname": "heat_no",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Heat No",
-   "options": "Daily Heat Planning"
+   "options": "Daily Heat Planning",
+   "reqd": 1
   },
   {
    "fieldname": "sales_order",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Sales Order",
-   "options": "Sales Order"
+   "options": "Sales Order",
+   "reqd": 1
   },
   {
    "fieldname": "sales_order_sheet",
    "fieldtype": "Link",
    "label": "Sales Order Sheet",
-   "options": "Sales Order Sheet"
+   "options": "Sales Order Sheet",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_gjej",
@@ -103,14 +103,51 @@
   },
   {
    "fieldname": "department_remark",
-   "fieldtype": "Small Text",
-   "label": "Department Remark"
+   "fieldtype": "Table",
+   "label": "Department Remark",
+   "options": "Sales Order Department Remark"
+  },
+  {
+   "fieldname": "section_break_qbof",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Text Editor",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Certificate Of Hardness Testing",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_xtav",
+   "fieldtype": "Section Break",
+   "label": "Company Details"
+  },
+  {
+   "fieldname": "column_break_ljfi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_mptz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_oyku",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-06 11:54:02.348744",
+ "modified": "2025-03-19 12:27:56.683666",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Certificate Of Hardness Testing",
