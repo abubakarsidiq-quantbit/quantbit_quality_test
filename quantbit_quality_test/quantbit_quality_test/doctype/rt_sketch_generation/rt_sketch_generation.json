@@ -1,0 +1,243 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-13 17:18:07.590532",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "copy_form",
+  "product_name",
+  "end_size_in",
+  "evaluation_standard",
+  "aprvd_cust_rss_no",
+  "column_break_rtqa",
+  "rss_no",
+  "customer_product",
+  "area_cover",
+  "film_density",
+  "grade_type",
+  "column_break_nvfw",
+  "date",
+  "accpt_std",
+  "rev",
+  "app_dt",
+  "rema",
+  "column_break_jwon",
+  "product_id",
+  "end_customer",
+  "penetrameter",
+  "our_procedure",
+  "section_break_mzia",
+  "rt_sketch_generation_details",
+  "section_break_lwkb",
+  "tot_ir_192",
+  "rem",
+  "linac_9",
+  "ii_img",
+  "option",
+  "column_break_qper",
+  "co_60",
+  "obsolete",
+  "rt_no",
+  "sign"
+ ],
+ "fields": [
+  {
+   "fieldname": "copy_form",
+   "fieldtype": "Data",
+   "label": "Copy Form"
+  },
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Product Name"
+  },
+  {
+   "fieldname": "end_size_in",
+   "fieldtype": "Select",
+   "label": "End Size In"
+  },
+  {
+   "fieldname": "evaluation_standard",
+   "fieldtype": "Select",
+   "label": "Evaluation Standard"
+  },
+  {
+   "fieldname": "aprvd_cust_rss_no",
+   "fieldtype": "Data",
+   "label": "Aprvd Cust RSS No"
+  },
+  {
+   "fieldname": "column_break_rtqa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rss_no",
+   "fieldtype": "Data",
+   "label": "RSS No"
+  },
+  {
+   "fieldname": "customer_product",
+   "fieldtype": "Select",
+   "label": "Customer Product"
+  },
+  {
+   "fieldname": "area_cover",
+   "fieldtype": "Data",
+   "label": "Area Cover"
+  },
+  {
+   "fieldname": "film_density",
+   "fieldtype": "Data",
+   "label": "Film Density"
+  },
+  {
+   "fieldname": "grade_type",
+   "fieldtype": "Select",
+   "label": "Grade Type"
+  },
+  {
+   "fieldname": "column_break_nvfw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "accpt_std",
+   "fieldtype": "Data",
+   "label": "Accpt Std"
+  },
+  {
+   "fieldname": "rev",
+   "fieldtype": "Data",
+   "label": "Rev"
+  },
+  {
+   "fieldname": "app_dt",
+   "fieldtype": "Data",
+   "label": "App Dt"
+  },
+  {
+   "fieldname": "rema",
+   "fieldtype": "Data",
+   "label": "Rema"
+  },
+  {
+   "fieldname": "column_break_jwon",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product_id",
+   "fieldtype": "Data",
+   "label": "Product ID"
+  },
+  {
+   "fieldname": "end_customer",
+   "fieldtype": "Data",
+   "label": "End Customer"
+  },
+  {
+   "fieldname": "penetrameter",
+   "fieldtype": "Select",
+   "label": "Penetrameter"
+  },
+  {
+   "fieldname": "our_procedure",
+   "fieldtype": "Select",
+   "label": "Our Procedure"
+  },
+  {
+   "fieldname": "section_break_mzia",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rt_sketch_generation_details",
+   "fieldtype": "Table",
+   "label": "RT Sketch Generation Details",
+   "options": "RT Sketch Generation Details"
+  },
+  {
+   "fieldname": "section_break_lwkb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tot_ir_192",
+   "fieldtype": "Data",
+   "label": "Tot IR 192"
+  },
+  {
+   "fieldname": "rem",
+   "fieldtype": "Data",
+   "label": "Rem"
+  },
+  {
+   "fieldname": "linac_9",
+   "fieldtype": "Data",
+   "label": "Linac 9"
+  },
+  {
+   "default": "0",
+   "fieldname": "ii_img",
+   "fieldtype": "Check",
+   "label": "II IMG"
+  },
+  {
+   "default": "0",
+   "fieldname": "option",
+   "fieldtype": "Check",
+   "label": "Option"
+  },
+  {
+   "fieldname": "column_break_qper",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "co_60",
+   "fieldtype": "Data",
+   "label": "Co 60"
+  },
+  {
+   "fieldname": "obsolete",
+   "fieldtype": "Select",
+   "label": "Obsolete"
+  },
+  {
+   "fieldname": "rt_no",
+   "fieldtype": "Data",
+   "label": "RT No"
+  },
+  {
+   "default": "0",
+   "fieldname": "sign",
+   "fieldtype": "Check",
+   "label": "Sign"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-13 17:52:19.459129",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "RT Sketch Generation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

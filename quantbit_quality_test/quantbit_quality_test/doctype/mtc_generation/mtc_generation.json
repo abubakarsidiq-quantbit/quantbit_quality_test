@@ -250,52 +250,62 @@
   {
    "fieldname": "data_shwu",
    "fieldtype": "Data",
-   "label": "TC Grade"
+   "label": "TC Grade",
+   "options": "Grade Master\n"
   },
   {
    "fieldname": "hardness",
    "fieldtype": "Select",
-   "label": "Hardness"
+   "label": "Hardness",
+   "options": "Grade Master"
   },
   {
    "fieldname": "bend_test",
    "fieldtype": "Select",
-   "label": "Bend Test"
+   "label": "Bend Test",
+   "options": "Grade Master"
   },
   {
    "fieldname": "print_ce",
    "fieldtype": "Select",
-   "label": "Print CE"
+   "label": "Print CE",
+   "options": "Grade Master"
   },
   {
    "fieldname": "glen",
    "fieldtype": "Select",
-   "label": "G.Len"
+   "label": "G.Len",
+   "options": "Grade Master"
   },
   {
    "fieldname": "imp_temp1",
    "fieldtype": "Select",
-   "label": "Imp Temp1"
+   "label": "Imp Temp1",
+   "options": "Grade Master"
   },
   {
    "fieldname": "imp_temp2",
    "fieldtype": "Select",
-   "label": "Imp Temp2"
+   "label": "Imp Temp2",
+   "options": "Grade Master"
   },
   {
    "fieldname": "ys",
    "fieldtype": "Select",
-   "label": "YS"
+   "label": "YS",
+   "options": "Grade Master"
   },
   {
    "fieldname": "unit",
    "fieldtype": "Select",
-   "label": "Unit"
+   "label": "Unit",
+   "options": "Grade Master"
   },
   {
    "fieldname": "incharge",
    "fieldtype": "Select",
-   "label": "Incharge"
+   "label": "Incharge",
+   "options": "Grade Master"
   },
   {
    "fieldname": "column_break_tonx",
@@ -304,47 +314,56 @@
   {
    "fieldname": "tc_standard",
    "fieldtype": "Data",
-   "label": "TC Standard"
+   "label": "TC Standard",
+   "options": "Grade Master\n"
   },
   {
    "fieldname": "bend_degree",
    "fieldtype": "Data",
-   "label": "Bend Degree"
+   "label": "Bend Degree",
+   "options": "Grade Master\n"
   },
   {
    "fieldname": "charpy_notch",
    "fieldtype": "Select",
-   "label": "Charpy Notch"
+   "label": "Charpy Notch",
+   "options": "Grade Master"
   },
   {
    "fieldname": "print_pre",
    "fieldtype": "Select",
-   "label": "Print PRE"
+   "label": "Print PRE",
+   "options": "Grade Master"
   },
   {
    "fieldname": "avg_impact_minimum",
    "fieldtype": "Data",
-   "label": "AVG Impact Minimum"
+   "label": "AVG Impact Minimum",
+   "options": "Grade Master\n"
   },
   {
    "fieldname": "avg_ind_1",
    "fieldtype": "Data",
-   "label": "AVG Ind 1"
+   "label": "AVG Ind 1",
+   "options": "Grade Master\n"
   },
   {
    "fieldname": "avg_ind_2",
    "fieldtype": "Data",
-   "label": "AVG Ind 2"
+   "label": "AVG Ind 2",
+   "options": "Grade Master\n"
   },
   {
    "fieldname": "material_code",
    "fieldtype": "Data",
-   "label": "Material Code"
+   "label": "Material Code",
+   "options": "Grade Master\n"
   },
   {
    "fieldname": "conc_round",
    "fieldtype": "Select",
-   "label": "Conc Round"
+   "label": "Conc Round",
+   "options": "Grade Master"
   },
   {
    "fieldname": "amended_from",
@@ -405,7 +424,11 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
+<<<<<<< HEAD
  "modified": "2025-03-06 11:59:52.340879",
+=======
+ "modified": "2025-03-19 11:28:52.067135",
+>>>>>>> 7cfdec3 (Update quantity Form)
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "MTC Generation",

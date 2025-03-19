@@ -6,7 +6,6 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "company",
   "naming_series",
   "column_break_gjej",
   "grade",
@@ -41,10 +40,7 @@
    "label": "Report No"
   },
   {
-   "fieldname": "column_break_whpw",
-   "fieldtype": "Column Break"
-  },
-  {
+   "default": "Today",
    "fieldname": "date",
    "fieldtype": "Date",
    "label": "Date"
@@ -93,10 +89,6 @@
   },
   {
    "fieldname": "column_break_vcmz",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_jhlq",
    "fieldtype": "Column Break"
   },
   {

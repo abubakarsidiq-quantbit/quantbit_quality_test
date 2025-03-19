@@ -7,11 +7,12 @@
  "engine": "InnoDB",
  "field_order": [
   "bend_test",
-  "shear_area",
   "test_result",
   "column_break_qxkn",
   "bend_deg",
-  "madrilla_dia"
+  "madrilla_dia",
+  "section_break_qyyp",
+  "remark"
  ],
  "fields": [
   {
@@ -19,12 +20,6 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Bend Test"
-  },
-  {
-   "fieldname": "shear_area",
-   "fieldtype": "Float",
-   "in_list_view": 1,
-   "label": "Shear Area"
   },
   {
    "fieldname": "test_result",

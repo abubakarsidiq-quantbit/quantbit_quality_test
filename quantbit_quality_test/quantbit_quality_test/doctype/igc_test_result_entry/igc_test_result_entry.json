@@ -6,18 +6,25 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "company",
-  "grade",
-  "sales_order",
   "naming_series",
-  "column_break_tzuf",
+  "company_details_section",
+  "company",
+  "column_break_fpqo",
+  "posting_date",
+  "section_break_uhyy",
+  "grade",
   "daily_heat_planning",
+  "test_method",
+  "test_standard",
+  "column_break_tzuf",
+  "sales_order",
   "heat_no",
   "sales_order_sheet",
   "section_break_zako",
   "table_swwu",
   "section_break_hovt",
-  "department_remark"
+  "department_remark",
+  "amended_from"
  ],
  "fields": [
   {
@@ -87,6 +94,7 @@
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
  "modified": "2025-03-06 11:55:52.812275",
  "modified_by": "Administrator",
@@ -105,6 +113,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

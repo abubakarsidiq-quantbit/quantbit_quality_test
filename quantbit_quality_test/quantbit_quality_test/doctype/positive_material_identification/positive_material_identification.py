@@ -6,6 +6,9 @@ from frappe.model.document import Document
 from frappe.utils import strip_html
 
 class PositiveMaterialIdentification(Document):
+	
+#fetch department remark from sales order sheet
+
 	@frappe.whitelist()
 	def update_remark(self):
 		if self.sales_order_sheet:

@@ -3,7 +3,6 @@
 
 import frappe
 from frappe.model.document import Document
-from frappe.utils import strip_html
 
 
 class FoundryTreatmentMicrostructureTest(Document):
@@ -30,6 +29,8 @@ class FoundryTreatmentMicrostructureTest(Document):
 		result = frappe.db.sql(query, (self.pouring_id,), as_list=True)
 		final_listed = [r[0] for r in result]
 		return final_listed
+
+#fetch department remark from sales order sheet
 
 	@frappe.whitelist()
 	def update_remark(self):

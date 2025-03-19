@@ -17,6 +17,10 @@
   "grade",
   "sales_order",
   "sales_order_sheet",
+  "section_break_hmop",
+  "table_orgi",
+  "column_break_lyho",
+  "table_tlig",
   "section_break_hawv",
   "positive_material_identification_details",
   "section_break_vgsc",
@@ -194,6 +198,25 @@
    "fieldtype": "Select",
    "label": "Series",
    "options": "PMI -"
+  },
+  {
+   "fieldname": "section_break_hmop",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_orgi",
+   "fieldtype": "Table",
+   "options": "Memo Details"
+  },
+  {
+   "fieldname": "column_break_lyho",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "table_tlig",
+   "fieldtype": "Table",
+   "label": "Alloy, Content Weight Participation",
+   "options": "Elements"
   }
  ],
  "index_web_pages_for_search": 1,

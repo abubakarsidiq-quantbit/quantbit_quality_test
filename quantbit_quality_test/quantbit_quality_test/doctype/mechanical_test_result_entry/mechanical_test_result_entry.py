@@ -3,70 +3,59 @@
 
 import frappe
 from frappe.model.document import Document
-from frappe.utils import strip_html
-
 
 class MechanicalTestResultEntry(Document):
+
+	#fetch the data in table grade_mechanical_properties from grade master
 	@frappe.whitelist()
 	def update_mechanical_properties(self):
 		if self.grade:
-			grade_master = frappe.get_doc("Grade Master", self.grade)
-			self.grade_mechanical_properties = []
-			for row in grade_master.mech_details:
+			result = frappe.get_all(
+			'Grade Mechanical Properties Details',  
+			filters={"parent": self.grade},  
+			fields=['minimun', 'maximum', 'mechanical_property_name']  )
+			# frappe.throw(f"parent: {self.grade}")
+			# frappe.throw(str(result))
+
+			for row in result:
 				self.append("grade_mechanical_properties", {
 					"mechanical_property_name": row.mechanical_property_name,
 					"maximum": row.maximum,
 					"minimun": row.minimun
 				})
+ 
+ #fetch the data in table temperature_details from grade master
 
 	@frappe.whitelist()
 	def test_temperature_update(self):
 		if self.grade:
-			grade_master = frappe.get_doc("Grade Master", self.grade)
+			result2 = frappe.get_all(
+			'Test Temperature Details',  
+			filters={"parent": self.grade},  
+			fields=['test_temperature', 'minimum']  )
+
 			self.temperature_details = []
-			for row in grade_master.test_temperature_detial:
+			for row in result2:
 				self.append("temperature_details", {
 					"test_temperature": row.test_temperature,
 					"minimum": row.minimum
 				})
 
-
+ #filter applied to sales order according to heat no
 	@frappe.whitelist()
 	def get_sales_orders(self):
-		query = """
-		SELECT sales_order
-		FROM `tabPouring Casting Details`
-		WHERE heat_no = %s
-	"""
-		
-		result = frappe.db.sql(query, (self.heat_no,), as_list=True)
-		final_listed = [r[0] for r in result]
+		sales_orders = frappe.get_all(
+			"Pouring Casting Details",   
+			filters={"heat_no": self.heat_no},  
+			fields=["sales_order"] 
+		)
+
+		final_listed = [r["sales_order"] for r in sales_orders]
 		return final_listed
-	
-	
-	# 	if heat_no:
-	# 		sales_orders = frappe.get_all(
-	# 			"Pouring Casting Details", 
-	# 			filters={"heat_no": heat_no},
-	# 			fields=["sales_order"]
-	# 		) 
-
-	# 		return [so["sales_order"] for so in sales_orders] if sales_orders else []
-		
-
-	# @frappe.whitelist()
-	# def set_filters_for_items(self):
-	# 	query = """
-	# 		SELECT DISTINCT casting_item_code
-	# 		FROM `tabPouring Casting Details`
-	# 		WHERE parent = %s
-	# 		AND `check` = 1
-	# 	"""
-	# 	result = frappe.db.sql(query, (self.pouring_id,), as_list=True)
-	# 	final_listed = [r[0] for r in result]
-	# 	return final_listed
 
 
+
+#no of test infcremented acording to heat no
 	@frappe.whitelist()
 	def before_insert(self):
 		last_entry = frappe.db.get_value("Mechanical Test Result Entry", {"heat_no": self.heat_no}, "no_of_tests", order_by="no_of_tests DESC")
@@ -83,27 +72,3 @@ class MechanicalTestResultEntry(Document):
 			self.department_remark = "\n".join(remarks_list) if remarks_list else ""
 		
  
-	# def get_sales_orders(self)
-	# 	if(self.heat_no):
-	# 		frappe.get_all("Daily Heat Planning Product Details",{"parent":self.heat_no},"sales_order_no",as_list)
-
-
-	# @frappe.whitelist()
-	# def get_sales_orders_by_heat_no(heat_no):
-	# 	sales_orders = frappe.get_all("Heat No Child Table", 
-	# 								filters={"parent": heat_no}, 
-	# 								fields=["sales_order"])
-
-	# 	return [so["sales_order"] for so in sales_orders]
-
-	# @frappe.whitelist()
-	# def get_sales_orders(heat_no):
-	# 	if not heat_no:
-	# 		return []
-	# 	sales_orders = frappe.get_all(
-	# 		"Pouring Casting Details", 
-	# 		filters={"heat_no": heat_no},
-	# 		pluck="sales_order"
-	# 	)
-
-	# frappe.msgprint(str(get_sales_orders("A020")))

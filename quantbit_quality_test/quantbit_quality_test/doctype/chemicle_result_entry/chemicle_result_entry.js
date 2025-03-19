@@ -1,11 +1,6 @@
 // Copyright (c) 2025, Quantbit Technologies Pvt. Ltd. and contributors
 // For license information, please see license.txt
 
-// frappe.ui.form.on("Chemicle Result Entry", {
-// 	refresh(frm) {
-
-// 	},
-// });
 frappe.ui.form.on('Chemical Result Entry Details', {
     act_value: function(frm, cdt, cdn) {
         let row = locals[cdt][cdn];
@@ -57,7 +52,7 @@ frappe.ui.form.on('Chemicle Result Entry', {
 frappe.ui.form.on('Chemicle Result Entry',{
     daily_heat_planning: function(frm) { 
             frappe.call({
-                method: 'get_sales_orders',  // Replace with actual method path
+                method: 'get_sales_orders', 
                 doc: frm.doc,
                 // args: {
                 //     heat_no: frm.doc.heat_no

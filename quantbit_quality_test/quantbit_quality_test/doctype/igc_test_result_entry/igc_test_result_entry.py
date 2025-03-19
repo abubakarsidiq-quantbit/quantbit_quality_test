@@ -3,20 +3,20 @@
 
 import frappe
 from frappe.model.document import Document
-from frappe.utils import strip_html
 
 
 class IGCTestResultEntry(Document):
+
+ #filter applied to sales order according to heat no
 	@frappe.whitelist()
 	def get_sales_orders(self):
-		query = """
-		SELECT sales_order
-		FROM `tabPouring Casting Details`
-		WHERE heat_no = %s
-	"""
-			
-		result = frappe.db.sql(query, (self.heat_no,), as_list=True)
-		final_listed = [r[0] for r in result]
+		sales_orders = frappe.get_all(
+			"Pouring Casting Details",   
+			filters={"heat_no": self.heat_no},  
+			fields=["sales_order"] 
+		)
+
+		final_listed = [r["sales_order"] for r in sales_orders]
 		return final_listed
 	
 

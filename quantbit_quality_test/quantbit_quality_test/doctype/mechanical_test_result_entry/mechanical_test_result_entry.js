@@ -49,7 +49,7 @@ actual_value: function(frm, cdt, cdn) {
 frappe.ui.form.on("Mechanical Test Result Entry", {
     daily_heat_planning: function(frm) { 
             frappe.call({
-                method: 'get_sales_orders',  // Replace with actual method path
+                method: 'get_sales_orders',  
                 doc: frm.doc,
                 // args: {
                 //     heat_no: frm.doc.heat_no

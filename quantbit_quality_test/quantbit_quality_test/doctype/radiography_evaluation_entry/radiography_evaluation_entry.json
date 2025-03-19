@@ -1,0 +1,260 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-13 16:49:54.992493",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "rss_no",
+  "scr_back",
+  "coverage_area",
+  "source",
+  "grade",
+  "accept_std",
+  "column_break_teoy",
+  "rt_no",
+  "strength",
+  "heat_no",
+  "technique",
+  "scr_front",
+  "film_make",
+  "column_break_ntrr",
+  "product",
+  "evaluation",
+  "drawing",
+  "customer_product",
+  "source_size",
+  "section_break_xljd",
+  "radiography_evaluation_entry_details",
+  "section_break_nkkl",
+  "evaluation_entry_details",
+  "section_break_rgct",
+  "enclosure_no",
+  "completed",
+  "po",
+  "c_rsh_dt",
+  "column_break_qlon",
+  "total_ir",
+  "area",
+  "srl",
+  "column_break_ajwi",
+  "co",
+  "film",
+  "int_rsh_dt",
+  "section_break_pwal",
+  "sq_inches_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "rss_no",
+   "fieldtype": "Data",
+   "label": "RSS No"
+  },
+  {
+   "fieldname": "scr_back",
+   "fieldtype": "Data",
+   "label": "SCR Back"
+  },
+  {
+   "fieldname": "coverage_area",
+   "fieldtype": "Select",
+   "label": "Coverage Area"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "Source"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "label": "Grade",
+   "options": "Grade Master"
+  },
+  {
+   "fieldname": "accept_std",
+   "fieldtype": "Data",
+   "label": "Accept Std"
+  },
+  {
+   "fieldname": "column_break_teoy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rt_no",
+   "fieldtype": "Data",
+   "label": "RT No"
+  },
+  {
+   "fieldname": "strength",
+   "fieldtype": "Data",
+   "label": "Strength"
+  },
+  {
+   "fieldname": "heat_no",
+   "fieldtype": "Link",
+   "label": "Heat No",
+   "options": "Daily Heat Planning"
+  },
+  {
+   "fieldname": "technique",
+   "fieldtype": "Data",
+   "label": "Technique"
+  },
+  {
+   "fieldname": "scr_front",
+   "fieldtype": "Data",
+   "label": "Scr Front"
+  },
+  {
+   "fieldname": "film_make",
+   "fieldtype": "Data",
+   "label": "Film Make"
+  },
+  {
+   "fieldname": "column_break_ntrr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Data",
+   "label": "Product"
+  },
+  {
+   "fieldname": "evaluation",
+   "fieldtype": "Data",
+   "label": "Evaluation"
+  },
+  {
+   "fieldname": "drawing",
+   "fieldtype": "Data",
+   "label": "Drawing"
+  },
+  {
+   "fieldname": "customer_product",
+   "fieldtype": "Data",
+   "label": "Customer Product"
+  },
+  {
+   "fieldname": "source_size",
+   "fieldtype": "Data",
+   "label": "Source Size"
+  },
+  {
+   "fieldname": "section_break_xljd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "radiography_evaluation_entry_details",
+   "fieldtype": "Table",
+   "label": "Radiography Evaluation Entry Details",
+   "options": "Radiography Evaluation Entry Details"
+  },
+  {
+   "fieldname": "section_break_nkkl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "evaluation_entry_details",
+   "fieldtype": "Table",
+   "label": "Evaluation Entry Details",
+   "options": "Evaluation Entry Details"
+  },
+  {
+   "fieldname": "section_break_rgct",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "enclosure_no",
+   "fieldtype": "Select",
+   "label": "Enclosure No"
+  },
+  {
+   "fieldname": "completed",
+   "fieldtype": "Select",
+   "label": "Completed"
+  },
+  {
+   "fieldname": "po",
+   "fieldtype": "Data",
+   "label": "PO"
+  },
+  {
+   "fieldname": "c_rsh_dt",
+   "fieldtype": "Data",
+   "label": "C Rsh Dt"
+  },
+  {
+   "fieldname": "column_break_qlon",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_ir",
+   "fieldtype": "Data",
+   "label": "Total IR"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area"
+  },
+  {
+   "fieldname": "srl",
+   "fieldtype": "Data",
+   "label": "Srl"
+  },
+  {
+   "fieldname": "column_break_ajwi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "co",
+   "fieldtype": "Data",
+   "label": "CO"
+  },
+  {
+   "fieldname": "film",
+   "fieldtype": "Select",
+   "label": "Film"
+  },
+  {
+   "fieldname": "int_rsh_dt",
+   "fieldtype": "Data",
+   "label": "Int Rsh Dt"
+  },
+  {
+   "fieldname": "section_break_pwal",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sq_inches_details",
+   "fieldtype": "Table",
+   "label": "Sq Inches Details",
+   "options": "Sq Inches Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-13 17:52:35.636587",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "Radiography Evaluation Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

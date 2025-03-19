@@ -11,6 +11,7 @@
   "product",
   "column_break_bsvq",
   "test_location",
+  "column_break_nrbb",
   "rows"
  ],
  "fields": [
@@ -18,11 +19,13 @@
    "fieldname": "memo_no",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Memo No."
+   "label": "Memo No.",
+   "options": "Sales Invoice"
   },
   {
    "fieldname": "column_break_zybs",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "options": "Sales Invoice"
   },
   {
    "fieldname": "product",
@@ -39,19 +42,25 @@
    "fieldname": "test_location",
    "fieldtype": "Select",
    "in_list_view": 1,
-   "label": "Test Location"
+   "label": "Test Location",
+   "options": "Sales Invoice"
   },
   {
    "fieldname": "rows",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Rows"
+   "label": "Rows",
+   "options": "Sales Invoice"
+  },
+  {
+   "fieldname": "column_break_nrbb",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-01-15 14:47:30.847651",
+ "modified": "2025-03-19 11:02:13.034760",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Memo Details",

@@ -3,7 +3,6 @@
 
 import frappe
 from frappe.model.document import Document
-from frappe.utils import strip_html
 
 class PittingCorrosionTest(Document):
 	@frappe.whitelist()
@@ -21,6 +20,8 @@ class PittingCorrosionTest(Document):
 				"po_no": po_no
 			})
 
+
+#fetch department remark from sales order sheet
 
 	@frappe.whitelist()
 	def update_remark(self):

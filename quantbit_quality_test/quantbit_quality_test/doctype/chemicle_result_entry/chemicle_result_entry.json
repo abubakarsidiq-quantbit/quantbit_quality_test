@@ -6,6 +6,11 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
+  "company_details_section",
+  "company",
+  "column_break_vcup",
+  "posting_date",
   "section_break_ogkl",
   "heat_no",
   "naming_series",
@@ -142,6 +147,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

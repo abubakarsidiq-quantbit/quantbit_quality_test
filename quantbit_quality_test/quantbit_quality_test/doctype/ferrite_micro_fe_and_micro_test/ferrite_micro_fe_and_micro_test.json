@@ -29,12 +29,8 @@
   "minimum",
   "maximum",
   "column_break_znyl",
-  "test_method",
-  "etchant",
-  "supply_duration",
-  "etching_condition",
-  "column_break_tmca",
   "memo_details",
+  "column_break_tmca",
   "section_break_imoi",
   "product_details",
   "section_break_hgck",
@@ -114,7 +110,7 @@
   },
   {
    "fieldname": "equip_srl",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Equip Srl"
   },
   {
@@ -137,28 +133,9 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "test_method",
-   "fieldtype": "Select",
-   "label": "Test Method"
-  },
-  {
-   "fieldname": "etchant",
-   "fieldtype": "Select",
-   "label": "Etchant"
-  },
-  {
-   "fieldname": "supply_duration",
-   "fieldtype": "Select",
-   "label": "Supply Duration"
-  },
-  {
-   "fieldname": "etching_condition",
-   "fieldtype": "Select",
-   "label": "Etching Condition"
-  },
-  {
    "fieldname": "column_break_tmca",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "hidden": 1
   },
   {
    "fieldname": "memo_details",

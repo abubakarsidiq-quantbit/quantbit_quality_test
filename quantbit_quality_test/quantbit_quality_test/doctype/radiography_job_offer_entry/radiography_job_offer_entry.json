@@ -1,0 +1,150 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-13 16:03:31.257866",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "offer_no",
+  "contractor_no",
+  "copy_form",
+  "column_break_qeno",
+  "date",
+  "contractor_name",
+  "section_break_mooh",
+  "heat_no",
+  "from_date",
+  "column_break_vjem",
+  "grade",
+  "to_date",
+  "column_break_xqwn",
+  "product",
+  "section_break_qtld",
+  "table_zkhq",
+  "section_break_mzxp",
+  "area_coverage",
+  "column_break_nocq",
+  "information"
+ ],
+ "fields": [
+  {
+   "fieldname": "offer_no",
+   "fieldtype": "Data",
+   "label": "Offer No"
+  },
+  {
+   "fieldname": "contractor_no",
+   "fieldtype": "Data",
+   "label": "Contractor No"
+  },
+  {
+   "fieldname": "copy_form",
+   "fieldtype": "Date",
+   "label": "Copy Form"
+  },
+  {
+   "fieldname": "column_break_qeno",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "contractor_name",
+   "fieldtype": "Data",
+   "label": "Contractor Name"
+  },
+  {
+   "fieldname": "section_break_mooh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "heat_no",
+   "fieldtype": "Link",
+   "label": "Heat No",
+   "options": "Daily Heat Planning"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "column_break_vjem",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "label": "Grade",
+   "options": "Grade Master"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "column_break_xqwn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Data",
+   "label": "Product"
+  },
+  {
+   "fieldname": "section_break_qtld",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_zkhq",
+   "fieldtype": "Table",
+   "options": "Radiography Details"
+  },
+  {
+   "fieldname": "section_break_mzxp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "area_coverage",
+   "fieldtype": "Select",
+   "label": "Area Coverage"
+  },
+  {
+   "fieldname": "column_break_nocq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "information",
+   "fieldtype": "Data",
+   "label": "Information"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-13 17:53:20.256626",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "Radiography Job Offer Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

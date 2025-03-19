@@ -3,32 +3,19 @@
 
 import frappe
 from frappe.model.document import Document
-from frappe.utils import strip_html
-
 
 class ChemicleResultEntry(Document):
-	# @frappe.whitelist()
-	# def update_chemical_and_element_data(self):
-	# 	if self.grade:
-	# 		grade_master = frappe.get_doc("Grade Master", self.grade)
-			
-	# 		self.chemical_result_entry_details = []
-
-	# 		for i, (chem, elem) in enumerate(zip(grade_master.chemical_details, grade_master.element_details)):
-	# 			self.append("chemical_result_entry_details", {
-	# 				"minimum": chem.internal_minimum,
-	# 				"maximum": chem.internal_maximum,
-	# 				"element_name": elem.element_symbol if i < len(grade_master.element_details) else None
-	# 			})
-
-
+#fetch the data in table chemical_result_entry_details from grade master
 	@frappe.whitelist()
 	def update_chemical_and_element_data(self):
 		if self.grade:
-			grade_master = frappe.get_doc("Grade Master", self.grade)
-			self.chemical_result_entry_details = []
+			result = frappe.get_all(
+				"Element Details", 
+				filters={"parent": self.grade},
+				fields=["element_symbol", "internal_minimum", "internal_maximum"] 
+			)
 
-			for row in grade_master.element_details:
+			for row in result:
 				self.append("chemical_result_entry_details", {
 					"element_name": row.element_symbol,
 					"minimum": row.internal_minimum,
@@ -47,13 +34,15 @@ class ChemicleResultEntry(Document):
 
 	@frappe.whitelist()
 	def get_sales_orders(self):
-		query = """
-		SELECT sales_order
-		FROM `tabPouring Casting Details`
-		WHERE heat_no = %s
-	"""
-		
-		result = frappe.db.sql(query, (self.heat_no,), as_list=True)
-		final_listed = [r[0] for r in result]
+		sales_orders = frappe.get_all(
+			"Pouring Casting Details",   
+			filters={"heat_no": self.heat_no},  
+			fields=["sales_order"] 
+		)
+
+		final_listed = [r["sales_order"] for r in sales_orders]
 		return final_listed
+	
+
+#fetch department remark from sales order sheet
 

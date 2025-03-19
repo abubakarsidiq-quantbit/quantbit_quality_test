@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestIGCTPracticeETestCertification(FrappeTestCase):
+class TestRadiographyJobOfferEntry(FrappeTestCase):
 	pass

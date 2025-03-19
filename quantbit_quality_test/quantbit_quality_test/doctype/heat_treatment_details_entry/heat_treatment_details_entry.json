@@ -6,16 +6,20 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
+  "section_break_ylbk",
+  "company",
+  "column_break_arwt",
+  "date",
+  "section_break_hpqo",
   "batch_no",
   "heat_no",
   "o_a_no",
   "quantity",
   "remarks",
-  "naming_series",
   "column_break_bdpq",
   "sales_order",
   "grade",
-  "date",
   "product",
   "thickness_max",
   "total_weight_kg",
@@ -26,7 +30,8 @@
   "balance",
   "srl",
   "section_break_ikcz",
-  "department_remark"
+  "department_remark",
+  "amended_from"
  ],
  "fields": [
   {
@@ -105,6 +110,7 @@
    "label": "Batch No."
   },
   {
+   "default": "Today",
    "fieldname": "date",
    "fieldtype": "Date",
    "label": "Date"
@@ -150,6 +156,7 @@
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
  "modified": "2025-03-06 11:53:17.246620",
  "modified_by": "Administrator",
@@ -168,6 +175,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

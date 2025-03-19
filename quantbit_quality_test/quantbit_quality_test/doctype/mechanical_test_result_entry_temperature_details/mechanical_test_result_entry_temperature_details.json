@@ -7,19 +7,29 @@
  "engine": "InnoDB",
  "field_order": [
   "test_temperature",
+  "test_result",
+  "column_break_jluu",
+  "test_speciman_size",
+  "v_notch_angle",
+  "v_notch_depth",
   "section_break_efcl",
-  "column_break_pjmo",
-  "minimum",
   "column_break_tfpj",
   "impact_1",
+  "lateral_expansion_1",
+  "shear_area_1",
   "column_break_dvgo",
   "impact_2",
+  "lateral_expansion_2",
+  "shear_area_2",
   "column_break_u8x1",
   "impact_3",
-  "column_break_npb0",
+  "lateral_expansion_3",
+  "shear_area_3",
+  "column_break_pjmo",
+  "minimum",
   "average",
-  "column_break_xkxq",
-  "test_result"
+  "section_break_wvft",
+  "remark"
  ],
  "fields": [
   {
@@ -65,15 +75,7 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "column_break_npb0",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "column_break_tfpj",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_xkxq",
    "fieldtype": "Column Break"
   },
   {
@@ -92,12 +94,73 @@
    "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Minimum"
+  },
+  {
+   "fieldname": "lateral_expansion_1",
+   "fieldtype": "Data",
+   "label": "Lateral Expansion 1"
+  },
+  {
+   "fieldname": "lateral_expansion_2",
+   "fieldtype": "Data",
+   "label": "Lateral Expansion 2"
+  },
+  {
+   "fieldname": "lateral_expansion_3",
+   "fieldtype": "Data",
+   "label": "Lateral Expansion 3"
+  },
+  {
+   "fieldname": "column_break_jluu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "10 X 10 X 55",
+   "fieldname": "test_speciman_size",
+   "fieldtype": "Data",
+   "label": "Test Speciman Size"
+  },
+  {
+   "default": "45",
+   "fieldname": "v_notch_angle",
+   "fieldtype": "Data",
+   "label": "V Notch Angle (In Degre)"
+  },
+  {
+   "default": "2",
+   "fieldname": "v_notch_depth",
+   "fieldtype": "Data",
+   "label": "V Notch Depth (In mm)"
+  },
+  {
+   "fieldname": "shear_area_1",
+   "fieldtype": "Data",
+   "label": "Shear Area 1"
+  },
+  {
+   "fieldname": "shear_area_2",
+   "fieldtype": "Data",
+   "label": "Shear Area 2"
+  },
+  {
+   "fieldname": "shear_area_3",
+   "fieldtype": "Data",
+   "label": "Shear Area 3"
+  },
+  {
+   "fieldname": "section_break_wvft",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Text Editor",
+   "label": "Remark"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-03-03 16:23:36.634936",
+ "modified": "2025-03-08 15:22:13.282288",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Mechanical Test Result Entry Temperature Details",
