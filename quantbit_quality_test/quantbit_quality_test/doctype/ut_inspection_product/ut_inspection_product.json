@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-17 10:18:23.577519",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sino",
+  "column_break_osrs",
+  "product",
+  "column_break_anor",
+  "description",
+  "column_break_fmpm",
+  "drawing",
+  "column_break_xsmx",
+  "grade",
+  "column_break_hbsg",
+  "heat_no",
+  "column_break_kmqc",
+  "ut_no",
+  "column_break_aunt",
+  "cast_srl",
+  "column_break_kino",
+  "range",
+  "column_break_jgsg",
+  "gain"
+ ],
+ "fields": [
+  {
+   "fieldname": "sino",
+   "fieldtype": "Int",
+   "label": "Sino"
+  },
+  {
+   "fieldname": "column_break_osrs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Data",
+   "label": "Product"
+  },
+  {
+   "fieldname": "column_break_anor",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_fmpm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "drawing",
+   "fieldtype": "Data",
+   "label": "Drawing"
+  },
+  {
+   "fieldname": "column_break_xsmx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade"
+  },
+  {
+   "fieldname": "column_break_hbsg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "heat_no",
+   "fieldtype": "Data",
+   "label": "Heat No"
+  },
+  {
+   "fieldname": "column_break_kmqc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ut_no",
+   "fieldtype": "Data",
+   "label": "Ut No"
+  },
+  {
+   "fieldname": "column_break_aunt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cast_srl",
+   "fieldtype": "Data",
+   "label": "Cast Srl"
+  },
+  {
+   "fieldname": "column_break_kino",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "range",
+   "fieldtype": "Data",
+   "label": "Range"
+  },
+  {
+   "fieldname": "column_break_jgsg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gain",
+   "fieldtype": "Data",
+   "label": "Gain"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-19 12:12:56.968706",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "UT Inspection Product",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

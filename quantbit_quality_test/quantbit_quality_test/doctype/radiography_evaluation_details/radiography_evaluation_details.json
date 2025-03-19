@@ -1,0 +1,174 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-13 16:35:02.441374",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "location",
+  "trick",
+  "sensitivity",
+  "sod",
+  "density",
+  "no_of_films",
+  "remarks",
+  "column_break_lwzu",
+  "source",
+  "trick_1",
+  "time",
+  "sfd",
+  "filmsize_width",
+  "film_sqr",
+  "check_gnvf",
+  "column_break_ywke",
+  "designation",
+  "trick_2",
+  "time_type",
+  "ug",
+  "filmsize_length",
+  "observation"
+ ],
+ "fields": [
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location"
+  },
+  {
+   "fieldname": "trick",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Trick"
+  },
+  {
+   "fieldname": "sensitivity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sensitivity"
+  },
+  {
+   "fieldname": "sod",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SOD"
+  },
+  {
+   "fieldname": "density",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Density"
+  },
+  {
+   "fieldname": "no_of_films",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "No Of Films"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_lwzu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Source"
+  },
+  {
+   "fieldname": "trick_1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Trick 1"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Time"
+  },
+  {
+   "fieldname": "sfd",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SFD"
+  },
+  {
+   "fieldname": "filmsize_width",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Filmsize Width"
+  },
+  {
+   "fieldname": "film_sqr",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Film SQR"
+  },
+  {
+   "default": "0",
+   "fieldname": "check_gnvf",
+   "fieldtype": "Check",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "column_break_ywke",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Designation"
+  },
+  {
+   "fieldname": "trick_2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Trick 2"
+  },
+  {
+   "fieldname": "time_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Time Type"
+  },
+  {
+   "fieldname": "ug",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "UG"
+  },
+  {
+   "fieldname": "filmsize_length",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Filmsize Length"
+  },
+  {
+   "fieldname": "observation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Observation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-19 12:16:30.669231",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "Radiography Evaluation Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-17 13:36:21.612428",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "heat_no",
+  "column_break_zefd",
+  "product",
+  "column_break_dxhg",
+  "rtmpdp_no",
+  "column_break_txws",
+  "grade",
+  "section_break_casw",
+  "link_lpww",
+  "section_break_ipmo",
+  "draw",
+  "section_break_ywef",
+  "link_msor",
+  "section_break_tyyu",
+  "pend_heats",
+  "column_break_qehh",
+  "clear",
+  "column_break_rfeq",
+  "exit"
+ ],
+ "fields": [
+  {
+   "fieldname": "heat_no",
+   "fieldtype": "Data",
+   "label": "Heat No"
+  },
+  {
+   "fieldname": "column_break_zefd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Data",
+   "label": "Product"
+  },
+  {
+   "fieldname": "column_break_dxhg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rtmpdp_no",
+   "fieldtype": "Data",
+   "label": "RT/MP/DP No"
+  },
+  {
+   "fieldname": "column_break_txws",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade"
+  },
+  {
+   "fieldname": "section_break_casw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "link_lpww",
+   "fieldtype": "Link",
+   "options": "Child1"
+  },
+  {
+   "fieldname": "section_break_ipmo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "draw",
+   "fieldtype": "Data",
+   "label": "Draw"
+  },
+  {
+   "fieldname": "section_break_ywef",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "link_msor",
+   "fieldtype": "Link",
+   "options": "Child2"
+  },
+  {
+   "fieldname": "section_break_tyyu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pend_heats",
+   "fieldtype": "Button",
+   "label": "Pend Heats"
+  },
+  {
+   "fieldname": "column_break_qehh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "clear",
+   "fieldtype": "Button",
+   "label": "Clear"
+  },
+  {
+   "fieldname": "column_break_rfeq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "exit",
+   "fieldtype": "Button",
+   "label": "Exit"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-19 12:12:35.214843",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "RT_MP_DP Number Generation",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

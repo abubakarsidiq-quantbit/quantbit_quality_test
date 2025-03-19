@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-13 16:55:15.797387",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "film_srl",
+  "designation",
+  "density",
+  "width",
+  "total_sq_inch",
+  "test_date",
+  "column_break_nctz",
+  "location",
+  "sensitivity",
+  "contractor",
+  "length",
+  "oberservation",
+  "report_date",
+  "column_break_qywv",
+  "thickness",
+  "sfd",
+  "source",
+  "no_of_films",
+  "status",
+  "check_xxtm"
+ ],
+ "fields": [
+  {
+   "fieldname": "film_srl",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Film Srl"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Designation"
+  },
+  {
+   "fieldname": "density",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Density"
+  },
+  {
+   "fieldname": "width",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Width"
+  },
+  {
+   "fieldname": "total_sq_inch",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total Sq Inch"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Test Date"
+  },
+  {
+   "fieldname": "column_break_nctz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location"
+  },
+  {
+   "fieldname": "sensitivity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sensitivity"
+  },
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contractor"
+  },
+  {
+   "fieldname": "length",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Length"
+  },
+  {
+   "fieldname": "oberservation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Oberservation"
+  },
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Report Date"
+  },
+  {
+   "fieldname": "column_break_qywv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "thickness",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Thickness"
+  },
+  {
+   "fieldname": "sfd",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SFD"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Source"
+  },
+  {
+   "fieldname": "no_of_films",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "No of Films"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status"
+  },
+  {
+   "default": "0",
+   "fieldname": "check_xxtm",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Check"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-19 12:25:39.693054",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "Radiography Evaluation Entry Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

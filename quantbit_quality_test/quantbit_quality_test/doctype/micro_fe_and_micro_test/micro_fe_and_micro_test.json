@@ -1,0 +1,268 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-03-19 10:40:45.906103",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "test_name",
+  "section_break_iyeh",
+  "company",
+  "heat_no",
+  "report_no",
+  "test_equip",
+  "column_break_fxaa",
+  "date_xlie",
+  "sales_order",
+  "customer",
+  "end_cust",
+  "column_break_xccb",
+  "grade",
+  "sales_order_sheet",
+  "customer_name",
+  "remarks",
+  "section_break_ljyr",
+  "test_method",
+  "etchant",
+  "supply_duration",
+  "etching_condition",
+  "column_break_znyl",
+  "memo_details",
+  "section_break_imoi",
+  "product_details",
+  "section_break_hgck",
+  "for_sppl",
+  "column_break_rgoa",
+  "for_tpi",
+  "amended_from",
+  "section_break_gfgv",
+  "remark",
+  "section_break_frjo",
+  "department_remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "FMMT -"
+  },
+  {
+   "fieldname": "test_name",
+   "fieldtype": "Select",
+   "label": "Test Name",
+   "options": "\nFerrite Micro FE\nMicro Test"
+  },
+  {
+   "fieldname": "section_break_iyeh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "heat_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Heat No",
+   "options": "Daily Heat Planning",
+   "reqd": 1
+  },
+  {
+   "fieldname": "report_no",
+   "fieldtype": "Data",
+   "label": "Report No"
+  },
+  {
+   "fieldname": "test_equip",
+   "fieldtype": "Select",
+   "label": "Test Equipment"
+  },
+  {
+   "fieldname": "column_break_fxaa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_xlie",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sales Order",
+   "options": "Sales Order",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "sales_order.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "end_cust",
+   "fieldtype": "Data",
+   "label": "End Customer"
+  },
+  {
+   "fieldname": "column_break_xccb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "label": "Grade",
+   "options": "Grade Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_order_sheet",
+   "fieldtype": "Link",
+   "label": "Sales Order Sheet",
+   "options": "Sales Order Sheet",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text Editor",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_ljyr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "test_method",
+   "fieldtype": "Select",
+   "label": "Test Method"
+  },
+  {
+   "fieldname": "etchant",
+   "fieldtype": "Select",
+   "label": "Etchant"
+  },
+  {
+   "fieldname": "supply_duration",
+   "fieldtype": "Select",
+   "label": "Supply Duration"
+  },
+  {
+   "fieldname": "etching_condition",
+   "fieldtype": "Select",
+   "label": "Etching Condition"
+  },
+  {
+   "fieldname": "column_break_znyl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "memo_details",
+   "fieldtype": "Table",
+   "label": "Memo Details",
+   "options": "Memo Details"
+  },
+  {
+   "fieldname": "section_break_imoi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "product_details",
+   "fieldtype": "Table",
+   "label": "Product Details",
+   "options": "Product Details"
+  },
+  {
+   "fieldname": "section_break_hgck",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "for_sppl",
+   "fieldtype": "Data",
+   "label": "For SPPL"
+  },
+  {
+   "fieldname": "column_break_rgoa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "for_tpi",
+   "fieldtype": "Data",
+   "label": "For TPI"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Ferrite Micro FE And Micro Test",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_gfgv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Text Editor",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "section_break_frjo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department_remark",
+   "fieldtype": "Table",
+   "label": "Department Remark",
+   "options": "Sales Order Department Remark"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-03-19 12:11:51.096114",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "Micro FE and Micro Test",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

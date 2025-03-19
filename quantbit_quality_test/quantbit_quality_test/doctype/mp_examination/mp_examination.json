@@ -1,0 +1,221 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-13 17:13:45.508461",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "invoice_no",
+  "report_no",
+  "specification",
+  "accept_std",
+  "test_type",
+  "prod_spacing",
+  "light_equip",
+  "date",
+  "surface_cond",
+  "current_used",
+  "mag_current",
+  "cover__area",
+  "max_light_intensity",
+  "grade",
+  "test_date",
+  "dc_no",
+  "dc_date",
+  "type_of_magnetise",
+  "test_method",
+  "sppl_proc",
+  "cust_procedure",
+  "section_break_ubfa",
+  "details",
+  "section_break_rfoi",
+  "po_dt",
+  "approved_by",
+  "tested_by",
+  "end_cust",
+  "save_to_file",
+  "report",
+  "sign"
+ ],
+ "fields": [
+  {
+   "fieldname": "invoice_no",
+   "fieldtype": "Data",
+   "label": "Invoice No"
+  },
+  {
+   "fieldname": "report_no",
+   "fieldtype": "Data",
+   "label": "Report No"
+  },
+  {
+   "fieldname": "specification",
+   "fieldtype": "Data",
+   "label": "Specification "
+  },
+  {
+   "fieldname": "accept_std",
+   "fieldtype": "Data",
+   "label": "Accept Std"
+  },
+  {
+   "fieldname": "test_type",
+   "fieldtype": "Data",
+   "label": "Test Type"
+  },
+  {
+   "fieldname": "prod_spacing",
+   "fieldtype": "Data",
+   "label": "Prod Spacing"
+  },
+  {
+   "fieldname": "light_equip",
+   "fieldtype": "Data",
+   "label": "Light Equip"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "surface_cond",
+   "fieldtype": "Data",
+   "label": "Surface Cond"
+  },
+  {
+   "fieldname": "current_used",
+   "fieldtype": "Data",
+   "label": "Current used"
+  },
+  {
+   "fieldname": "mag_current",
+   "fieldtype": "Data",
+   "label": "Mag. Current "
+  },
+  {
+   "fieldname": "cover__area",
+   "fieldtype": "Data",
+   "label": "Cover . Area"
+  },
+  {
+   "fieldname": "max_light_intensity",
+   "fieldtype": "Int",
+   "label": "MAx Light Intensity"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date"
+  },
+  {
+   "fieldname": "dc_no",
+   "fieldtype": "Data",
+   "label": "D.C No"
+  },
+  {
+   "fieldname": "dc_date",
+   "fieldtype": "Date",
+   "label": "DC Date"
+  },
+  {
+   "fieldname": "type_of_magnetise",
+   "fieldtype": "Data",
+   "label": "Type of magnetise"
+  },
+  {
+   "fieldname": "test_method",
+   "fieldtype": "Date",
+   "label": "Test Method"
+  },
+  {
+   "fieldname": "sppl_proc",
+   "fieldtype": "Data",
+   "label": "SPPL Proc."
+  },
+  {
+   "fieldname": "cust_procedure",
+   "fieldtype": "Data",
+   "label": "Cust Procedure"
+  },
+  {
+   "fieldname": "section_break_ubfa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Link",
+   "label": "Details",
+   "options": "Magnetic Particle Child Table"
+  },
+  {
+   "fieldname": "section_break_rfoi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "po_dt",
+   "fieldtype": "Date",
+   "label": "PO Dt"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved By"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Data",
+   "label": "Tested By"
+  },
+  {
+   "fieldname": "end_cust",
+   "fieldtype": "Data",
+   "label": "End Cust"
+  },
+  {
+   "fieldname": "save_to_file",
+   "fieldtype": "Attach",
+   "label": "Save to file"
+  },
+  {
+   "fieldname": "report",
+   "fieldtype": "Button",
+   "label": "Report"
+  },
+  {
+   "default": "0",
+   "fieldname": "sign",
+   "fieldtype": "Check",
+   "label": "Sign"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-19 12:15:15.920873",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "MP Examination",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
