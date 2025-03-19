@@ -48,6 +48,6 @@ frappe.ui.form.on('Ferrite Micro FE And Micro Test', {
        },
 
          before_submit: function(frm) {
-                frm.set_value("department_remark", ""); // Clear remarks before saving
+                frm.set_value("department_remark", ""); 
             }
     });

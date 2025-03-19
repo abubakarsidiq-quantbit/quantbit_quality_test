@@ -6,16 +6,20 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_5dyw",
-  "company",
   "naming_series",
-  "column_break_pzal",
+  "company_details_section",
+  "company",
+  "column_break_gwli",
+  "posting_date",
+  "section_break_5dyw",
   "daily_heat_planning",
+  "column_break_pzal",
   "heat_no",
   "section_break_qoye",
-  "no_of_tests",
   "column_break_udjf",
   "grade",
+  "column_break_ntmy",
+  "no_of_tests",
   "column_break_lmki",
   "standard",
   "column_break_hjok",
@@ -111,7 +115,7 @@
   {
    "fieldname": "grade_mechanical_properties",
    "fieldtype": "Table",
-   "label": "Grade Mechanical Properties",
+   "label": "Mechanical Properties",
    "options": "Grade Mechanical Properties"
   },
   {
@@ -149,7 +153,7 @@
   {
    "fieldname": "temperature_details",
    "fieldtype": "Table",
-   "label": "Mechanical Test Result Entry Temperature Details",
+   "label": "Impact Test Result",
    "options": "Mechanical Test Result Entry Temperature Details"
   },
   {
@@ -159,7 +163,7 @@
   {
    "fieldname": "hardness_details",
    "fieldtype": "Table",
-   "label": "Mechanical Test Result Entry Hardness Details",
+   "label": "Hardness Test Details",
    "options": "Mechanical Test Result Entry Hardness Details"
   },
   {
@@ -169,7 +173,7 @@
   {
    "fieldname": "test_temperature_details",
    "fieldtype": "Table",
-   "label": "Mechanical Test Result Entry Test Temperature Details",
+   "label": "Bend Test Result",
    "options": "Mechanical Test Result Entry Test Temperature Details"
   },
   {
@@ -208,12 +212,31 @@
    "fieldname": "remark",
    "fieldtype": "Text Editor",
    "label": "Remark"
+  },
+  {
+   "fieldname": "company_details_section",
+   "fieldtype": "Section Break",
+   "label": "Company Details"
+  },
+  {
+   "fieldname": "column_break_gwli",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "column_break_ntmy",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-07 16:26:48.353699",
+ "modified": "2025-03-13 10:07:57.868251",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Mechanical Test Result Entry",

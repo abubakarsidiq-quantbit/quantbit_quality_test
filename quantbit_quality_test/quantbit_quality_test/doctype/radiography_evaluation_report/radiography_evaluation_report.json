@@ -1,0 +1,330 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-13 16:22:57.839123",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "report_no",
+  "product_no",
+  "back",
+  "source",
+  "strength",
+  "spec",
+  "our_proc",
+  "rss_no",
+  "column_break_vstz",
+  "date",
+  "product_name",
+  "coverage_area",
+  "source_size",
+  "technique",
+  "evalution",
+  "cust_rt_no",
+  "quality_level",
+  "column_break_euoe",
+  "rt_no",
+  "draw",
+  "screen_front",
+  "cust_c_area",
+  "ir",
+  "acpt_std",
+  "cust_proc",
+  "film_make",
+  "column_break_kstl",
+  "heat_no",
+  "grade",
+  "iqi_std",
+  "iqi_group",
+  "co",
+  "cast_srl",
+  "test_date",
+  "section_break_cnor",
+  "radiography_evaluation_details",
+  "section_break_cbaw",
+  "total_films",
+  "co_total",
+  "end_customer",
+  "column_break_neoo",
+  "dc_no",
+  "total_area",
+  "films_given_to",
+  "column_break_eofn",
+  "ir_total",
+  "inspector",
+  "as_per",
+  "section_break_hwud",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "report_no",
+   "fieldtype": "Data",
+   "label": "Report No"
+  },
+  {
+   "fieldname": "product_no",
+   "fieldtype": "Data",
+   "label": "Product No"
+  },
+  {
+   "fieldname": "back",
+   "fieldtype": "Data",
+   "label": "Back"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "Source"
+  },
+  {
+   "fieldname": "strength",
+   "fieldtype": "Data",
+   "label": "Strength"
+  },
+  {
+   "fieldname": "spec",
+   "fieldtype": "Select",
+   "label": "Spec"
+  },
+  {
+   "fieldname": "our_proc",
+   "fieldtype": "Select",
+   "label": "Our Proc"
+  },
+  {
+   "fieldname": "rss_no",
+   "fieldtype": "Select",
+   "label": "RSS No"
+  },
+  {
+   "fieldname": "column_break_vstz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Product Name"
+  },
+  {
+   "fieldname": "coverage_area",
+   "fieldtype": "Select",
+   "label": "Coverage Area"
+  },
+  {
+   "fieldname": "source_size",
+   "fieldtype": "Data",
+   "label": "Source Size"
+  },
+  {
+   "fieldname": "technique",
+   "fieldtype": "Data",
+   "label": "Technique"
+  },
+  {
+   "fieldname": "evalution",
+   "fieldtype": "Data",
+   "label": "Evalution"
+  },
+  {
+   "fieldname": "cust_rt_no",
+   "fieldtype": "Data",
+   "label": "Cust RT No"
+  },
+  {
+   "fieldname": "quality_level",
+   "fieldtype": "Select",
+   "label": "Quality Level"
+  },
+  {
+   "fieldname": "column_break_euoe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rt_no",
+   "fieldtype": "Data",
+   "label": "RT No"
+  },
+  {
+   "fieldname": "draw",
+   "fieldtype": "Data",
+   "label": "Draw"
+  },
+  {
+   "fieldname": "screen_front",
+   "fieldtype": "Data",
+   "label": "Screen Front"
+  },
+  {
+   "fieldname": "cust_c_area",
+   "fieldtype": "Select",
+   "label": "Cust C Area"
+  },
+  {
+   "fieldname": "ir",
+   "fieldtype": "Data",
+   "label": "IR"
+  },
+  {
+   "fieldname": "acpt_std",
+   "fieldtype": "Data",
+   "label": "Acpt Std"
+  },
+  {
+   "fieldname": "cust_proc",
+   "fieldtype": "Select",
+   "label": "Cust Proc"
+  },
+  {
+   "fieldname": "film_make",
+   "fieldtype": "Select",
+   "label": "Film Make"
+  },
+  {
+   "fieldname": "column_break_kstl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "heat_no",
+   "fieldtype": "Link",
+   "label": "Heat No",
+   "options": "Daily Heat Planning"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "label": "Grade",
+   "options": "Grade Master"
+  },
+  {
+   "fieldname": "iqi_std",
+   "fieldtype": "Select",
+   "label": "IQI Std"
+  },
+  {
+   "fieldname": "iqi_group",
+   "fieldtype": "Select",
+   "label": "IQI Group"
+  },
+  {
+   "fieldname": "co",
+   "fieldtype": "Data",
+   "label": "CO"
+  },
+  {
+   "fieldname": "cast_srl",
+   "fieldtype": "Data",
+   "label": "Cast Srl"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date"
+  },
+  {
+   "fieldname": "section_break_cnor",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "radiography_evaluation_details",
+   "fieldtype": "Table",
+   "label": "Radiography Evaluation Details",
+   "options": "Radiography Evaluation Details"
+  },
+  {
+   "fieldname": "section_break_cbaw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_films",
+   "fieldtype": "Data",
+   "label": "Total Films"
+  },
+  {
+   "fieldname": "co_total",
+   "fieldtype": "Data",
+   "label": "CO Total"
+  },
+  {
+   "fieldname": "end_customer",
+   "fieldtype": "Data",
+   "label": "End Customer"
+  },
+  {
+   "fieldname": "column_break_neoo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dc_no",
+   "fieldtype": "Data",
+   "label": "DC No"
+  },
+  {
+   "fieldname": "total_area",
+   "fieldtype": "Data",
+   "label": "Total Area"
+  },
+  {
+   "fieldname": "films_given_to",
+   "fieldtype": "Data",
+   "label": "Films Given To"
+  },
+  {
+   "fieldname": "column_break_eofn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ir_total",
+   "fieldtype": "Data",
+   "label": "IR Total"
+  },
+  {
+   "fieldname": "inspector",
+   "fieldtype": "Select",
+   "label": "Inspector"
+  },
+  {
+   "fieldname": "as_per",
+   "fieldtype": "Data",
+   "label": "As per"
+  },
+  {
+   "fieldname": "section_break_hwud",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text Editor",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-13 17:53:02.798741",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "Radiography Evaluation Report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -15,7 +15,7 @@ frappe.ui.form.on("Heat Treatment Details Entry", {
             frm.refresh_field("department_remark");
        },
 
-         before_save: function(frm) {
-                frm.set_value("department_remark", ""); // Clear remarks before saving
+         before_submit: function(frm) {
+                frm.set_value("department_remark", ""); 
             }
     });

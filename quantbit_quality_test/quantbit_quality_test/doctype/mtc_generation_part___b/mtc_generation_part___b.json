@@ -50,10 +50,36 @@
   "column_break_xdjm",
   "column_break_bady",
   "ibr",
+  "column_break_nzlp",
   "for_ibr",
   "column_break_uciz",
   "end_cust",
   "for_ibr_1",
+  "section_break_ribw",
+  "locn",
+  "sign",
+  "column_break_qnam",
+  "screen",
+  "column_break_hetl",
+  "print",
+  "column_break_nnsp",
+  "file",
+  "section_break_gesd",
+  "sign_type",
+  "column_break_xczy",
+  "report",
+  "column_break_tpko",
+  "clear",
+  "column_break_njws",
+  "exit",
+  "section_break_vunx",
+  "desp_memo_from",
+  "gen_pdf_to_web",
+  "column_break_hwbm",
+  "to",
+  "column_break_verv",
+  "disp_memo",
+  "annexure",
   "tab_break_ldeb",
   "section_break_fsgw",
   "data_shwu",
@@ -425,12 +451,135 @@
    "fieldtype": "Select",
    "label": "Series",
    "options": "MTCB -"
+  },
+  {
+   "fieldname": "column_break_nzlp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ribw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "locn",
+   "fieldtype": "Data",
+   "label": "Locn"
+  },
+  {
+   "default": "0",
+   "fieldname": "sign",
+   "fieldtype": "Check",
+   "label": "Sign"
+  },
+  {
+   "fieldname": "column_break_qnam",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "screen",
+   "fieldtype": "Check",
+   "label": "Screen"
+  },
+  {
+   "fieldname": "column_break_hetl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "print",
+   "fieldtype": "Check",
+   "label": "Print"
+  },
+  {
+   "fieldname": "column_break_nnsp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "file",
+   "fieldtype": "Check",
+   "label": "File"
+  },
+  {
+   "fieldname": "section_break_gesd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sign_type",
+   "fieldtype": "Data",
+   "label": "Sign Type"
+  },
+  {
+   "fieldname": "column_break_xczy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "report",
+   "fieldtype": "Button",
+   "label": "Report"
+  },
+  {
+   "fieldname": "column_break_tpko",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "clear",
+   "fieldtype": "Button",
+   "label": "Clear"
+  },
+  {
+   "fieldname": "column_break_njws",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "exit",
+   "fieldtype": "Button",
+   "label": "Exit"
+  },
+  {
+   "fieldname": "section_break_vunx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "desp_memo_from",
+   "fieldtype": "Data",
+   "label": "Desp Memo From"
+  },
+  {
+   "default": "0",
+   "fieldname": "gen_pdf_to_web",
+   "fieldtype": "Check",
+   "label": "Gen PDF to WEB"
+  },
+  {
+   "fieldname": "column_break_hwbm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Data",
+   "label": "To"
+  },
+  {
+   "fieldname": "column_break_verv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "disp_memo",
+   "fieldtype": "Button",
+   "label": "Disp Memo"
+  },
+  {
+   "fieldname": "annexure",
+   "fieldtype": "Button",
+   "label": "Annexure"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-05 20:45:00.447305",
+ "modified": "2025-03-19 10:25:54.759424",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "MTC Generation Part - B",

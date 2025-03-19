@@ -6,12 +6,18 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "company",
-  "grade",
-  "sales_order",
   "naming_series",
-  "column_break_tzuf",
+  "company_details_section",
+  "company",
+  "column_break_fpqo",
+  "posting_date",
+  "section_break_uhyy",
+  "grade",
   "daily_heat_planning",
+  "test_method",
+  "test_standard",
+  "column_break_tzuf",
+  "sales_order",
   "heat_no",
   "sales_order_sheet",
   "section_break_zako",
@@ -19,7 +25,8 @@
   "section_break_qscv",
   "remark",
   "section_break_hovt",
-  "department_remark"
+  "department_remark",
+  "amended_from"
  ],
  "fields": [
   {
@@ -100,17 +107,62 @@
   },
   {
    "fieldname": "section_break_qscv",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "hidden": 1
   },
   {
    "fieldname": "remark",
    "fieldtype": "Text Editor",
    "label": "Remark"
+  },
+  {
+   "fieldname": "test_standard",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Test Standard",
+   "options": "IGC Practice Test Details"
+  },
+  {
+   "fetch_from": "test_standard.test_standard",
+   "fieldname": "test_method",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Test Method"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "IGC Test Result Entry",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "company_details_section",
+   "fieldtype": "Section Break",
+   "label": "Company Details"
+  },
+  {
+   "fieldname": "column_break_fpqo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "section_break_uhyy",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2025-03-07 16:06:46.540716",
+ "modified": "2025-03-13 10:15:23.263271",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "IGC Test Result Entry",
@@ -127,6 +179,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

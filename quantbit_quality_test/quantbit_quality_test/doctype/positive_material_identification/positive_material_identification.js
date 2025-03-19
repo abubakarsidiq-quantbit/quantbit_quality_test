@@ -16,6 +16,6 @@ frappe.ui.form.on("Positive Material Identification", {
        },
 
          before_submit: function(frm) {
-                frm.set_value("department_remark", ""); // Clear remarks before saving
+                frm.set_value("department_remark", ""); 
             }
     });

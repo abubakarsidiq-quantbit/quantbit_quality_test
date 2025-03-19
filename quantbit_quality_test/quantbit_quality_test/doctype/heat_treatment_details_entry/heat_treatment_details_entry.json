@@ -6,16 +6,20 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
+  "section_break_ylbk",
+  "company",
+  "column_break_arwt",
+  "date",
+  "section_break_hpqo",
   "batch_no",
   "heat_no",
   "o_a_no",
   "quantity",
   "remarks",
-  "naming_series",
   "column_break_bdpq",
   "sales_order",
   "grade",
-  "date",
   "product",
   "thickness_max",
   "total_weight_kg",
@@ -28,7 +32,8 @@
   "section_break_wjyn",
   "remark",
   "section_break_ikcz",
-  "department_remark"
+  "department_remark",
+  "amended_from"
  ],
  "fields": [
   {
@@ -107,6 +112,7 @@
    "label": "Batch No."
   },
   {
+   "default": "Today",
    "fieldname": "date",
    "fieldtype": "Date",
    "label": "Date",
@@ -162,11 +168,41 @@
    "fieldname": "remark",
    "fieldtype": "Text Editor",
    "label": "Remark"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Heat Treatment Details Entry",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_ylbk",
+   "fieldtype": "Section Break",
+   "label": "Company Details"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "section_break_hpqo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_arwt",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2025-03-07 16:03:38.992873",
+ "modified": "2025-03-13 10:01:41.568621",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Heat Treatment Details Entry",
@@ -183,6 +219,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

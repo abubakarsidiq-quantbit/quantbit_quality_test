@@ -6,20 +6,21 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "company",
   "naming_series",
-  "column_break_gjej",
-  "grade",
-  "column_break_qjor",
-  "heat_no",
-  "column_break_vcmz",
-  "sales_order",
-  "column_break_jhlq",
-  "sales_order_sheet",
-  "section_break_qdzy",
-  "report_no",
-  "column_break_whpw",
+  "section_break_xtav",
+  "company",
+  "column_break_ljfi",
   "date",
+  "section_break_mptz",
+  "grade",
+  "column_break_gjej",
+  "heat_no",
+  "column_break_qjor",
+  "sales_order",
+  "column_break_vcmz",
+  "sales_order_sheet",
+  "column_break_oyku",
+  "report_no",
   "section_break_qbof",
   "remark",
   "section_break_hdus",
@@ -36,19 +37,12 @@
    "reqd": 1
   },
   {
-   "fieldname": "section_break_qdzy",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "report_no",
    "fieldtype": "Data",
    "label": "Report No"
   },
   {
-   "fieldname": "column_break_whpw",
-   "fieldtype": "Column Break"
-  },
-  {
+   "default": "Today",
    "fieldname": "date",
    "fieldtype": "Date",
    "label": "Date",
@@ -98,10 +92,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "column_break_jhlq",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Series",
@@ -135,12 +125,29 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "section_break_xtav",
+   "fieldtype": "Section Break",
+   "label": "Company Details"
+  },
+  {
+   "fieldname": "column_break_ljfi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_mptz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_oyku",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-07 16:26:10.479116",
+ "modified": "2025-03-13 10:03:50.062497",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Certificate Of Hardness Testing",

@@ -1,6 +1,6 @@
 // Copyright (c) 2025, Quantbit Technologies Pvt. Ltd. and contributors
 // For license information, please see license.txt
-// let sales_order = []
+
 frappe.ui.form.on("Mechanical Test Result Entry", {
 	grade: function(frm) {
 
@@ -49,7 +49,7 @@ actual_value: function(frm, cdt, cdn) {
 frappe.ui.form.on("Mechanical Test Result Entry", {
     daily_heat_planning: function(frm) { 
             frappe.call({
-                method: 'get_sales_orders',  // Replace with actual method path
+                method: 'get_sales_orders',  
                 doc: frm.doc,
                 // args: {
                 //     heat_no: frm.doc.heat_no
@@ -94,23 +94,6 @@ function calculate_average(frm, cdt, cdn) {
     frm.refresh_field("temperature_details"); 
 }
 
-// frappe.ui.form.on("Mechanical Test Result Entry", {
-//     sales_order_sheet: function(frm) {
-//         frm.call({
-//             method: "update_remark",
-//             doc: frm.doc,
-//             callback: function(r) {
-//                 if (r.message) {
-//                     frm.set_df_property("department_remark", "value", r.message); // Set remarks dynamically
-//                 }
-//             }
-//         });
-//     },
-    
-//     before_save: function(frm) {
-//         frm.set_value("department_remark", ""); // Clear remarks before saving
-//     }
-// });
 
 frappe.ui.form.on("Mechanical Test Result Entry", {
     onload: function(frm) {
@@ -145,6 +128,6 @@ frappe.ui.form.on("Mechanical Test Result Entry", {
     },
 
     before_submit: function(frm) {
-                frm.set_value("department_remark", ""); // Clear remarks before saving
+                frm.set_value("department_remark", ""); 
             }
 });

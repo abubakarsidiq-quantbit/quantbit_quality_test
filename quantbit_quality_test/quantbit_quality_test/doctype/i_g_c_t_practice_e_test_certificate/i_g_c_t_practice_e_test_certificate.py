@@ -3,21 +3,28 @@
 
 import frappe
 from frappe.model.document import Document
-from frappe.utils import strip_html
 
 
-class IGCTPracticeETestCertification(Document):
+class IGCTPracticeETestCertificate(Document):
+#fetch the data in po_details according to sales order
 	@frappe.whitelist()
 	def fetch_po_details(self):
 		if self.sales_order:
-			sales_order = frappe.get_doc("Sales Order", self.sales_order)
-			self.po_details = []
-				
-			self.append("po_details", {
-				"po_no": sales_order.po_no,
-				"po_date": sales_order.po_date
-			})
+			po_details = frappe.get_all(
+				"Sales Order",  
+				filters={"name": self.sales_order},
+				fields=["po_no", "po_date"]  
+			)
 
+			if po_details:
+				self.append("po_details", {
+					"po_no": po_details[0]["po_no"], 
+					"po_date": po_details[0]["po_date"]
+				})
+
+
+
+#fetch the data in test_certification_details according to heat no
 	@frappe.whitelist()
 	def fetch_sales_orders_and_pouring_no(self):
 		casting_details = frappe.get_all("Pouring Casting Details",filters={"heat_no":self.heat_number},fields=["parent","sales_order"])
@@ -28,13 +35,19 @@ class IGCTPracticeETestCertification(Document):
 				"pouring_no": row.parent  
 			})
 
+#fetch department remark from sales order sheet
 	@frappe.whitelist()
 	def update_dept_remark(self):
 		if self.sales_order_sheet:
-			sales_order_sheet = frappe.get_doc("Sales Order Sheet", self.sales_order_sheet)
-			for row in sales_order_sheet.department_remark:
+			department_remarks = frappe.get_all(
+				'Sales Order Department Remark', 
+				filters={'parent': self.sales_order_sheet}, 
+				fields=['po_serial_number', 'department', 'remark']  
+			)
+			for row in department_remarks:
 				self.append("department_remark", {
 					"po_serial_number": row.po_serial_number,
 					"department": row.department,
 					"remark": row.remark
 				})
+

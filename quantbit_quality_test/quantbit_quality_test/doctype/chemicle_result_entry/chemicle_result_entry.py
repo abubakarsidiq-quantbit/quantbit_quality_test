@@ -3,65 +3,49 @@
 
 import frappe
 from frappe.model.document import Document
-from frappe.utils import strip_html
-
 
 class ChemicleResultEntry(Document):
-	# @frappe.whitelist()
-	# def update_chemical_and_element_data(self):
-	# 	if self.grade:
-	# 		grade_master = frappe.get_doc("Grade Master", self.grade)
-			
-	# 		self.chemical_result_entry_details = []
-
-	# 		for i, (chem, elem) in enumerate(zip(grade_master.chemical_details, grade_master.element_details)):
-	# 			self.append("chemical_result_entry_details", {
-	# 				"minimum": chem.internal_minimum,
-	# 				"maximum": chem.internal_maximum,
-	# 				"element_name": elem.element_symbol if i < len(grade_master.element_details) else None
-	# 			})
-
-
+#fetch the data in table chemical_result_entry_details from grade master
 	@frappe.whitelist()
 	def update_chemical_and_element_data(self):
 		if self.grade:
-			grade_master = frappe.get_doc("Grade Master", self.grade)
-			self.chemical_result_entry_details = []
+			result = frappe.get_all(
+				"Element Details", 
+				filters={"parent": self.grade},
+				fields=["element_symbol", "internal_minimum", "internal_maximum"] 
+			)
 
-			for row in grade_master.element_details:
+			for row in result:
 				self.append("chemical_result_entry_details", {
 					"element_name": row.element_symbol,
 					"minimum": row.internal_minimum,
 					"maximum": row.internal_maximum
 				})
 
-	# @frappe.whitelist()
-	# def update_remark(self):
-	# 	if self.sales_order_sheet:
-	# 		sales_order_sheet = frappe.get_doc("Sales Order Sheet", self.sales_order_sheet)
-
-	# 		remarks_list = [strip_html(row.remark) for row in sales_order_sheet.department_remark]
-
-	# 		self.department_remark = "\n".join(remarks_list) if remarks_list else ""
-
-
+#filter applied to sales order according to heat no
 	@frappe.whitelist()
 	def get_sales_orders(self):
-		query = """
-		SELECT sales_order
-		FROM `tabPouring Casting Details`
-		WHERE heat_no = %s
-	"""
-		
-		result = frappe.db.sql(query, (self.heat_no,), as_list=True)
-		final_listed = [r[0] for r in result]
+		sales_orders = frappe.get_all(
+			"Pouring Casting Details",   
+			filters={"heat_no": self.heat_no},  
+			fields=["sales_order"] 
+		)
+
+		final_listed = [r["sales_order"] for r in sales_orders]
 		return final_listed
+	
+
+#fetch department remark from sales order sheet
 
 	@frappe.whitelist()
 	def update_dept_remark(self):
 		if self.sales_order_sheet:
-			sales_order_sheet = frappe.get_doc("Sales Order Sheet", self.sales_order_sheet)
-			for row in sales_order_sheet.department_remark:
+			department_remarks = frappe.get_all(
+				'Sales Order Department Remark', 
+				filters={'parent': self.sales_order_sheet}, 
+				fields=['po_serial_number', 'department', 'remark']  
+			)
+			for row in department_remarks:
 				self.append("department_remark", {
 					"po_serial_number": row.po_serial_number,
 					"department": row.department,

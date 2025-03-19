@@ -16,29 +16,7 @@ frappe.ui.form.on("MTC Generation", {
        },
 
          before_submit: function(frm) {
-                frm.set_value("department_remark", ""); // Clear remarks before saving
+                frm.set_value("department_remark", ""); 
             }
     });
 
-
-    // frappe.ui.form.on("MTC Generation", {
-    //     sales_order: function(frm) { 
-    //         frappe.call({
-    //             method: 'get_sales_order_sheet',
-    //             doc: frm.doc, 
-    //             callback: function(r) {
-    //                 if (r.message) {
-    //                     var sales_order_sheet = r.message;
-    //                     frm.set_query("sales_order_ref", function() {
-    //                         return {
-    //                             filters: [
-    //                                 ['Sales Order Sheet', 'name', 'in', sales_order_sheet]  
-    //                             ]
-    //                         };
-    //                     });
-    //                 }
-    //             }
-    //         });
-    //     }
-    // });
-    

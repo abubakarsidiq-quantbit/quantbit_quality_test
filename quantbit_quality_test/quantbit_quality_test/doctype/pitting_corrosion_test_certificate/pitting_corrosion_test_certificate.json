@@ -37,7 +37,12 @@
   "column_break_bwvr",
   "surface_finish_grit",
   "section_break_mmeq",
-  "remarks"
+  "remarks",
+  "amended_from",
+  "section_break_upai",
+  "report",
+  "clear",
+  "exit"
  ],
  "fields": [
   {
@@ -190,11 +195,41 @@
    "fieldtype": "Select",
    "label": "Series",
    "options": "PCTC -"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Pitting Corrosion Test Certificate",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_upai",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "report",
+   "fieldtype": "Button",
+   "label": "Report"
+  },
+  {
+   "fieldname": "clear",
+   "fieldtype": "Button",
+   "label": "Clear"
+  },
+  {
+   "fieldname": "exit",
+   "fieldtype": "Button",
+   "label": "Exit"
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2025-03-07 16:35:30.259991",
+ "modified": "2025-03-19 09:53:33.269112",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Pitting Corrosion Test Certificate",
@@ -211,6 +246,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

@@ -1,0 +1,291 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-03-13 10:28:49.974110",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "column_break_mcxr",
+  "company_details_section",
+  "company",
+  "column_break_uibm",
+  "date",
+  "section_break_ytzw",
+  "customer",
+  "column_break_alsp",
+  "customer_name",
+  "section_break_vlh0",
+  "grade",
+  "sales_order",
+  "start_on",
+  "test_specification",
+  "boiling_specification",
+  "column_break_jrdz",
+  "daily_heat_planning",
+  "sales_order_sheet",
+  "end_on",
+  "end_cust",
+  "deg_bend_test",
+  "column_break_cadh",
+  "heat_number",
+  "boiling_duration",
+  "format_no",
+  "sensitizing_treatment_yesno",
+  "former_die_for_bend_test",
+  "remarks",
+  "section_break_ivfj",
+  "po_details",
+  "column_break_ioaz",
+  "test_certification_details",
+  "section_break_hnkk",
+  "remark",
+  "section_break_tawa",
+  "department_remark",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "IGCT -"
+  },
+  {
+   "fieldname": "column_break_mcxr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_details_section",
+   "fieldtype": "Section Break",
+   "label": "Company Details"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_uibm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ytzw",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_alsp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "section_break_vlh0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "label": "Grade",
+   "options": "Grade Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "daily_heat_planning",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Daily Heat Planning",
+   "options": "Daily Heat Planning",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "daily_heat_planning.heat_no",
+   "fieldname": "heat_number",
+   "fieldtype": "Data",
+   "label": "Heat Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sales Order",
+   "options": "Sales Order",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sales_order_sheet",
+   "fieldtype": "Link",
+   "label": "Sales Order Sheet",
+   "options": "Sales Order Sheet",
+   "reqd": 1
+  },
+  {
+   "fieldname": "test_specification",
+   "fieldtype": "Data",
+   "label": "Test Specification"
+  },
+  {
+   "fieldname": "column_break_jrdz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_on",
+   "fieldtype": "Datetime",
+   "label": "End On"
+  },
+  {
+   "fieldname": "end_cust",
+   "fieldtype": "Link",
+   "label": "End Custmer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "boiling_specification",
+   "fieldtype": "Data",
+   "label": "Boiling Specification"
+  },
+  {
+   "fieldname": "deg_bend_test",
+   "fieldtype": "Data",
+   "label": "Deg. Bend Test"
+  },
+  {
+   "fieldname": "start_on",
+   "fieldtype": "Datetime",
+   "label": "Start On"
+  },
+  {
+   "fieldname": "column_break_cadh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "boiling_duration",
+   "fieldtype": "Data",
+   "label": "Boiling Duration"
+  },
+  {
+   "fieldname": "format_no",
+   "fieldtype": "Data",
+   "label": "Format No."
+  },
+  {
+   "fieldname": "sensitizing_treatment_yesno",
+   "fieldtype": "Select",
+   "label": "Sensitizing Treatment Yes/No",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "former_die_for_bend_test",
+   "fieldtype": "Data",
+   "label": "Former Die For Bend Test"
+  },
+  {
+   "default": "Sensitized at 675 deg C for 1 Hour ",
+   "depends_on": "sensitizing_treatment_yesno == 'Yes'",
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_ivfj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "po_details",
+   "fieldtype": "Table",
+   "label": "PO Details",
+   "options": "PO Details"
+  },
+  {
+   "fieldname": "column_break_ioaz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_certification_details",
+   "fieldtype": "Table",
+   "label": "I G C T Practice E Test Certification Details",
+   "options": "I G C T Practice E Test Certification Details"
+  },
+  {
+   "fieldname": "section_break_hnkk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Text Editor",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "section_break_tawa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "department_remark",
+   "fieldtype": "Table",
+   "label": "Department Remark",
+   "options": "Sales Order Department Remark"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "I G C T Practice E Test Certificate",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-03-13 10:34:07.721528",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "I G C T Practice E Test Certificate",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -6,9 +6,13 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
+  "company_details_section",
+  "company",
+  "column_break_vcup",
+  "posting_date",
   "section_break_ogkl",
   "daily_heat_planning",
-  "naming_series",
   "column_break_tcxc",
   "heat_no",
   "column_break_240z",
@@ -130,12 +134,33 @@
    "fieldname": "remark",
    "fieldtype": "Text Editor",
    "label": "Remark"
+  },
+  {
+   "fieldname": "company_details_section",
+   "fieldtype": "Section Break",
+   "label": "Company Details"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_vcup",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-07 16:05:37.159183",
+ "modified": "2025-03-13 10:09:41.895812",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Chemicle Result Entry",
@@ -152,6 +177,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

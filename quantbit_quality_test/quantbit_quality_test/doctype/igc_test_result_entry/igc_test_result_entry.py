@@ -3,42 +3,51 @@
 
 import frappe
 from frappe.model.document import Document
-from frappe.utils import strip_html
 
 
 class IGCTestResultEntry(Document):
+
+ #filter applied to sales order according to heat no
 	@frappe.whitelist()
 	def get_sales_orders(self):
-		query = """
-		SELECT sales_order
-		FROM `tabPouring Casting Details`
-		WHERE heat_no = %s
-	"""
-			
-		result = frappe.db.sql(query, (self.heat_no,), as_list=True)
-		final_listed = [r[0] for r in result]
+		sales_orders = frappe.get_all(
+			"Pouring Casting Details",   
+			filters={"heat_no": self.heat_no},  
+			fields=["sales_order"] 
+		)
+
+		final_listed = [r["sales_order"] for r in sales_orders]
 		return final_listed
 	
+#fetch department remark from sales order sheet
+
 	@frappe.whitelist()
 	def update_dept_remark(self):
 		if self.sales_order_sheet:
-			sales_order_sheet = frappe.get_doc("Sales Order Sheet", self.sales_order_sheet)
-			for row in sales_order_sheet.department_remark:
+			department_remarks = frappe.get_all(
+				'Sales Order Department Remark', 
+				filters={'parent': self.sales_order_sheet}, 
+				fields=['po_serial_number', 'department', 'remark']  
+			)
+			for row in department_remarks:
 				self.append("department_remark", {
 					"po_serial_number": row.po_serial_number,
 					"department": row.department,
 					"remark": row.remark
 				})
-	
-
-	# @frappe.whitelist()
-	# def update_remark(self):
-	# 	if self.sales_order_sheet:
-	# 		sales_order_sheet = frappe.get_doc("Sales Order Sheet", self.sales_order_sheet)
-
-	# 		remarks_list = [strip_html(row.remark) for row in sales_order_sheet.department_remark]
-
-	# 		self.department_remark = "\n".join(remarks_list) if remarks_list else ""
 
 
-    
+#fetch the data in IGC Test Entry Details from test standard
+	@frappe.whitelist()
+	def get_test_standard(self):
+		if self.test_standard:
+			result = frappe.get_doc("IGC Practice Test Details", self.test_standard)
+
+			self.append("table_swwu", {
+				"test_standard": result.test_standard,
+				"test_temp": result.test_temp,
+				"length": result.length,
+				"width":result.width,
+				"area":result.area,
+				"height":result.height
+			})

@@ -1,7 +1,13 @@
 // Copyright (c) 2025, Quantbit Technologies Pvt. Ltd. and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on("I G C T Practice E Test Certification", {
+// frappe.ui.form.on("I G C T Practice E Test Certificate", {
+// 	refresh(frm) {
+
+// 	},
+// });
+
+frappe.ui.form.on("I G C T Practice E Test Certificate", {
 	sales_order: function(frm) {
 
         frm.clear_table("po_details");
@@ -16,7 +22,7 @@ frappe.ui.form.on("I G C T Practice E Test Certification", {
 }
 });
 
-frappe.ui.form.on("I G C T Practice E Test Certification", {
+frappe.ui.form.on("I G C T Practice E Test Certificate", {
 	daily_heat_planning: function(frm) {
 
         frm.clear_table("test_certification_details");
@@ -31,7 +37,7 @@ frappe.ui.form.on("I G C T Practice E Test Certification", {
 }
 });
 
-frappe.ui.form.on("I G C T Practice E Test Certification", {
+frappe.ui.form.on("I G C T Practice E Test Certificate", {
     sales_order_sheet: function(frm) {
 
         frm.clear_table("department_remark");
@@ -46,6 +52,6 @@ frappe.ui.form.on("I G C T Practice E Test Certification", {
        },
 
          before_submit: function(frm) {
-                frm.set_value("department_remark", ""); // Clear remarks before saving
+                frm.set_value("department_remark", ""); 
             }
     });
