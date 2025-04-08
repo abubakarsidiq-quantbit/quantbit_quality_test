@@ -3,23 +3,24 @@
  "allow_rename": 1,
  "creation": "2025-01-09 14:38:31.202274",
  "doctype": "DocType",
+ "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "element_name",
+  "element_symbol",
   "minimum",
   "act_value",
   "column_break_ndyf",
   "maximum",
-  "text"
+  "text",
+  "test_formula"
  ],
  "fields": [
   {
    "fieldname": "element_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "in_preview": 1,
-   "in_standard_filter": 1,
-   "label": "Element Name"
+   "fieldtype": "Link",
+   "label": "Element Name",
+   "options": "Element"
   },
   {
    "fieldname": "minimum",
@@ -31,12 +32,11 @@
   },
   {
    "fieldname": "act_value",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "in_preview": 1,
    "in_standard_filter": 1,
-   "label": "Act. Value",
-   "reqd": 1
+   "label": "Act. Value"
   },
   {
    "fieldname": "column_break_ndyf",
@@ -57,12 +57,22 @@
    "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Text"
+  },
+  {
+   "fieldname": "test_formula",
+   "fieldtype": "Data",
+   "label": "Formula"
+  },
+  {
+   "fieldname": "element_symbol",
+   "fieldtype": "Data",
+   "label": "Element Symbol"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-03-19 12:27:58.603683",
+ "modified": "2025-03-25 18:03:43.776664",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Chemical Result Entry Details",

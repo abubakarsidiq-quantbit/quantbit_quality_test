@@ -1,10 +1,12 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-01-14 17:36:44.204322",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "section_break_rbbs",
   "company",
   "grade",
@@ -63,28 +65,36 @@
  "fields": [
   {
    "fieldname": "section_break_rbbs",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Company Details"
   },
   {
    "fieldname": "company",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Company",
-   "options": "Company"
+   "options": "Company",
+   "reqd": 1
   },
   {
    "fieldname": "grade",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Grade",
-   "options": "Grade"
+   "options": "Grade Master",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_ginl",
    "fieldtype": "Column Break"
   },
   {
+   "default": "Today",
    "fieldname": "posting_date",
    "fieldtype": "Date",
-   "label": "Posting Date"
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
   },
   {
    "fieldname": "po_no",
@@ -108,7 +118,8 @@
   },
   {
    "fieldname": "section_break_yphw",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Specification Details"
   },
   {
    "fieldname": "specification",
@@ -140,7 +151,8 @@
   },
   {
    "fieldname": "section_break_hmtf",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Dye Penetrant Details"
   },
   {
    "fieldname": "select_hhyq",
@@ -327,15 +339,22 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "DPE -"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-19 12:27:59.535395",
+ "modified": "2025-04-08 17:33:09.440485",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Dye Penetrant Examination",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

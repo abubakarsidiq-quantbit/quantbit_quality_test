@@ -9,17 +9,30 @@
   "section_break_ptgj",
   "company",
   "customer",
+  "delivery_note",
   "naming_series",
   "column_break_yrsi",
   "posting_date",
   "customer_name",
+  "sales_invoice",
   "column_break_fohf",
   "grade",
   "sales_order",
   "sales_order_sheet",
-  "section_break_hmop",
+  "section_break_ffyf",
   "table_orgi",
-  "alloy_content_weight_percent",
+  "section_break_hmop",
+  "c1",
+  "c5",
+  "column_break_rbfd",
+  "c2",
+  "c6",
+  "column_break_agxi",
+  "c3",
+  "c7",
+  "column_break_cief",
+  "c4",
+  "c8",
   "section_break_hawv",
   "positive_material_identification_details",
   "section_break_vgsc",
@@ -31,12 +44,12 @@
   "po_grade",
   "instrument_type",
   "for_sppl",
-  "remark",
   "column_break_dcds",
   "po_std",
   "for_tpi",
   "project",
   "section_break_mmpg",
+  "remark",
   "department_remark",
   "amended_from"
  ],
@@ -218,15 +231,78 @@
    "options": "Memo Details"
   },
   {
-   "fieldname": "alloy_content_weight_percent",
-   "fieldtype": "Table",
-   "label": "Alloy Content Weight Percent",
-   "options": "Elements"
+   "fieldname": "delivery_note",
+   "fieldtype": "Link",
+   "label": "Delivery Note",
+   "options": "Delivery Note"
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "label": "Sales Invoice",
+   "options": "Sales Invoice"
+  },
+  {
+   "fieldname": "c1",
+   "fieldtype": "Float",
+   "label": "C1"
+  },
+  {
+   "fieldname": "c2",
+   "fieldtype": "Float",
+   "label": "C2"
+  },
+  {
+   "fieldname": "c3",
+   "fieldtype": "Float",
+   "label": "C3"
+  },
+  {
+   "fieldname": "c4",
+   "fieldtype": "Float",
+   "label": "C4"
+  },
+  {
+   "fieldname": "c5",
+   "fieldtype": "Float",
+   "label": "C5"
+  },
+  {
+   "fieldname": "c6",
+   "fieldtype": "Float",
+   "label": "C6"
+  },
+  {
+   "fieldname": "c7",
+   "fieldtype": "Float",
+   "label": "C7"
+  },
+  {
+   "fieldname": "c8",
+   "fieldtype": "Float",
+   "label": "C8"
+  },
+  {
+   "fieldname": "section_break_ffyf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_rbfd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_agxi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_cief",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
+ "modified": "2025-04-05 13:36:06.390260",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Positive Material Identification",

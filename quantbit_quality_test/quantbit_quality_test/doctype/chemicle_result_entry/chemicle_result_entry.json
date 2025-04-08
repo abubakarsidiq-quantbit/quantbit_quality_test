@@ -7,22 +7,17 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
-  "company_details_section",
-  "company",
-  "column_break_vcup",
-  "posting_date",
   "section_break_ogkl",
-  "heat_no",
-  "naming_series",
   "column_break_tcxc",
   "daily_heat_planning",
-  "column_break_240z",
   "grade",
-  "column_break_lvqp",
+  "column_break_vybp",
+  "heat_no",
+  "grade_name",
+  "column_break_240z",
   "sales_order",
-  "column_break_iidy",
   "sales_order_sheet",
-  "column_break_akoi",
+  "column_break_anvj",
   "anals_date",
   "section_break_juwh",
   "chemical_result_entry_details",
@@ -40,6 +35,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Heat No.",
+   "read_only": 1,
    "reqd": 1
   },
   {
@@ -65,18 +61,10 @@
    "options": "Order Details"
   },
   {
-   "fieldname": "column_break_lvqp",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "sales_order_sheet",
    "fieldtype": "Link",
    "label": "Sales Order Sheet",
    "options": "Sales Order Sheet"
-  },
-  {
-   "fieldname": "column_break_iidy",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "anals_date",
@@ -114,22 +102,36 @@
   {
    "fieldname": "daily_heat_planning",
    "fieldtype": "Link",
-   "label": "Daily Heat Planning",
-   "options": "Daily Heat Planning"
-  },
-  {
-   "fieldname": "column_break_akoi",
-   "fieldtype": "Column Break"
+   "label": "Heat Number",
+   "options": "Daily Heat Planning",
+   "reqd": 1
   },
   {
    "fieldname": "department_remark",
-   "fieldtype": "Small Text",
-   "label": "Department Remark"
+   "fieldtype": "Table",
+   "label": "Department Remark",
+   "options": "Sales Order Department Remark"
+  },
+  {
+   "fieldname": "column_break_vybp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_anvj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "grade.grade_name",
+   "fieldname": "grade_name",
+   "fieldtype": "Data",
+   "label": "Grade Name",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
+ "modified": "2025-03-26 10:54:31.201527",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Chemicle Result Entry",

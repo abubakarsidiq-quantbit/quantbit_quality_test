@@ -55,10 +55,10 @@ class MechanicalTestResultEntry(Document):
 
 
 
-#no of test infcremented acording to heat no
+#no of test incremented according to heat no
 	@frappe.whitelist()
 	def before_insert(self):
-		last_entry = frappe.db.get_value("Mechanical Test Result Entry", {"heat_no": self.heat_no}, "no_of_tests", order_by="no_of_tests DESC")
+		last_entry = frappe.db.get_value("Mechanical Test Result Entry", {"heat_no": self.heat_no, "docstatus": 1}, "no_of_tests", order_by="no_of_tests DESC")
 
 		self.no_of_tests = (last_entry or 0) + 1
 
@@ -80,4 +80,11 @@ class MechanicalTestResultEntry(Document):
 					"remark": row.remark
 				})
 
- 
+    
+	# @frappe.whitelist()
+	# def before_save(self):
+	# 	self.hardness_average = self.get_average_hardness()
+
+	# def get_average_hardness(self):
+	# 	hardness_values = [row.hardness for row in self.hardness_details if row.hardness]
+	# 	return round(sum(hardness_values) / len(hardness_values), 3) if hardness_values else 0.000

@@ -39,10 +39,17 @@
   "section_break_mmeq",
   "remarks",
   "amended_from",
-  "section_break_upai",
-  "report",
-  "clear",
-  "exit"
+  "section_break_nboq",
+  "date",
+  "po_date",
+  "customer",
+  "column_break_kgnf",
+  "po_nos",
+  "specian_size_dm",
+  "report_no",
+  "column_break_joru",
+  "material_grade",
+  "acceptance_criteria"
  ],
  "fields": [
   {
@@ -207,28 +214,62 @@
    "search_index": 1
   },
   {
-   "fieldname": "section_break_upai",
+   "fieldname": "section_break_nboq",
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "report",
-   "fieldtype": "Button",
-   "label": "Report"
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
   },
   {
-   "fieldname": "clear",
-   "fieldtype": "Button",
-   "label": "Clear"
+   "fieldname": "po_nos",
+   "fieldtype": "Data",
+   "label": "P.O. NOs"
   },
   {
-   "fieldname": "exit",
-   "fieldtype": "Button",
-   "label": "Exit"
+   "fieldname": "po_date",
+   "fieldtype": "Date",
+   "label": "PO Date"
+  },
+  {
+   "fieldname": "material_grade",
+   "fieldtype": "Data",
+   "label": "Material Grade"
+  },
+  {
+   "fieldname": "specian_size_dm",
+   "fieldtype": "Data",
+   "label": "Specian Size (dm)"
+  },
+  {
+   "fieldname": "acceptance_criteria",
+   "fieldtype": "Data",
+   "label": "Acceptance Criteria "
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Small Text",
+   "label": "Customer"
+  },
+  {
+   "fieldname": "report_no",
+   "fieldtype": "Data",
+   "label": "Report No"
+  },
+  {
+   "fieldname": "column_break_kgnf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_joru",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
+ "modified": "2025-03-24 12:22:24.667837",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Pitting Corrosion Test Certificate",

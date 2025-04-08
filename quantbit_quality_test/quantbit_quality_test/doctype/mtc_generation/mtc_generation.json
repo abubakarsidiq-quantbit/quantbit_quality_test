@@ -8,52 +8,50 @@
  "field_order": [
   "naming_series",
   "mtc_generation",
-  "section_break_l7tb",
+  "column_break_vkts",
   "company",
+  "section_break_l7tb",
   "grade",
   "tc_no",
   "customer",
   "column_break_tfvz",
   "posting_date",
   "sales_order",
-  "tc_type",
-  "column_break_vbgf",
-  "heat_no",
   "sales_order_sheet",
-  "heading",
+  "column_break_vbgf",
+  "heat_number",
+  "heat_no",
   "dc_no",
+  "heading",
   "section_break_gcvj",
   "mtc_product_details_part_a",
-  "section_break_abiu",
-  "oa_grade",
-  "column_break_fhnh",
-  "std",
-  "column_break_llbu",
-  "ibr_tc_no",
-  "column_break_nxop",
-  "date",
-  "section_break_vmna",
-  "ht_details",
+  "section_break_nftj",
+  "hardness",
+  "bend_test",
+  "column_break_yozz",
+  "bend_degree",
+  "charpy_notch",
+  "section_break_dkuo",
+  "details_of_mechanical_property",
+  "details_of_chemical_properties",
+  "section_break_iflj",
+  "heat_treatment_details",
   "section_break_uhmu",
   "remarks_details",
   "edition",
   "section_break_hcit",
-  "column_break_lbjl",
-  "remark",
-  "column_break_xdjm",
   "column_break_bady",
   "ibr",
   "for_ibr",
   "column_break_uciz",
   "end_cust",
   "for_ibr_1",
+  "section_break_klhs",
+  "remark",
   "section_break_kefu",
-  "department_remark",
+  "sheet_department_remark",
   "tab_break_ldeb",
   "section_break_fsgw",
-  "data_shwu",
-  "hardness",
-  "bend_test",
   "print_ce",
   "glen",
   "imp_temp1",
@@ -62,11 +60,7 @@
   "unit",
   "incharge",
   "column_break_tonx",
-  "tc_standard",
-  "bend_degree",
-  "charpy_notch",
   "print_pre",
-  "avg_impact_minimum",
   "avg_ind_1",
   "avg_ind_2",
   "material_code",
@@ -109,30 +103,21 @@
    "reqd": 1
   },
   {
-   "fieldname": "tc_type",
-   "fieldtype": "Select",
-   "label": "TC Type"
-  },
-  {
    "fieldname": "column_break_vbgf",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "heat_no",
-   "fieldtype": "Link",
-   "label": "Heat No",
-   "options": "Daily Heat Planning",
-   "reqd": 1
-  },
-  {
    "fieldname": "heading",
    "fieldtype": "Select",
-   "label": "Heading"
+   "label": "Heading",
+   "options": "CERTIFICATION AS PER EN 10204 3.1\nAS PER EN 10204 3.1\nAS PER EN 10204 3.2\nacc./nach (EN 764-5) as per EN 10204 - 3.1\nacc./nach (EN 764-5) as per EN 10204 - 3.2\nAS PER EN 10204 2.2"
   },
   {
+   "depends_on": "eval:doc.mtc_generation == 'DC Wise'\r\n",
    "fieldname": "dc_no",
-   "fieldtype": "Data",
-   "label": "DC No."
+   "fieldtype": "Link",
+   "label": "DC No.",
+   "options": "Sales Invoice"
   },
   {
    "fieldname": "section_break_gcvj",
@@ -143,51 +128,6 @@
    "fieldtype": "Table",
    "label": "MTC Product Details",
    "options": "MTC Product Details Part - A"
-  },
-  {
-   "fieldname": "section_break_abiu",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "oa_grade",
-   "fieldtype": "Data",
-   "label": "OA Grade"
-  },
-  {
-   "fieldname": "column_break_fhnh",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "std",
-   "fieldtype": "Data",
-   "label": "STD"
-  },
-  {
-   "fieldname": "column_break_llbu",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "ibr_tc_no",
-   "fieldtype": "Data",
-   "label": "IBR TC No."
-  },
-  {
-   "fieldname": "column_break_nxop",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "date",
-   "fieldtype": "Date",
-   "label": "Date"
-  },
-  {
-   "fieldname": "section_break_vmna",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "ht_details",
-   "fieldtype": "Data",
-   "label": "HT Details"
   },
   {
    "fieldname": "section_break_uhmu",
@@ -204,17 +144,9 @@
    "hide_border": 1
   },
   {
-   "fieldname": "column_break_lbjl",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "remark",
    "fieldtype": "Text Editor",
    "label": "Remark"
-  },
-  {
-   "fieldname": "column_break_xdjm",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "column_break_bady",
@@ -254,122 +186,68 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "data_shwu",
-   "fieldtype": "Data",
-   "label": "TC Grade",
-   "options": "Grade Master\n"
-  },
-  {
-   "fieldname": "hardness",
-   "fieldtype": "Select",
-   "label": "Hardness",
-   "options": "Grade Master"
-  },
-  {
-   "fieldname": "bend_test",
-   "fieldtype": "Select",
-   "label": "Bend Test",
-   "options": "Grade Master"
-  },
-  {
    "fieldname": "print_ce",
    "fieldtype": "Select",
-   "label": "Print CE",
-   "options": "Grade Master"
+   "label": "Print CE"
   },
   {
    "fieldname": "glen",
    "fieldtype": "Select",
-   "label": "G.Len",
-   "options": "Grade Master"
+   "label": "G.Len"
   },
   {
    "fieldname": "imp_temp1",
    "fieldtype": "Select",
-   "label": "Imp Temp1",
-   "options": "Grade Master"
+   "label": "Imp Temp1"
   },
   {
    "fieldname": "imp_temp2",
    "fieldtype": "Select",
-   "label": "Imp Temp2",
-   "options": "Grade Master"
+   "label": "Imp Temp2"
   },
   {
    "fieldname": "ys",
    "fieldtype": "Select",
-   "label": "YS",
-   "options": "Grade Master"
+   "label": "YS"
   },
   {
    "fieldname": "unit",
    "fieldtype": "Select",
-   "label": "Unit",
-   "options": "Grade Master"
+   "label": "Unit"
   },
   {
    "fieldname": "incharge",
    "fieldtype": "Select",
-   "label": "Incharge",
-   "options": "Grade Master"
+   "label": "Incharge"
   },
   {
    "fieldname": "column_break_tonx",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "tc_standard",
-   "fieldtype": "Data",
-   "label": "TC Standard",
-   "options": "Grade Master\n"
-  },
-  {
-   "fieldname": "bend_degree",
-   "fieldtype": "Data",
-   "label": "Bend Degree",
-   "options": "Grade Master\n"
-  },
-  {
-   "fieldname": "charpy_notch",
-   "fieldtype": "Select",
-   "label": "Charpy Notch",
-   "options": "Grade Master"
-  },
-  {
    "fieldname": "print_pre",
    "fieldtype": "Select",
-   "label": "Print PRE",
-   "options": "Grade Master"
-  },
-  {
-   "fieldname": "avg_impact_minimum",
-   "fieldtype": "Data",
-   "label": "AVG Impact Minimum",
-   "options": "Grade Master\n"
+   "label": "Print PRE"
   },
   {
    "fieldname": "avg_ind_1",
    "fieldtype": "Data",
-   "label": "AVG Ind 1",
-   "options": "Grade Master\n"
+   "label": "AVG Ind 1"
   },
   {
    "fieldname": "avg_ind_2",
    "fieldtype": "Data",
-   "label": "AVG Ind 2",
-   "options": "Grade Master\n"
+   "label": "AVG Ind 2"
   },
   {
    "fieldname": "material_code",
    "fieldtype": "Data",
-   "label": "Material Code",
-   "options": "Grade Master\n"
+   "label": "Material Code"
   },
   {
    "fieldname": "conc_round",
    "fieldtype": "Select",
-   "label": "Conc Round",
-   "options": "Grade Master"
+   "label": "Conc Round"
   },
   {
    "fieldname": "amended_from",
@@ -390,18 +268,10 @@
    "reqd": 1
   },
   {
-   "fieldname": "sales_order",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Sales Order",
-   "options": "Sales Order",
-   "reqd": 1
-  },
-  {
    "fieldname": "sales_order_sheet",
-   "fieldtype": "Link",
+   "fieldtype": "Table MultiSelect",
    "label": "Sales Order Sheet",
-   "options": "Sales Order Sheet",
+   "options": "Sales Sheet Details",
    "reqd": 1
   },
   {
@@ -413,8 +283,8 @@
   {
    "fieldname": "mtc_generation",
    "fieldtype": "Select",
-   "label": "MTC Generation",
-   "options": "\nHeat Wise\nDC Wise\nItem Wise"
+   "label": "MTC Generation Type",
+   "options": "\nHeat Wise\nDC Wise"
   },
   {
    "fieldname": "remarks_details",
@@ -427,15 +297,99 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "department_remark",
+   "fieldname": "section_break_klhs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_vkts",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_dkuo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_nftj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Table MultiSelect",
+   "label": "Sales Order",
+   "options": "Order Details"
+  },
+  {
+   "fieldname": "hardness",
+   "fieldtype": "Link",
+   "label": "Hardness",
+   "options": "Hardness Details"
+  },
+  {
+   "fieldname": "bend_test",
+   "fieldtype": "Data",
+   "label": "Bend Test"
+  },
+  {
+   "fieldname": "column_break_yozz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bend_degree",
+   "fieldtype": "Data",
+   "label": "Bend Degree"
+  },
+  {
+   "default": "V",
+   "fieldname": "charpy_notch",
+   "fieldtype": "Data",
+   "label": "Charpy Notch"
+  },
+  {
+   "fieldname": "sheet_department_remark",
    "fieldtype": "Table",
-   "label": "Department Remark",
-   "options": "Sales Order Department Remark"
+   "label": "Sheet Department Remark",
+   "options": "Sheet Department Remark"
+  },
+  {
+   "fieldname": "details_of_mechanical_property",
+   "fieldtype": "Table",
+   "label": "Details Of Mechanical Property",
+   "options": "Details Of Mechanical Property"
+  },
+  {
+   "fieldname": "details_of_chemical_properties",
+   "fieldtype": "Table",
+   "label": "Details Of Chemical Properties",
+   "options": "Details Of Chemical Properties"
+  },
+  {
+   "fieldname": "heat_no",
+   "fieldtype": "Data",
+   "label": "Heat No.",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval: doc.mtc_generation == \"Heat Wise\"",
+   "fieldname": "heat_number",
+   "fieldtype": "Link",
+   "label": "Heat Number",
+   "options": "Daily Heat Planning"
+  },
+  {
+   "fieldname": "section_break_iflj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "heat_treatment_details",
+   "fieldtype": "Table",
+   "label": "Heat Treatment Details",
+   "options": "Heat Treatment Details"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
+ "modified": "2025-04-08 14:19:23.577874",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "MTC Generation",

@@ -14,11 +14,12 @@
   "section_break_uhyy",
   "grade",
   "daily_heat_planning",
-  "test_method",
   "test_standard",
+  "test_method",
   "column_break_tzuf",
-  "sales_order",
+  "grade_name",
   "heat_no",
+  "sales_order",
   "sales_order_sheet",
   "section_break_zako",
   "table_swwu",
@@ -54,6 +55,7 @@
    "fieldname": "heat_no",
    "fieldtype": "Data",
    "label": "Heat No.",
+   "read_only": 1,
    "reqd": 1
   },
   {
@@ -71,8 +73,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Sales Order",
-   "options": "Sales Order",
-   "reqd": 1
+   "options": "Sales Order"
   },
   {
    "fieldname": "sales_order_sheet",
@@ -91,7 +92,7 @@
    "fieldname": "daily_heat_planning",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Daily Heat Planning",
+   "label": "Heat Number",
    "options": "Daily Heat Planning",
    "reqd": 1
   },
@@ -157,11 +158,18 @@
   {
    "fieldname": "section_break_uhyy",
    "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "grade.grade_name",
+   "fieldname": "grade_name",
+   "fieldtype": "Data",
+   "label": "Grade Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
+ "modified": "2025-03-26 10:55:36.805716",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "IGC Test Result Entry",

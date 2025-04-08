@@ -1,40 +1,77 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-03-13 17:13:45.508461",
+ "autoname": "naming_series:",
+ "creation": "2025-03-20 10:26:14.015489",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "invoice_no",
-  "report_no",
-  "specification",
-  "accept_std",
-  "test_type",
-  "prod_spacing",
-  "light_equip",
+  "naming_series",
+  "column_break_jbxi",
+  "company",
+  "column_break_fhil",
   "date",
-  "surface_cond",
-  "current_used",
-  "mag_current",
-  "cover__area",
-  "max_light_intensity",
+  "section_break_suye",
   "grade",
-  "test_date",
-  "dc_no",
-  "dc_date",
-  "type_of_magnetise",
-  "test_method",
-  "sppl_proc",
+  "column_break_jtwg",
+  "invoice_no",
+  "section_break_itws",
+  "column_break_ziah",
+  "residual_field_strength",
   "cust_procedure",
+  "sppl_proc",
+  "mfg_date",
+  "column_break_wknp",
+  "powder_make",
+  "colour_of_magnetic_particle_used",
+  "demagnetise",
+  "specification",
+  "column_break_jvld",
+  "sensitivity_check",
+  "test_date",
+  "accept_std",
+  "bath_concentration",
+  "column_break_spja",
+  "dc_date",
+  "mag_current",
+  "calibration_on",
+  "magnetic_field_strength",
+  "section_break_isaw",
+  "surface_cond",
+  "light_equip",
+  "calibration_expiry_date",
+  "test_method",
+  "column_break_vviw",
+  "report_no",
+  "material_test_temperature_in_degree_c",
+  "required_light_intensity",
+  "current_used",
+  "column_break_vbih",
+  "stage_of_testing",
+  "dc_no",
+  "test_type",
+  "machine_make",
+  "column_break_iolj",
+  "prod_spacing",
+  "batch_no",
+  "cover__area",
+  "type_of_magnetise",
+  "column_break_pqlm",
+  "expiry_date",
+  "adequacy_of_magnetic_field_strength",
+  "test_medium",
+  "max_light_intensity",
   "section_break_ubfa",
-  "details",
+  "magnetic_particles_details",
   "section_break_rfoi",
   "po_dt",
+  "as_per",
+  "column_break_mpsn",
   "approved_by",
-  "tested_by",
   "end_cust",
-  "save_to_file",
-  "report",
+  "column_break_afou",
+  "tested_by",
+  "test_site",
   "sign"
  ],
  "fields": [
@@ -44,29 +81,14 @@
    "label": "Invoice No"
   },
   {
-   "fieldname": "report_no",
-   "fieldtype": "Data",
-   "label": "Report No"
-  },
-  {
    "fieldname": "specification",
    "fieldtype": "Data",
    "label": "Specification "
   },
   {
-   "fieldname": "accept_std",
-   "fieldtype": "Data",
-   "label": "Accept Std"
-  },
-  {
    "fieldname": "test_type",
    "fieldtype": "Data",
-   "label": "Test Type"
-  },
-  {
-   "fieldname": "prod_spacing",
-   "fieldtype": "Data",
-   "label": "Prod Spacing"
+   "label": "Magnetization Technique"
   },
   {
    "fieldname": "light_equip",
@@ -74,19 +96,9 @@
    "label": "Light Equip"
   },
   {
-   "fieldname": "date",
-   "fieldtype": "Date",
-   "label": "Date"
-  },
-  {
    "fieldname": "surface_cond",
    "fieldtype": "Data",
    "label": "Surface Cond"
-  },
-  {
-   "fieldname": "current_used",
-   "fieldtype": "Data",
-   "label": "Current used"
   },
   {
    "fieldname": "mag_current",
@@ -96,17 +108,62 @@
   {
    "fieldname": "cover__area",
    "fieldtype": "Data",
-   "label": "Cover . Area"
+   "label": "Extent of Examination"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "label": "Grade",
+   "options": "Grade Master"
+  },
+  {
+   "fieldname": "type_of_magnetise",
+   "fieldtype": "Data",
+   "label": "Type of magnetise"
+  },
+  {
+   "fieldname": "test_method",
+   "fieldtype": "Date",
+   "label": "Test Method"
+  },
+  {
+   "fieldname": "demagnetise",
+   "fieldtype": "Data",
+   "label": "Demagnetise"
+  },
+  {
+   "fieldname": "cust_procedure",
+   "fieldtype": "Data",
+   "label": "Cust Procedure"
+  },
+  {
+   "fieldname": "column_break_wknp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "report_no",
+   "fieldtype": "Data",
+   "label": "Report No"
+  },
+  {
+   "fieldname": "accept_std",
+   "fieldtype": "Data",
+   "label": "Accept Std"
+  },
+  {
+   "fieldname": "prod_spacing",
+   "fieldtype": "Data",
+   "label": "Prod Spacing"
+  },
+  {
+   "fieldname": "current_used",
+   "fieldtype": "Data",
+   "label": "Current used"
   },
   {
    "fieldname": "max_light_intensity",
    "fieldtype": "Int",
-   "label": "MAx Light Intensity"
-  },
-  {
-   "fieldname": "grade",
-   "fieldtype": "Data",
-   "label": "Grade"
+   "label": "MAX Light Intensity"
   },
   {
    "fieldname": "test_date",
@@ -124,34 +181,13 @@
    "label": "DC Date"
   },
   {
-   "fieldname": "type_of_magnetise",
-   "fieldtype": "Data",
-   "label": "Type of magnetise"
-  },
-  {
-   "fieldname": "test_method",
-   "fieldtype": "Date",
-   "label": "Test Method"
-  },
-  {
    "fieldname": "sppl_proc",
    "fieldtype": "Data",
    "label": "SPPL Proc."
   },
   {
-   "fieldname": "cust_procedure",
-   "fieldtype": "Data",
-   "label": "Cust Procedure"
-  },
-  {
    "fieldname": "section_break_ubfa",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "details",
-   "fieldtype": "Link",
-   "label": "Details",
-   "options": "Magnetic Particle Child Table"
   },
   {
    "fieldname": "section_break_rfoi",
@@ -163,9 +199,17 @@
    "label": "PO Dt"
   },
   {
+   "fieldname": "column_break_mpsn",
+   "fieldtype": "Column Break"
+  },
+  {
    "fieldname": "approved_by",
    "fieldtype": "Data",
    "label": "Approved By"
+  },
+  {
+   "fieldname": "column_break_afou",
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "tested_by",
@@ -173,33 +217,209 @@
    "label": "Tested By"
   },
   {
+   "default": "0",
+   "fieldname": "sign",
+   "fieldtype": "Check",
+   "label": "Sign"
+  },
+  {
    "fieldname": "end_cust",
    "fieldtype": "Data",
    "label": "End Cust"
   },
   {
-   "fieldname": "save_to_file",
-   "fieldtype": "Attach",
-   "label": "Save to file"
+   "fieldname": "column_break_jvld",
+   "fieldtype": "Column Break"
   },
   {
-   "fieldname": "report",
-   "fieldtype": "Button",
-   "label": "Report"
+   "fieldname": "calibration_expiry_date",
+   "fieldtype": "Date",
+   "label": "Calibration Expiry Date"
   },
   {
-   "default": "0",
-   "fieldname": "sign",
-   "fieldtype": "Check",
-   "label": "Sign"
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "residual_field_strength",
+   "fieldtype": "Data",
+   "label": "Residual Field Strength",
+   "translatable": 1
+  },
+  {
+   "fieldname": "adequacy_of_magnetic_field_strength",
+   "fieldtype": "Data",
+   "label": "Adequacy of Magnetic Field Strength",
+   "translatable": 1
+  },
+  {
+   "fieldname": "material_test_temperature_in_degree_c",
+   "fieldtype": "Data",
+   "label": "Material Test Temperature (in Degree C)",
+   "translatable": 1
+  },
+  {
+   "fieldname": "required_light_intensity",
+   "fieldtype": "Int",
+   "label": "Required Light Intensity"
+  },
+  {
+   "fieldname": "powder_make",
+   "fieldtype": "Data",
+   "label": "Powder Make",
+   "translatable": 1
+  },
+  {
+   "fieldname": "colour_of_magnetic_particle_used",
+   "fieldtype": "Data",
+   "label": "Colour of Magnetic Particle Used",
+   "translatable": 1
+  },
+  {
+   "fieldname": "stage_of_testing",
+   "fieldtype": "Data",
+   "label": "Stage of Testing",
+   "translatable": 1
+  },
+  {
+   "fieldname": "machine_make",
+   "fieldtype": "Data",
+   "label": "Machine Make",
+   "translatable": 1
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Data",
+   "label": "Batch No.",
+   "translatable": 1
+  },
+  {
+   "fieldname": "test_medium",
+   "fieldtype": "Data",
+   "label": "Test Medium",
+   "translatable": 1
+  },
+  {
+   "fieldname": "sensitivity_check",
+   "fieldtype": "Data",
+   "label": "Sensitivity Check",
+   "translatable": 1
+  },
+  {
+   "fieldname": "calibration_on",
+   "fieldtype": "Data",
+   "label": "Calibration On",
+   "translatable": 1
+  },
+  {
+   "fieldname": "mfg_date",
+   "fieldtype": "Date",
+   "label": "Mfg Date"
+  },
+  {
+   "fieldname": "magnetic_field_strength",
+   "fieldtype": "Data",
+   "label": "Magnetic Field Strength",
+   "translatable": 1
+  },
+  {
+   "fieldname": "bath_concentration",
+   "fieldtype": "Data",
+   "label": "Bath Concentration",
+   "translatable": 1
+  },
+  {
+   "fieldname": "test_site",
+   "fieldtype": "Link",
+   "label": "Test Site",
+   "options": "Business Unit"
+  },
+  {
+   "fieldname": "as_per",
+   "fieldtype": "Data",
+   "label": "As Per"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "MPE -"
+  },
+  {
+   "fieldname": "section_break_itws",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_suye",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_jtwg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "magnetic_particles_details",
+   "fieldtype": "Table",
+   "label": "Magnetic Particles Details",
+   "options": "Magnetic Particle Child Table"
+  },
+  {
+   "fieldname": "column_break_ziah",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_spja",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_isaw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_vviw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vbih",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_iolj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_pqlm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jbxi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_fhil",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-19 12:27:54.167931",
+ "modified": "2025-04-08 14:57:33.510559",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "MP Examination",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

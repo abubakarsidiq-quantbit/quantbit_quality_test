@@ -23,12 +23,15 @@
   "product",
   "thickness_max",
   "total_weight_kg",
+  "cycle",
   "column_break_qled",
   "sales_order_sheet",
+  "grade_name",
   "furnace",
   "product_description",
   "balance",
   "srl",
+  "std",
   "section_break_wjyn",
   "remark",
   "section_break_ikcz",
@@ -197,11 +200,30 @@
   {
    "fieldname": "column_break_arwt",
    "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "grade.grade_name",
+   "fieldname": "grade_name",
+   "fieldtype": "Data",
+   "label": "Grade Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cycle",
+   "fieldtype": "Data",
+   "label": "Cycle"
+  },
+  {
+   "fieldname": "std",
+   "fieldtype": "Data",
+   "label": "STD"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
+ "modified": "2025-04-05 12:38:57.364938",
+ "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Heat Treatment Details Entry",
  "naming_rule": "By \"Naming Series\" field",

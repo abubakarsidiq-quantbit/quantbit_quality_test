@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-26 11:56:59.145533",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "oa_srl",
+  "description",
+  "heat_no",
+  "oa_no",
+  "qty",
+  "item",
+  "column_break_edat",
+  "dp_nos",
+  "max_thick",
+  "cast_srl",
+  "findings",
+  "result",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "oa_srl",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PO Srl."
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "heat_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Heat No.",
+   "options": "Pouring"
+  },
+  {
+   "fieldname": "oa_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "OA No."
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Grade",
+   "options": "Grade"
+  },
+  {
+   "fieldname": "column_break_edat",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dp_nos",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DP Nos."
+  },
+  {
+   "fieldname": "max_thick",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Max Thick"
+  },
+  {
+   "fieldname": "cast_srl",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Cast Srl"
+  },
+  {
+   "fieldname": "findings",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Observations / Findings"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Data",
+   "label": "Result"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remark"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-26 11:56:59.145533",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "VT Examination Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

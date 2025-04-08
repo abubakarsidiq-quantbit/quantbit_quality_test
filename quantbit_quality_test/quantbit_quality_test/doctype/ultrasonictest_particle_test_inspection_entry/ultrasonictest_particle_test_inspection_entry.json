@@ -1,10 +1,12 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-01-14 16:34:26.569765",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "section_break_xgmy",
   "company",
   "customer",
@@ -13,24 +15,25 @@
   "customer_name",
   "section_break_ogky",
   "select_oowb",
-  "customer_proc_ref",
-  "equipment_make",
   "testmethod",
   "technique",
   "equipment_calibration",
   "prob_size",
   "couplant_used",
-  "sub_contractor",
   "column_break_sqyp",
   "acceptance_standard",
-  "sppl_procedure",
   "stage_of_test",
   "surface_condition",
-  "calibration_standard",
   "amplitude",
   "frequency",
-  "scanning",
   "sub_contractor_ref",
+  "column_break_aosw",
+  "customer_proc_ref",
+  "equipment_make",
+  "sppl_procedure",
+  "calibration_standard",
+  "scanning",
+  "sub_contractor",
   "section_break_tcyz",
   "table_nebw",
   "section_break_ggbl",
@@ -47,13 +50,16 @@
  "fields": [
   {
    "fieldname": "section_break_xgmy",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Company Details"
   },
   {
    "fieldname": "company",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Company",
-   "options": "Company"
+   "options": "Company",
+   "reqd": 1
   },
   {
    "fieldname": "customer",
@@ -66,9 +72,12 @@
    "fieldtype": "Column Break"
   },
   {
+   "default": "Today",
    "fieldname": "posting_date",
    "fieldtype": "Date",
-   "label": "Posting Date"
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
   },
   {
    "fetch_from": "customer.customer_name",
@@ -78,7 +87,8 @@
   },
   {
    "fieldname": "section_break_ogky",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Ultrasonic Test Details"
   },
   {
    "fieldname": "select_oowb",
@@ -176,12 +186,14 @@
   },
   {
    "fieldname": "section_break_tcyz",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "UT Inspection Details"
   },
   {
    "fieldname": "table_nebw",
    "fieldtype": "Table",
-   "options": "UT Inspection Details"
+   "label": "UT Inspection Details",
+   "options": "UT Inspection Details copy"
   },
   {
    "fieldname": "section_break_ggbl",
@@ -223,7 +235,7 @@
   {
    "fieldname": "ecust",
    "fieldtype": "Data",
-   "label": "E.Cust"
+   "label": "End Customer"
   },
   {
    "fieldname": "amended_from",
@@ -234,15 +246,26 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "UPTI -"
+  },
+  {
+   "fieldname": "column_break_aosw",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-19 12:27:58.778655",
+ "modified": "2025-04-08 17:34:41.784178",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "UltrasonicTest Particle Test Inspection Entry",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

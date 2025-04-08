@@ -9,8 +9,8 @@ class PittingCorrosionTest(Document):
 	def fetch_and_append_sales_orders(self):
 		casting_details = frappe.get_all("Pouring Casting Details",filters={"heat_no":self.heat_no},fields=["parent","sales_order"])
 		# frappe.throw(str(casting_details))
-		if not casting_details:
-			frappe.throw(f"No Sales Order found for Heat No: {self.heat_no}")
+		# if not casting_details:
+		# 	frappe.throw(f"No Sales Order found for Heat No: {self.heat_no}")
 
 		for entry in casting_details:
 			po_no = frappe.db.get_value("Sales Order", entry.sales_order, "po_no")

@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-05 15:13:04.126827",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "heat_number",
+  "column_break_kveh",
+  "heat_no",
+  "column_break_dmcv",
+  "location",
+  "section_break_jgrd",
+  "observation_1",
+  "observation_4",
+  "column_break_uewo",
+  "observation_2",
+  "observation_5",
+  "average",
+  "column_break_eipx",
+  "observation_3",
+  "observation_6"
+ ],
+ "fields": [
+  {
+   "fetch_from": "heat_number.heat_no",
+   "fieldname": "heat_no",
+   "fieldtype": "Data",
+   "label": "Heat No"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location"
+  },
+  {
+   "fieldname": "observation_1",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Observation 1"
+  },
+  {
+   "fieldname": "observation_2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Observation 2"
+  },
+  {
+   "fieldname": "observation_3",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Observation 3"
+  },
+  {
+   "fieldname": "observation_4",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Observation 4"
+  },
+  {
+   "fieldname": "observation_5",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Observation 5"
+  },
+  {
+   "fieldname": "observation_6",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Observation 6"
+  },
+  {
+   "fieldname": "average",
+   "fieldtype": "Float",
+   "label": "Average"
+  },
+  {
+   "fieldname": "column_break_dmcv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_jgrd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_uewo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_eipx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "heat_number",
+   "fieldtype": "Link",
+   "label": "Heat Number",
+   "options": "Daily Heat Planning"
+  },
+  {
+   "fieldname": "column_break_kveh",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-08 14:10:10.080000",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "Ferritoscope Location Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -7,7 +7,6 @@
  "field_order": [
   "report_no",
   "product_no",
-  "back",
   "source",
   "strength",
   "spec",
@@ -25,7 +24,6 @@
   "column_break_euoe",
   "rt_no",
   "draw",
-  "screen_front",
   "cust_c_area",
   "ir",
   "acpt_std",
@@ -66,11 +64,6 @@
    "fieldname": "product_no",
    "fieldtype": "Data",
    "label": "Product No"
-  },
-  {
-   "fieldname": "back",
-   "fieldtype": "Data",
-   "label": "Back"
   },
   {
    "fieldname": "source",
@@ -154,11 +147,6 @@
    "fieldname": "draw",
    "fieldtype": "Data",
    "label": "Draw"
-  },
-  {
-   "fieldname": "screen_front",
-   "fieldtype": "Data",
-   "label": "Screen Front"
   },
   {
    "fieldname": "cust_c_area",
@@ -305,7 +293,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-19 12:27:53.734797",
+ "modified": "2025-03-24 19:27:06.728516",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Radiography Evaluation Report",

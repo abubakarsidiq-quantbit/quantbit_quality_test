@@ -33,7 +33,7 @@ frappe.ui.form.on('Chemicle Result Entry',{
 frappe.ui.form.on('Chemicle Result Entry', {
     sales_order_sheet: function(frm) {
         frm.call({
-            method: "update_remark",
+            method: "update_dept_remark",
             doc: frm.doc,
             callback: function(r) {
                 if (r.message) {
@@ -43,9 +43,9 @@ frappe.ui.form.on('Chemicle Result Entry', {
         });
     },
     
-    before_save: function(frm) {
-        frm.set_value("department_remark", ""); // Clear remarks before saving
-    }
+    // before_save: function(frm) {
+    //     frm.set_value("department_remark", ""); // Clear remarks before saving
+    // }
 });
 
 
@@ -75,3 +75,83 @@ frappe.ui.form.on('Chemicle Result Entry',{
 });
 
 
+// frappe.ui.form.on("Chemical Result Entry Details", {
+//     act_value: function(frm, cdt, cdn) {
+//         let row = locals[cdt][cdn];
+
+//         // Check if element contains operators
+//         if (/[\+\-\*\/]/.test(row.element_name)) {
+//             let expression = row.element_name;
+
+//             // Replace element names with their actual values
+//             frm.doc.chemical_result_entry_details.forEach(child => {
+//                 expression = expression.replaceAll(child.element_name, child.act_value || 0);
+//             });
+
+//             try {
+//                 let result = eval(expression); // Calculate expression
+//                 frappe.model.set_value(cdt, cdn, "act_value", result);
+//             } catch (e) {
+//                 frappe.msgprint("Invalid formula: " + row.element_name);
+//             }
+//         }
+//     }
+// });
+
+
+frappe.ui.form.on("Chemical Result Entry Details", {
+    // element_name: function(frm, cdt, cdn) {
+    //     calculate_actual_value(frm, cdt, cdn);
+    // },
+    act_value: function(frm, cdt, cdn) {
+        // console.log("hiii")
+        calculate_actual_value(frm, cdt, cdn);
+       
+    }
+});
+
+function calculate_actual_value(frm, cdt, cdn) {
+    let row = locals[cdt][cdn];
+    
+    if (row.test_formula){
+        console.log(row.test_formula)
+    }
+    // if (/[\+\-\*\/]/.test(row.test_formula)) {
+    //     let expression = row.test_formula;
+       
+    //     // Replace each element name in the formula with its actual value
+    //     frm.doc.chemical_result_entry_details.forEach(child => {
+    //         let regex = new RegExp("\\b" + child.element_symbol + "\\b", "g");
+    //         expression = expression.replace(regex, child.act_value || 0);
+    //     });
+
+    //     try {
+    //         let result = eval(expression);  // Evaluate the expression
+    //         frappe.model.set_value(cdt, cdn, "act_value", result);
+    //     } catch (e) {
+    //         frappe.msgprint("Invalid formula: " + row.element_symbol);
+    //     }
+    // }
+
+    // // **Now, update all rows where this element is used**
+    // frm.doc.chemical_result_entry_details.forEach(child => {
+    //     if (child.element_symbol.includes(row.element_symbol)) {  // Check dependency
+    //         calculate_actual_value(frm, child.doctype, child.name);  // Recalculate
+    //     }
+    // });
+
+    frm.refresh_field("chemical_result_entry_details");  // Refresh the table
+}
+
+
+frappe.ui.form.on('Chemical Result Entry Details',{
+    act_value: function(frm) {
+
+                frm.call({
+                method: "calculate_special_elements",  
+                doc: frm.doc  
+            });
+        
+            frm.refresh_field("chemical_result_entry_details");
+    },
+});

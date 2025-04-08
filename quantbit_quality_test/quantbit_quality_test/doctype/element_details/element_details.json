@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:element_symbol",
  "creation": "2025-03-04 10:35:32.912986",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -9,10 +10,7 @@
   "element_name",
   "column_break_zzvp",
   "element_symbol",
-  "column_break_tuxk",
-  "internal_minimum",
-  "column_break_nxwm",
-  "internal_maximum"
+  "amended_from"
  ],
  "fields": [
   {
@@ -31,36 +29,29 @@
    "fieldname": "element_symbol",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Element Symbol"
+   "label": "Element Symbol",
+   "unique": 1
   },
   {
-   "fieldname": "column_break_tuxk",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "internal_minimum",
-   "fieldtype": "Float",
-   "in_list_view": 1,
-   "label": "Internal Minimum"
-  },
-  {
-   "fieldname": "column_break_nxwm",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "internal_maximum",
-   "fieldtype": "Float",
-   "in_list_view": 1,
-   "label": "Internal Maximum"
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Element Details",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-03-19 12:27:57.774926",
+ "modified": "2025-03-25 12:21:17.897552",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Element Details",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",

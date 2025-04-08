@@ -13,6 +13,8 @@
   "date",
   "section_break_mptz",
   "grade",
+  "column_break_hwdd",
+  "grade_name",
   "column_break_gjej",
   "heat_no",
   "column_break_qjor",
@@ -142,12 +144,23 @@
   {
    "fieldname": "column_break_oyku",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hwdd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "grade.grade_name",
+   "fieldname": "grade_name",
+   "fieldtype": "Data",
+   "label": "Grade Name",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-19 12:27:56.683666",
+ "modified": "2025-03-26 10:52:52.341161",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Certificate Of Hardness Testing",

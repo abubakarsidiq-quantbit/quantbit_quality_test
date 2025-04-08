@@ -7,16 +7,17 @@
  "engine": "InnoDB",
  "field_order": [
   "po_no",
-  "heat_no",
-  "item",
   "description",
+  "heat_no",
+  "grade",
   "quantity",
   "column_break_vlpe",
   "mp_no",
   "max_thick",
-  "cast_srl",
   "result",
-  "remark"
+  "item",
+  "remark",
+  "cast_srl"
  ],
  "fields": [
   {
@@ -73,25 +74,31 @@
    "fieldname": "cast_srl",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Cast Srl"
+   "label": "Remark"
   },
   {
    "fieldname": "result",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Result"
+   "label": "Observations / Findings"
   },
   {
    "fieldname": "remark",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Remark"
+   "label": "Result"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "label": "Grade",
+   "options": "Grade"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-03-19 12:27:59.683766",
+ "modified": "2025-03-24 16:50:22.494279",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "MP Examination Details",

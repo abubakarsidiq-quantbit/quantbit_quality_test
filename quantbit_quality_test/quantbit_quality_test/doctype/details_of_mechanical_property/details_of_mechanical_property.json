@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-07 11:13:43.959274",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_dnky",
+  "heat_number",
+  "column_break_rwhx",
+  "heat_no",
+  "section_break_rtmv",
+  "mechanical_property_name",
+  "column_break_t7gj",
+  "minimun",
+  "column_break_ianf",
+  "maximum",
+  "column_break_ljes",
+  "actual_value"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "mechanical_property_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Mechanical Property Name",
+   "options": "Mechanical Properties Type"
+  },
+  {
+   "fieldname": "column_break_t7gj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "minimun",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Minimun",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_ianf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "maximum",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Maximum",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_ljes",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actual_value",
+   "fieldtype": "Float",
+   "label": "Actual Value"
+  },
+  {
+   "fieldname": "section_break_dnky",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "heat_number.heat_no",
+   "fieldname": "heat_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Heat No"
+  },
+  {
+   "fieldname": "section_break_rtmv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "heat_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Heat Number",
+   "options": "Daily Heat Planning"
+  },
+  {
+   "fieldname": "column_break_rwhx",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-07 15:43:14.872034",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "Details Of Mechanical Property",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

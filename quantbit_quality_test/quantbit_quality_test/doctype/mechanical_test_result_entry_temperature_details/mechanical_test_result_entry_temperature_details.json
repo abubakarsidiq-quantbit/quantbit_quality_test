@@ -26,8 +26,13 @@
   "lateral_expansion_3",
   "shear_area_3",
   "column_break_pjmo",
-  "minimum",
   "average",
+  "lateral_avg",
+  "shear_avg",
+  "column_break_nwhr",
+  "minimum",
+  "lateral_min",
+  "shear_min",
   "section_break_wvft",
   "remark"
  ],
@@ -60,7 +65,7 @@
    "fieldname": "average",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Average"
+   "label": "Impact Average"
   },
   {
    "fieldname": "section_break_efcl",
@@ -93,7 +98,7 @@
    "fieldname": "minimum",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Minimum"
+   "label": "Average Minimum"
   },
   {
    "fieldname": "lateral_expansion_1",
@@ -155,12 +160,40 @@
    "fieldname": "remark",
    "fieldtype": "Text Editor",
    "label": "Remark"
+  },
+  {
+   "fieldname": "column_break_nwhr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lateral_avg",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Lateral Expansion Average"
+  },
+  {
+   "fieldname": "shear_avg",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Shear Area Average"
+  },
+  {
+   "fieldname": "lateral_min",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Lateral Expansion Minimum"
+  },
+  {
+   "fieldname": "shear_min",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Shear Area Minimum"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-03-19 12:27:57.194232",
+ "modified": "2025-03-25 10:17:29.711834",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Mechanical Test Result Entry Temperature Details",

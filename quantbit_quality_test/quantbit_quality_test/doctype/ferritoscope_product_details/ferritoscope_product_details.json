@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-05 15:11:22.396532",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product",
+  "heat_number",
+  "heat_no",
+  "column_break_oytz",
+  "mpdp_no",
+  "rt_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "product",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product"
+  },
+  {
+   "fieldname": "heat_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Heat Number",
+   "options": "Daily Heat Planning"
+  },
+  {
+   "fetch_from": "heat_number.heat_no",
+   "fieldname": "heat_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Heat No"
+  },
+  {
+   "fieldname": "column_break_oytz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mpdp_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MP/DP No"
+  },
+  {
+   "fieldname": "rt_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RT No"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-08 14:06:44.014741",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "Ferritoscope Product Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

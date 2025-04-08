@@ -16,17 +16,16 @@
   "column_break_pzal",
   "heat_no",
   "section_break_qoye",
-  "column_break_udjf",
-  "grade",
-  "column_break_ntmy",
-  "no_of_tests",
   "column_break_lmki",
   "standard",
-  "column_break_hjok",
+  "no_of_tests",
+  "column_break_udjf",
+  "grade",
   "sales_order",
-  "column_break_mehf",
+  "column_break_uklp",
+  "grade_name",
   "sales_order_sheet",
-  "column_break_6639",
+  "column_break_ntmy",
   "analysis_date",
   "section_break_qaiu",
   "grade_mechanical_properties",
@@ -37,6 +36,7 @@
   "section_break_awry",
   "hardness_details",
   "amended_from",
+  "hardness_average",
   "section_break_kfws",
   "remark",
   "section_break_ccyt",
@@ -100,10 +100,6 @@
    "read_only": 1
   },
   {
-   "fieldname": "column_break_hjok",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "analysis_date",
    "fieldtype": "Date",
    "label": "Analysis Date"
@@ -129,19 +125,11 @@
    "options": "Order Details"
   },
   {
-   "fieldname": "column_break_mehf",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "sales_order_sheet",
    "fieldtype": "Link",
    "label": "Sales Order Sheet",
    "options": "Sales Order Sheet",
    "reqd": 1
-  },
-  {
-   "fieldname": "column_break_6639",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "naming_series",
@@ -189,7 +177,7 @@
    "fieldname": "daily_heat_planning",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Daily Heat Planning",
+   "label": "Heat Number",
    "options": "Daily Heat Planning",
    "reqd": 1
   },
@@ -230,11 +218,28 @@
   {
    "fieldname": "column_break_ntmy",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hardness_average",
+   "fieldtype": "Float",
+   "label": "Hardness Average"
+  },
+  {
+   "fieldname": "column_break_uklp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "grade.grade_name",
+   "fieldname": "grade_name",
+   "fieldtype": "Data",
+   "label": "Grade Name",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
+ "modified": "2025-03-25 11:14:05.783943",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Mechanical Test Result Entry",

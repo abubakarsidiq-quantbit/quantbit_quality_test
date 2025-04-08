@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class MicroFEandMicroTest(Document):
+class CertificationOfFerriteTestingASTME562(Document):
 	pass

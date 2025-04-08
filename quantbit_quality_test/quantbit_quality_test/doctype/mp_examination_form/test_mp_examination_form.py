@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestMicroFEandMicroTest(FrappeTestCase):
+class TestMPExaminationForm(FrappeTestCase):
 	pass

@@ -1,0 +1,525 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-26 12:00:11.371005",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "dcno",
+  "p_o_no",
+  "extent_of_exam",
+  "test_method",
+  "penetrant_apply",
+  "drying_time",
+  "lightning_equipment",
+  "specification",
+  "acceptance_std",
+  "penetrant_life",
+  "cleaner_life",
+  "developer_life",
+  "date_of_examination",
+  "surface_conditiontemp",
+  "calibration_validity",
+  "procedure",
+  "column_break_xluz",
+  "date",
+  "po_date",
+  "surface_condition",
+  "penetrant_type",
+  "penetrant_time",
+  "developer_application",
+  "light_intensity",
+  "sppl_procedure",
+  "penetrant_type_make",
+  "cleaner_type_make",
+  "developer_type_make",
+  "grade",
+  "drg_no",
+  "technique_used",
+  "light_measuring_instrument_srno",
+  "material_specification",
+  "equipment_used",
+  "column_break_emkj",
+  "report_no",
+  "stage_of_test",
+  "temperature",
+  "pre_cleaning",
+  "penetrant_remove",
+  "developer_time",
+  "test_date",
+  "custprocedure",
+  "penetrant_batch",
+  "cleaner_batch",
+  "developer_batch",
+  "uom",
+  "actual_light_intensity",
+  "examination_stage",
+  "thickness_range",
+  "acceptance_standard",
+  "section_break_zmek",
+  "obervation_table_details",
+  "section_break_hpvg",
+  "dp_examination_details",
+  "section_break_duem",
+  "test_side",
+  "column_break_zuka",
+  "tested_by",
+  "exit_copy",
+  "column_break_etja",
+  "approved_by",
+  "column_break_lfxu",
+  "as_per",
+  "column_break_fcno",
+  "end_customer",
+  "section_break_iwel",
+  "atttch_file",
+  "column_break_fple",
+  "screen",
+  "column_break_ijra",
+  "printter",
+  "column_break_vkpk",
+  "file",
+  "column_break_kiss",
+  "sign",
+  "column_break_zext",
+  "exit",
+  "column_break_edno",
+  "report",
+  "column_break_kcvu",
+  "clear"
+ ],
+ "fields": [
+  {
+   "fieldname": "dcno",
+   "fieldtype": "Datetime",
+   "label": "D.C.No"
+  },
+  {
+   "fieldname": "p_o_no",
+   "fieldtype": "Data",
+   "label": "P O No"
+  },
+  {
+   "fieldname": "extent_of_exam",
+   "fieldtype": "Data",
+   "label": "Extent of Exam"
+  },
+  {
+   "fieldname": "test_method",
+   "fieldtype": "Data",
+   "label": "Test Method"
+  },
+  {
+   "fieldname": "penetrant_apply",
+   "fieldtype": "Select",
+   "label": "Penetrant Apply",
+   "options": "By Dipping\nBy Spraying\nBy Brushing"
+  },
+  {
+   "fieldname": "drying_time",
+   "fieldtype": "Data",
+   "label": "Drying Time"
+  },
+  {
+   "fieldname": "lightning_equipment",
+   "fieldtype": "Data",
+   "label": "Lightning Equipment"
+  },
+  {
+   "fieldname": "specification",
+   "fieldtype": "Data",
+   "label": "Specification"
+  },
+  {
+   "fieldname": "acceptance_std",
+   "fieldtype": "Data",
+   "label": "Acceptance Std"
+  },
+  {
+   "fieldname": "penetrant_life",
+   "fieldtype": "Data",
+   "label": "Penetrant Life"
+  },
+  {
+   "fieldname": "cleaner_life",
+   "fieldtype": "Data",
+   "label": "Cleaner Life"
+  },
+  {
+   "fieldname": "developer_life",
+   "fieldtype": "Data",
+   "label": "Developer Life"
+  },
+  {
+   "fieldname": "column_break_xluz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "po_date",
+   "fieldtype": "Date",
+   "label": "Po Date"
+  },
+  {
+   "fieldname": "surface_condition",
+   "fieldtype": "Select",
+   "label": "Surface Condition",
+   "options": "As Cast\nMachined"
+  },
+  {
+   "fieldname": "penetrant_type",
+   "fieldtype": "Data",
+   "label": "Penetrant Type"
+  },
+  {
+   "fieldname": "penetrant_time",
+   "fieldtype": "Data",
+   "label": "Penetrant Time (Dwell Time) in min"
+  },
+  {
+   "fieldname": "developer_application",
+   "fieldtype": "Data",
+   "label": "Developer Application"
+  },
+  {
+   "fieldname": "light_intensity",
+   "fieldtype": "Int",
+   "label": "Light Intensity"
+  },
+  {
+   "fieldname": "sppl_procedure",
+   "fieldtype": "Data",
+   "label": "SPPL Procedure"
+  },
+  {
+   "fieldname": "penetrant_type_make",
+   "fieldtype": "Data",
+   "label": "Penetrant Type Make"
+  },
+  {
+   "fieldname": "cleaner_type_make",
+   "fieldtype": "Data",
+   "label": "Cleaner Type Make"
+  },
+  {
+   "fieldname": "developer_type_make",
+   "fieldtype": "Data",
+   "label": "Developer Type Make"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade"
+  },
+  {
+   "fieldname": "column_break_emkj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "report_no",
+   "fieldtype": "Data",
+   "label": "Report No"
+  },
+  {
+   "fieldname": "stage_of_test",
+   "fieldtype": "Select",
+   "label": "Stage of Test",
+   "options": "Raw\nAs Cast\nProof Machining\nSemifinished Machining\nFinished Machining"
+  },
+  {
+   "fieldname": "temperature",
+   "fieldtype": "Data",
+   "label": "Temperature (in Degree C)"
+  },
+  {
+   "fieldname": "pre_cleaning",
+   "fieldtype": "Data",
+   "label": "Pre Cleaning"
+  },
+  {
+   "fieldname": "penetrant_remove",
+   "fieldtype": "Select",
+   "label": "Penetrant Remove",
+   "options": "By Hand\nBy Water"
+  },
+  {
+   "fieldname": "developer_time",
+   "fieldtype": "Data",
+   "label": "Developer Dwell Time (in min)"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date"
+  },
+  {
+   "fieldname": "custprocedure",
+   "fieldtype": "Data",
+   "label": "Cust.Procedure"
+  },
+  {
+   "fieldname": "penetrant_batch",
+   "fieldtype": "Data",
+   "label": "Penetrant Batch"
+  },
+  {
+   "fieldname": "cleaner_batch",
+   "fieldtype": "Data",
+   "label": "Cleaner Batch"
+  },
+  {
+   "fieldname": "developer_batch",
+   "fieldtype": "Data",
+   "label": "Developer Batch"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Select",
+   "label": "UOM",
+   "options": "Lux\nmW/(cm^2)"
+  },
+  {
+   "fieldname": "section_break_hpvg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "dp_examination_details",
+   "fieldtype": "Table",
+   "label": "VT Examination Details",
+   "options": "VT Examination Details"
+  },
+  {
+   "fieldname": "section_break_duem",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "test_side",
+   "fieldtype": "Link",
+   "label": "Test Site",
+   "options": "Business Unit"
+  },
+  {
+   "fieldname": "column_break_zuka",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Link",
+   "label": "Tested By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "exit_copy",
+   "fieldtype": "Button",
+   "label": "Exit Copy"
+  },
+  {
+   "fieldname": "column_break_etja",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_lfxu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "as_per",
+   "fieldtype": "Data",
+   "label": "As per"
+  },
+  {
+   "fieldname": "column_break_fcno",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_customer",
+   "fieldtype": "Link",
+   "label": "End Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "section_break_iwel",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "atttch_file",
+   "fieldtype": "Attach",
+   "label": "Atttch File"
+  },
+  {
+   "fieldname": "column_break_fple",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "screen",
+   "fieldtype": "Check",
+   "label": "Screen "
+  },
+  {
+   "fieldname": "column_break_ijra",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "printter",
+   "fieldtype": "Check",
+   "label": "Printter"
+  },
+  {
+   "fieldname": "column_break_vkpk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "file",
+   "fieldtype": "Check",
+   "label": "File "
+  },
+  {
+   "fieldname": "column_break_kiss",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "sign",
+   "fieldtype": "Check",
+   "label": "Sign"
+  },
+  {
+   "fieldname": "column_break_zext",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "exit",
+   "fieldtype": "Button",
+   "label": "Exit"
+  },
+  {
+   "fieldname": "column_break_edno",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "report",
+   "fieldtype": "Button",
+   "label": "Report"
+  },
+  {
+   "fieldname": "column_break_kcvu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "clear",
+   "fieldtype": "Button",
+   "label": "Clear"
+  },
+  {
+   "fieldname": "date_of_examination",
+   "fieldtype": "Date",
+   "label": "Date Of Examination"
+  },
+  {
+   "fieldname": "drg_no",
+   "fieldtype": "Data",
+   "label": "DRG. NO."
+  },
+  {
+   "fieldname": "technique_used",
+   "fieldtype": "Data",
+   "label": "Technique Used"
+  },
+  {
+   "fieldname": "actual_light_intensity",
+   "fieldtype": "Data",
+   "label": "Actual Light Intensity"
+  },
+  {
+   "fieldname": "surface_conditiontemp",
+   "fieldtype": "Data",
+   "label": "Surface Condition/Temp"
+  },
+  {
+   "fieldname": "light_measuring_instrument_srno",
+   "fieldtype": "Data",
+   "label": "Light Measuring Instrument SR.NO"
+  },
+  {
+   "fieldname": "examination_stage",
+   "fieldtype": "Data",
+   "label": "Examination Stage"
+  },
+  {
+   "fieldname": "calibration_validity",
+   "fieldtype": "Date",
+   "label": "Calibration Validity"
+  },
+  {
+   "fieldname": "material_specification",
+   "fieldtype": "Data",
+   "label": "Material Specification"
+  },
+  {
+   "fieldname": "thickness_range",
+   "fieldtype": "Data",
+   "label": "Thickness Range"
+  },
+  {
+   "fieldname": "procedure",
+   "fieldtype": "Data",
+   "label": "Procedure"
+  },
+  {
+   "fieldname": "equipment_used",
+   "fieldtype": "Data",
+   "label": "Equipment Used"
+  },
+  {
+   "fieldname": "acceptance_standard",
+   "fieldtype": "Data",
+   "label": "Acceptance Standard"
+  },
+  {
+   "fieldname": "obervation_table_details",
+   "fieldtype": "Table",
+   "label": "Obervation Table Details",
+   "options": "Obervation Table Details"
+  },
+  {
+   "fieldname": "section_break_zmek",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-26 15:21:51.421109",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "VT Examination",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

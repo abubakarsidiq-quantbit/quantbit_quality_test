@@ -1,10 +1,18 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-03-13 17:18:07.590532",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "section_break_hkhw",
+  "naming_series",
+  "section_break_qlpf",
+  "comapany",
+  "column_break_vcrm",
+  "date",
+  "section_break_wkug",
   "copy_form",
   "product_name",
   "end_size_in",
@@ -17,7 +25,6 @@
   "film_density",
   "grade_type",
   "column_break_nvfw",
-  "date",
   "accpt_std",
   "rev",
   "app_dt",
@@ -27,19 +34,24 @@
   "end_customer",
   "penetrameter",
   "our_procedure",
+  "surface_condition",
   "section_break_mzia",
   "rt_sketch_generation_details",
+  "front_screen",
+  "back_sreen",
   "section_break_lwkb",
   "tot_ir_192",
-  "rem",
+  "co_60",
   "linac_9",
+  "rt_no",
   "ii_img",
   "option",
   "column_break_qper",
-  "co_60",
   "obsolete",
-  "rt_no",
-  "sign"
+  "sign",
+  "total_no_of_exposure",
+  "total_no_of_films",
+  "rem"
  ],
  "fields": [
   {
@@ -55,7 +67,7 @@
   {
    "fieldname": "end_size_in",
    "fieldtype": "Select",
-   "label": "End Size In"
+   "label": "Film Size In"
   },
   {
    "fieldname": "evaluation_standard",
@@ -79,7 +91,7 @@
   {
    "fieldname": "customer_product",
    "fieldtype": "Select",
-   "label": "Customer Product"
+   "label": "Customer Procedure"
   },
   {
    "fieldname": "area_cover",
@@ -101,9 +113,12 @@
    "fieldtype": "Column Break"
   },
   {
+   "default": "Today",
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "Date"
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
   },
   {
    "fieldname": "accpt_std",
@@ -147,11 +162,12 @@
   {
    "fieldname": "our_procedure",
    "fieldtype": "Select",
-   "label": "Our Procedure"
+   "label": "SPPL Procedure"
   },
   {
    "fieldname": "section_break_mzia",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "RT Sketch Generation Details"
   },
   {
    "fieldname": "rt_sketch_generation_details",
@@ -161,7 +177,8 @@
   },
   {
    "fieldname": "section_break_lwkb",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Details"
   },
   {
    "fieldname": "tot_ir_192",
@@ -171,12 +188,12 @@
   {
    "fieldname": "rem",
    "fieldtype": "Data",
-   "label": "Rem"
+   "label": "Remark"
   },
   {
    "fieldname": "linac_9",
    "fieldtype": "Data",
-   "label": "Linac 9"
+   "label": "Linac"
   },
   {
    "default": "0",
@@ -214,11 +231,68 @@
    "fieldname": "sign",
    "fieldtype": "Check",
    "label": "Sign"
+  },
+  {
+   "fieldname": "surface_condition",
+   "fieldtype": "Select",
+   "label": "Surface Condition"
+  },
+  {
+   "fieldname": "total_no_of_exposure",
+   "fieldtype": "Data",
+   "label": "Total no of Exposure"
+  },
+  {
+   "fieldname": "total_no_of_films",
+   "fieldtype": "Data",
+   "label": "Total no of Films"
+  },
+  {
+   "fieldname": "front_screen",
+   "fieldtype": "Data",
+   "label": "Front Screen"
+  },
+  {
+   "fieldname": "back_sreen",
+   "fieldtype": "Data",
+   "label": "Back Sreen"
+  },
+  {
+   "fieldname": "section_break_hkhw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "RT -"
+  },
+  {
+   "fieldname": "section_break_qlpf",
+   "fieldtype": "Section Break",
+   "label": "Company Details"
+  },
+  {
+   "fieldname": "comapany",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Comapany",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_vcrm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_wkug",
+   "fieldtype": "Section Break",
+   "label": "RT Sketch Generation"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-19 12:27:53.367840",
+ "modified": "2025-04-08 17:35:57.037843",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "RT Sketch Generation",

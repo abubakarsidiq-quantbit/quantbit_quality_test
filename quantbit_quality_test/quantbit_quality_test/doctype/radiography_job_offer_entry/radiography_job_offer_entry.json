@@ -1,16 +1,16 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-03-13 16:03:31.257866",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "offer_no",
-  "contractor_no",
-  "copy_form",
-  "column_break_qeno",
+  "naming_series",
+  "section_break_mrot",
+  "company",
+  "column_break_hjnw",
   "date",
-  "contractor_name",
   "section_break_mooh",
   "heat_no",
   "from_date",
@@ -19,8 +19,14 @@
   "to_date",
   "column_break_xqwn",
   "product",
+  "section_break_bfnf",
+  "contractor_no",
+  "copy_form",
+  "column_break_qeno",
+  "contractor_name",
+  "offer_no",
   "section_break_qtld",
-  "table_zkhq",
+  "radiography_details",
   "section_break_mzxp",
   "area_coverage",
   "column_break_nocq",
@@ -39,7 +45,7 @@
   },
   {
    "fieldname": "copy_form",
-   "fieldtype": "Date",
+   "fieldtype": "Data",
    "label": "Copy Form"
   },
   {
@@ -47,9 +53,12 @@
    "fieldtype": "Column Break"
   },
   {
+   "default": "Today",
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "Date"
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
   },
   {
    "fieldname": "contractor_name",
@@ -58,7 +67,8 @@
   },
   {
    "fieldname": "section_break_mooh",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Grade Details"
   },
   {
    "fieldname": "heat_no",
@@ -97,16 +107,13 @@
   },
   {
    "fieldname": "section_break_qtld",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "table_zkhq",
-   "fieldtype": "Table",
-   "options": "Radiography Details"
+   "fieldtype": "Section Break",
+   "label": "Radiography Details"
   },
   {
    "fieldname": "section_break_mzxp",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Details"
   },
   {
    "fieldname": "area_coverage",
@@ -121,14 +128,49 @@
    "fieldname": "information",
    "fieldtype": "Data",
    "label": "Information"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "RJO -"
+  },
+  {
+   "fieldname": "section_break_bfnf",
+   "fieldtype": "Section Break",
+   "label": "Contractor Details"
+  },
+  {
+   "fieldname": "section_break_mrot",
+   "fieldtype": "Section Break",
+   "label": "Compnay Details"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_hjnw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "radiography_details",
+   "fieldtype": "Table",
+   "label": "Radiography Details",
+   "options": "Radiography Details"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-19 12:27:53.969545",
+ "modified": "2025-04-08 17:37:48.293888",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Radiography Job Offer Entry",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-07 11:19:12.386902",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_oati",
+  "heat_number",
+  "column_break_rhuq",
+  "heat_no",
+  "column_break_ibqi",
+  "element_name",
+  "column_break_zsbk",
+  "element_symbol",
+  "section_break_rv7a",
+  "standard_minimum",
+  "standard_maximum",
+  "column_break_svd7",
+  "internal_minimum",
+  "internal_maximum",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fetch_from": "item_code.item_name",
+   "fieldname": "element_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Element Name",
+   "options": "Element"
+  },
+  {
+   "fieldname": "column_break_zsbk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "element_name.element_symbol",
+   "fieldname": "element_symbol",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Element Symbol",
+   "options": "Item"
+  },
+  {
+   "fieldname": "section_break_rv7a",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "standard_minimum",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Standard Minimum",
+   "precision": "2"
+  },
+  {
+   "columns": 2,
+   "fieldname": "standard_maximum",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Standard Maximum",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_svd7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "internal_minimum",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Internal Minimum",
+   "precision": "2"
+  },
+  {
+   "columns": 2,
+   "fieldname": "internal_maximum",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Internal Maximum",
+   "precision": "2"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fetch_from": "heat_number.heat_no",
+   "fieldname": "heat_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Heat No."
+  },
+  {
+   "fieldname": "column_break_ibqi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_oati",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_rhuq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "heat_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Heat Number",
+   "options": "Daily Heat Planning"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-07 15:42:52.259244",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "Details Of Chemical Properties",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

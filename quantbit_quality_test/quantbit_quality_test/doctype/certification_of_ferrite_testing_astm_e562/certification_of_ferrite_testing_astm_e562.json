@@ -1,0 +1,230 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-05 15:20:04.238599",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_zipq",
+  "customer",
+  "material",
+  "test_method",
+  "column_break_znza",
+  "customer_name",
+  "grade",
+  "column_break_oumj",
+  "report_no",
+  "heat_number",
+  "column_break_zvyi",
+  "date",
+  "heat_no",
+  "amended_from",
+  "test_details_section",
+  "etchant",
+  "no_of_fields",
+  "standard_deviation",
+  "column_break_oujv",
+  "supply_and_duration",
+  "avg_estimated_volume",
+  "volume_estimate",
+  "column_break_abjs",
+  "etchant_condition",
+  "relative_accuracy",
+  "column_break_gkil",
+  "grid_size",
+  "confidence_interval",
+  "field_wise_volume__estimate_section",
+  "volume_estimate_details",
+  "section_break_sork",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_zipq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "report_no",
+   "fieldtype": "Data",
+   "label": "Report No"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "material",
+   "fieldtype": "Data",
+   "label": "Material"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "label": "Grade",
+   "options": "Grade Master"
+  },
+  {
+   "fieldname": "heat_number",
+   "fieldtype": "Link",
+   "label": "Heat Number",
+   "options": "Daily Heat Planning"
+  },
+  {
+   "fieldname": "heat_no",
+   "fieldtype": "Data",
+   "label": "Heat No"
+  },
+  {
+   "fieldname": "test_method",
+   "fieldtype": "Data",
+   "label": "Test Method"
+  },
+  {
+   "fieldname": "column_break_znza",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_oumj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zvyi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Certification Of Ferrite Testing ASTM E562",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "test_details_section",
+   "fieldtype": "Section Break",
+   "label": "Test Details"
+  },
+  {
+   "fieldname": "etchant",
+   "fieldtype": "Data",
+   "label": "Etchant"
+  },
+  {
+   "fieldname": "supply_and_duration",
+   "fieldtype": "Data",
+   "label": "Supply And Duration"
+  },
+  {
+   "fieldname": "etchant_condition",
+   "fieldtype": "Data",
+   "label": "Etchant Condition"
+  },
+  {
+   "fieldname": "grid_size",
+   "fieldtype": "Float",
+   "label": "Grid Size"
+  },
+  {
+   "fieldname": "no_of_fields",
+   "fieldtype": "Float",
+   "label": "No. Of Fields"
+  },
+  {
+   "fieldname": "avg_estimated_volume",
+   "fieldtype": "Float",
+   "label": "Avg Estimated Volume %"
+  },
+  {
+   "fieldname": "relative_accuracy",
+   "fieldtype": "Float",
+   "label": "% Relative Accuracy"
+  },
+  {
+   "fieldname": "confidence_interval",
+   "fieldtype": "Float",
+   "label": "95 % Confidence Interval"
+  },
+  {
+   "fieldname": "standard_deviation",
+   "fieldtype": "Float",
+   "label": "Standard Deviation"
+  },
+  {
+   "fieldname": "volume_estimate",
+   "fieldtype": "Data",
+   "label": "Volume Estimate"
+  },
+  {
+   "fieldname": "column_break_oujv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_abjs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_gkil",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "field_wise_volume__estimate_section",
+   "fieldtype": "Section Break",
+   "label": "Field Wise Volume % Estimate"
+  },
+  {
+   "fieldname": "volume_estimate_details",
+   "fieldtype": "Table",
+   "label": "Volume Estimate Details",
+   "options": "Volume Estimate Details"
+  },
+  {
+   "fieldname": "section_break_sork",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text Editor",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-04-05 15:30:12.012784",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "Certification Of Ferrite Testing ASTM E562",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

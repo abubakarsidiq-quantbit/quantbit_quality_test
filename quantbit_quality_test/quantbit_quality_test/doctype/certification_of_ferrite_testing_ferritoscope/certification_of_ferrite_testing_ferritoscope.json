@@ -1,0 +1,178 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-05 14:55:05.917017",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_k4aq",
+  "customer",
+  "test_equipment",
+  "po_no",
+  "column_break_oivb",
+  "customer_name",
+  "grade",
+  "po_date",
+  "column_break_pocb",
+  "report_no",
+  "calibration_block_used",
+  "min",
+  "column_break_rlls",
+  "date",
+  "requirement",
+  "max",
+  "section_break_suhe",
+  "ferritoscope_product_details",
+  "section_break_eyux",
+  "ferritoscope_location_details",
+  "section_break_pqqw",
+  "remark",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_k4aq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "test_equipment",
+   "fieldtype": "Data",
+   "label": "Test Equipment"
+  },
+  {
+   "fieldname": "po_no",
+   "fieldtype": "Data",
+   "label": "P.O No"
+  },
+  {
+   "fieldname": "column_break_oivb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "label": "Grade",
+   "options": "Grade Master"
+  },
+  {
+   "fieldname": "po_date",
+   "fieldtype": "Date",
+   "label": "P.O Date"
+  },
+  {
+   "fieldname": "column_break_pocb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "report_no",
+   "fieldtype": "Data",
+   "label": "Report No."
+  },
+  {
+   "fieldname": "calibration_block_used",
+   "fieldtype": "Data",
+   "label": "Calibration Block Used"
+  },
+  {
+   "fieldname": "min",
+   "fieldtype": "Float",
+   "label": "Min"
+  },
+  {
+   "fieldname": "column_break_rlls",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "requirement",
+   "fieldtype": "Data",
+   "label": "Requirement"
+  },
+  {
+   "fieldname": "max",
+   "fieldtype": "Float",
+   "label": "Max"
+  },
+  {
+   "fieldname": "section_break_pqqw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Text Editor",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "section_break_suhe",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_eyux",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Certification Of Ferrite Testing Ferritoscope",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "ferritoscope_product_details",
+   "fieldtype": "Table",
+   "label": "Ferritoscope Product Details",
+   "options": "Ferritoscope Product Details"
+  },
+  {
+   "fieldname": "ferritoscope_location_details",
+   "fieldtype": "Table",
+   "label": "Ferritoscope Location Details",
+   "options": "Ferritoscope Location Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-04-08 14:11:03.302771",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "Certification Of Ferrite Testing Ferritoscope",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

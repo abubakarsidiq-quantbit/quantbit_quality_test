@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-05 15:27:51.428035",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "field",
+  "column_break_ufdt",
+  "volume"
+ ],
+ "fields": [
+  {
+   "fieldname": "field",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Field"
+  },
+  {
+   "fieldname": "volume",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Volume %"
+  },
+  {
+   "fieldname": "column_break_ufdt",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-05 15:28:37.607939",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "Volume Estimate Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

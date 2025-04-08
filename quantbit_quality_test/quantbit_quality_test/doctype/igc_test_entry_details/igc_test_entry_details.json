@@ -7,8 +7,6 @@
  "engine": "InnoDB",
  "field_order": [
   "entry_date",
-  "column_break_zokd",
-  "test_as_per",
   "specimen_size_mm_section",
   "test_standard",
   "test_temp",
@@ -31,7 +29,6 @@
   "millimetre_per_month",
   "column_break_ivwh",
   "cycle",
-  "unit",
   "conversion_factor",
   "rate_of_corrosion__unit"
  ],
@@ -41,17 +38,6 @@
    "fieldtype": "Date",
    "in_list_view": 1,
    "label": "Entry Date"
-  },
-  {
-   "fieldname": "column_break_zokd",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "test_as_per",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Test Standard",
-   "options": "IGC Practice Test Details"
   },
   {
    "fieldname": "specimen_size_mm_section",
@@ -141,13 +127,6 @@
    "label": "Cycle"
   },
   {
-   "fieldname": "unit",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Unit",
-   "options": "UOM"
-  },
-  {
    "fieldname": "rate_of_corrosion__unit",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -194,13 +173,13 @@
    "fieldname": "conversion_factor",
    "fieldtype": "Select",
    "label": "Conversion Factor ",
-   "options": "inches per month\ninches per year\nmillimetres per year\nmils per year\nmilligrams per square decimetre per day\ngrams per square metre per hour"
+   "options": "\ninches per month\ninches per year\nmillimetres per year\nmils per year\nmilligrams per square decimetre per day\ngrams per square metre per hour"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-03-19 12:27:57.524843",
+ "modified": "2025-03-25 11:20:38.227673",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "IGC Test Entry Details",

@@ -18,21 +18,26 @@
   "customer_name",
   "section_break_vlh0",
   "grade",
-  "sales_order",
+  "daily_heat_planning",
   "start_on",
   "test_specification",
   "boiling_specification",
+  "test_specimen_size_mm",
+  "sensitizing_treatment_yesno",
   "column_break_jrdz",
-  "daily_heat_planning",
-  "sales_order_sheet",
+  "grade_name",
+  "heat_number",
   "end_on",
+  "edition",
   "end_cust",
   "deg_bend_test",
+  "sensitising_information",
   "column_break_cadh",
-  "heat_number",
+  "sales_order",
+  "sales_order_sheet",
+  "duration",
   "boiling_duration",
   "format_no",
-  "sensitizing_treatment_yesno",
   "former_die_for_bend_test",
   "remarks",
   "section_break_ivfj",
@@ -101,7 +106,8 @@
    "fetch_from": "customer.customer_name",
    "fieldname": "customer_name",
    "fieldtype": "Data",
-   "label": "Customer Name"
+   "label": "Customer Name",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_vlh0",
@@ -129,10 +135,12 @@
   },
   {
    "fieldname": "test_specification",
-   "fieldtype": "Data",
-   "label": "Test Specification"
+   "fieldtype": "Link",
+   "label": "Test Specification",
+   "options": "IGC Practice Test Details"
   },
   {
+   "default": "Cu + CuSO\u2084 + 16% H\u2082SO\u2084\n",
    "fieldname": "boiling_specification",
    "fieldtype": "Data",
    "label": "Boiling Specification"
@@ -145,7 +153,7 @@
    "fieldname": "daily_heat_planning",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Daily Heat Planning",
+   "label": "Heat Number",
    "options": "Daily Heat Planning",
    "reqd": 1
   },
@@ -180,7 +188,8 @@
    "fetch_from": "daily_heat_planning.heat_no",
    "fieldname": "heat_number",
    "fieldtype": "Data",
-   "label": "Heat Number",
+   "label": "Heat No",
+   "read_only": 1,
    "reqd": 1
   },
   {
@@ -197,7 +206,7 @@
    "fieldname": "sensitizing_treatment_yesno",
    "fieldtype": "Select",
    "label": "Sensitizing Treatment Yes/No",
-   "options": "Yes\nNo"
+   "options": "\nYes\nNo"
   },
   {
    "fieldname": "former_die_for_bend_test",
@@ -259,12 +268,41 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "default": "25 X 75 X 6",
+   "fieldname": "test_specimen_size_mm",
+   "fieldtype": "Data",
+   "label": "Test Specimen Size (mm)"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Float",
+   "label": "Duration"
+  },
+  {
+   "fetch_from": "test_specification.edition",
+   "fieldname": "edition",
+   "fieldtype": "Data",
+   "label": "Edition"
+  },
+  {
+   "fetch_from": "grade.grade_name",
+   "fieldname": "grade_name",
+   "fieldtype": "Data",
+   "label": "Grade Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sensitising_information",
+   "fieldtype": "Data",
+   "label": "Sensitising Information"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-19 13:35:34.099022",
+ "modified": "2025-04-05 10:05:53.592711",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "I G C T Practice E Test Certificate",

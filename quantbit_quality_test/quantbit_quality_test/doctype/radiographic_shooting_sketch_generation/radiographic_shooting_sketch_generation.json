@@ -1,27 +1,31 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-01-13 15:40:20.940677",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_17hj",
+  "naming_series",
+  "section_break_mjxx",
   "company",
+  "column_break_dcvf",
+  "date",
+  "section_break_17hj",
   "item",
   "item_name",
-  "column_break_fdms",
-  "rss_no",
-  "cust_proc",
   "end_cust",
+  "column_break_fdms",
+  "grade",
+  "cust_proc",
+  "rss_no",
   "column_break_diqk",
-  "date",
   "accpt_std",
   "film_size_in",
   "section_break_xseh",
   "area_cover",
   "ir",
   "coli",
-  "grade",
   "column_break_uhoo",
   "rev",
   "film_density",
@@ -39,25 +43,28 @@
   "rt_generation_details",
   "section_break_mduf",
   "obsolete",
+  "linac_9",
   "rt_no",
   "column_break_uldt",
   "total_ir__192",
   "co_60",
-  "linac_9",
-  "amended_from",
   "column_break_mavl",
-  "remark_2"
+  "remark_2",
+  "amended_from"
  ],
  "fields": [
   {
    "fieldname": "section_break_17hj",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Item Details"
   },
   {
    "fieldname": "company",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Company",
-   "options": "Company"
+   "options": "Company",
+   "reqd": 1
   },
   {
    "fieldname": "item",
@@ -77,8 +84,8 @@
   },
   {
    "fieldname": "rss_no",
-   "fieldtype": "Int",
-   "label": "RSS NO."
+   "fieldtype": "Float",
+   "label": "RSS No."
   },
   {
    "fieldname": "cust_proc",
@@ -88,16 +95,19 @@
   {
    "fieldname": "end_cust",
    "fieldtype": "Data",
-   "label": "End Cust"
+   "label": "End Customer"
   },
   {
    "fieldname": "column_break_diqk",
    "fieldtype": "Column Break"
   },
   {
+   "default": "Today",
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "Date"
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
   },
   {
    "fieldname": "accpt_std",
@@ -111,7 +121,8 @@
   },
   {
    "fieldname": "section_break_xseh",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Radiographic Shooting Sketch Details"
   },
   {
    "fieldname": "area_cover",
@@ -132,7 +143,7 @@
    "fieldname": "grade",
    "fieldtype": "Link",
    "label": "Grade",
-   "options": "Grade"
+   "options": "Grade Master"
   },
   {
    "fieldname": "column_break_uhoo",
@@ -151,7 +162,7 @@
   {
    "fieldname": "apprvl_remarks",
    "fieldtype": "Data",
-   "label": "Apprvl Remarks"
+   "label": "Approval Remarks"
   },
   {
    "fieldname": "remark",
@@ -198,7 +209,8 @@
   },
   {
    "fieldname": "section_break_wcxx",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "RT Generation Details"
   },
   {
    "fieldname": "rt_generation_details",
@@ -208,7 +220,8 @@
   },
   {
    "fieldname": "section_break_mduf",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Details"
   },
   {
    "fieldname": "obsolete",
@@ -240,6 +253,30 @@
    "label": "Linac 9"
   },
   {
+   "fieldname": "column_break_mavl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remark_2",
+   "fieldtype": "Small Text",
+   "label": "Remark 2"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "RSSG -"
+  },
+  {
+   "fieldname": "section_break_mjxx",
+   "fieldtype": "Section Break",
+   "label": "Company Details"
+  },
+  {
+   "fieldname": "column_break_dcvf",
+   "fieldtype": "Column Break"
+  },
+  {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
@@ -248,24 +285,16 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
-  },
-  {
-   "fieldname": "column_break_mavl",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "remark_2",
-   "fieldtype": "Small Text",
-   "label": "Remark 2"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-19 12:27:59.882694",
+ "modified": "2025-04-08 17:36:53.390459",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Radiographic Shooting Sketch Generation",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

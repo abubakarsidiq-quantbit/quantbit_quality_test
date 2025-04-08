@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-05 14:19:00.925840",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_wytw",
+  "customer",
+  "material",
+  "test_method",
+  "column_break_tqcz",
+  "customer_name",
+  "grade",
+  "column_break_zsol",
+  "report_no",
+  "heat_number",
+  "column_break_kqje",
+  "date",
+  "heat_no",
+  "test_details_section",
+  "etchant",
+  "column_break_oitp",
+  "supply_and_duration",
+  "column_break_peeq",
+  "etchant_condition",
+  "section_break_pcsu",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_wytw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "report_no",
+   "fieldtype": "Data",
+   "label": "Report No"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "material",
+   "fieldtype": "Data",
+   "label": "Material"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "label": "Grade",
+   "options": "Grade Master"
+  },
+  {
+   "fieldname": "heat_number",
+   "fieldtype": "Link",
+   "label": "Heat Number",
+   "options": "Daily Heat Planning"
+  },
+  {
+   "fetch_from": "heat_number.heat_no",
+   "fieldname": "heat_no",
+   "fieldtype": "Data",
+   "label": "Heat No"
+  },
+  {
+   "fieldname": "test_method",
+   "fieldtype": "Data",
+   "label": "Test Method"
+  },
+  {
+   "fieldname": "column_break_tqcz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zsol",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_kqje",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_details_section",
+   "fieldtype": "Section Break",
+   "label": "Test Details"
+  },
+  {
+   "fieldname": "etchant",
+   "fieldtype": "Data",
+   "label": "Etchant"
+  },
+  {
+   "fieldname": "column_break_oitp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supply_and_duration",
+   "fieldtype": "Data",
+   "label": "Supply And Duration"
+  },
+  {
+   "fieldname": "column_break_peeq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "etchant_condition",
+   "fieldtype": "Data",
+   "label": "Etchant Condition"
+  },
+  {
+   "fieldname": "section_break_pcsu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text Editor",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-04-05 14:53:55.415311",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "Certification Of Micro Testing",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

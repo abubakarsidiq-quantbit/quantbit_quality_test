@@ -45,19 +45,18 @@
   "remark_8",
   "remark_10",
   "section_break_hcit",
-  "column_break_lbjl",
-  "remark",
-  "column_break_xdjm",
   "column_break_bady",
   "ibr",
   "column_break_nzlp",
   "for_ibr",
   "column_break_uciz",
   "end_cust",
+  "column_break_pxzh",
   "for_ibr_1",
+  "section_break_bhiv",
+  "remark",
   "section_break_ribw",
   "locn",
-  "sign",
   "column_break_qnam",
   "screen",
   "column_break_hetl",
@@ -65,20 +64,17 @@
   "column_break_nnsp",
   "file",
   "section_break_gesd",
+  "sign",
+  "gen_pdf_to_web",
+  "column_break_hrxe",
   "sign_type",
-  "column_break_xczy",
-  "report",
-  "column_break_tpko",
-  "clear",
-  "column_break_njws",
-  "exit",
   "section_break_vunx",
   "desp_memo_from",
-  "gen_pdf_to_web",
   "column_break_hwbm",
   "to",
   "column_break_verv",
   "disp_memo",
+  "column_break_ejjk",
   "annexure",
   "tab_break_ldeb",
   "section_break_fsgw",
@@ -288,17 +284,9 @@
    "hide_border": 1
   },
   {
-   "fieldname": "column_break_lbjl",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "remark",
    "fieldtype": "Small Text",
    "label": "Remark"
-  },
-  {
-   "fieldname": "column_break_xdjm",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "column_break_bady",
@@ -511,33 +499,6 @@
    "label": "Sign Type"
   },
   {
-   "fieldname": "column_break_xczy",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "report",
-   "fieldtype": "Button",
-   "label": "Report"
-  },
-  {
-   "fieldname": "column_break_tpko",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "clear",
-   "fieldtype": "Button",
-   "label": "Clear"
-  },
-  {
-   "fieldname": "column_break_njws",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "exit",
-   "fieldtype": "Button",
-   "label": "Exit"
-  },
-  {
    "fieldname": "section_break_vunx",
    "fieldtype": "Section Break"
   },
@@ -574,12 +535,28 @@
    "fieldname": "annexure",
    "fieldtype": "Button",
    "label": "Annexure"
+  },
+  {
+   "fieldname": "section_break_bhiv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_hrxe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ejjk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_pxzh",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-19 12:27:55.714386",
+ "modified": "2025-03-19 14:01:36.742687",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "MTC Generation Part - B",

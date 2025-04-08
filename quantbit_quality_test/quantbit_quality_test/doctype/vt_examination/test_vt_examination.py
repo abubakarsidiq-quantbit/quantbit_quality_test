@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestFerriteMicroFEAndMicroTest(FrappeTestCase):
+class TestVTExamination(FrappeTestCase):
 	pass

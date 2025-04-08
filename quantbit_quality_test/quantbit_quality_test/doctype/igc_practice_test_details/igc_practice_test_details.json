@@ -12,6 +12,7 @@
   "width",
   "area",
   "column_break_khtm",
+  "edition",
   "test_standard",
   "length",
   "height"
@@ -56,11 +57,16 @@
   {
    "fieldname": "column_break_khtm",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "edition",
+   "fieldtype": "Data",
+   "label": "Edition"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-19 12:27:56.328962",
+ "modified": "2025-03-25 12:05:14.099820",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "IGC Practice Test Details",

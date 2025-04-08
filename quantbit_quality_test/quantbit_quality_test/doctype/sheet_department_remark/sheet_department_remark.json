@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-05 17:54:33.120639",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sales_order_sheet",
+  "column_break_knls",
+  "po_serial_number",
+  "column_break_6shb",
+  "department",
+  "section_break_tb1l",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "po_serial_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "P.O. Serial Number"
+  },
+  {
+   "fieldname": "column_break_6shb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "section_break_tb1l",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Remark"
+  },
+  {
+   "fieldname": "sales_order_sheet",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sales Order Sheet",
+   "options": "Sales Order Sheet"
+  },
+  {
+   "fieldname": "column_break_knls",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-05 17:55:02.650441",
+ "modified_by": "Administrator",
+ "module": "Quantbit Quality Test",
+ "name": "Sheet Department Remark",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

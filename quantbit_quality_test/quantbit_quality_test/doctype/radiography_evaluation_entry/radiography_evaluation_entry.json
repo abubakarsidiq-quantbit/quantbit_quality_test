@@ -26,6 +26,8 @@
   "source_size",
   "section_break_xljd",
   "radiography_evaluation_entry_details",
+  "front_screen",
+  "back_screen",
   "section_break_nkkl",
   "evaluation_entry_details",
   "section_break_rgct",
@@ -231,11 +233,21 @@
    "fieldtype": "Table",
    "label": "Sq Inches Details",
    "options": "Sq Inches Details"
+  },
+  {
+   "fieldname": "front_screen",
+   "fieldtype": "Data",
+   "label": "Front Screen"
+  },
+  {
+   "fieldname": "back_screen",
+   "fieldtype": "Data",
+   "label": "Back Screen"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-19 12:27:52.777543",
+ "modified": "2025-03-26 17:10:25.154970",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Radiography Evaluation Entry",

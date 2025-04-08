@@ -1,7 +1,7 @@
 // Copyright (c) 2025, Quantbit Technologies Pvt. Ltd. and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on('Ferrite Micro FE And Micro Test', {
+frappe.ui.form.on('Ferrite Micro FE Test', {
     test_name: function(frm) {
         toggle_fields_based_on_test(frm);
     }
@@ -33,10 +33,10 @@ function toggle_fields_based_on_test(frm) {
 }
 
 
-frappe.ui.form.on('Ferrite Micro FE And Micro Test', {
+frappe.ui.form.on('Ferrite Micro FE Test', {
     sales_order_sheet: function(frm) {
         frm.call({
-            method: "update_remark",
+            method: "update_dept_remark",
             doc: frm.doc,
             callback: function(r) {
                 if (r.message) {
@@ -46,7 +46,7 @@ frappe.ui.form.on('Ferrite Micro FE And Micro Test', {
         });
     },
     
-    before_save: function(frm) {
+    before_submit: function(frm) {
         frm.set_value("department_remark", ""); 
     }
 });

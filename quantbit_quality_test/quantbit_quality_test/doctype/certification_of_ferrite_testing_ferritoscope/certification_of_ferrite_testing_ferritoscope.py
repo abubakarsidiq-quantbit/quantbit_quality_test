@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class UTInspectionProduct(Document):
+class CertificationOfFerriteTestingFerritoscope(Document):
 	pass

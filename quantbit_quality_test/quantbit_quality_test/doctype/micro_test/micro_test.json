@@ -2,34 +2,36 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2025-01-09 16:48:19.812101",
+ "creation": "2025-03-19 10:40:45.906103",
+ "default_view": "List",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
-  "column_break_uvmk",
+  "column_break_mpvh",
   "test_name",
   "section_break_iyeh",
   "company",
+  "grade",
   "heat_no",
   "report_no",
-  "test_equip",
   "column_break_fxaa",
   "date_xlie",
-  "sales_order",
+  "grade_name",
   "customer",
   "end_cust",
   "column_break_xccb",
-  "grade",
   "sales_order_sheet",
+  "sales_order",
   "customer_name",
-  "section_break_gvzh",
+  "test_equip",
+  "section_break_elpl",
   "remarks",
   "section_break_ljyr",
-  "equip_srl",
-  "calib_block",
-  "minimum",
-  "maximum",
+  "test_method",
+  "etchant",
+  "supply_duration",
+  "etching_condition",
   "column_break_znyl",
   "memo_details",
   "section_break_imoi",
@@ -152,24 +154,24 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "equip_srl",
-   "fieldtype": "Data",
-   "label": "Equip Srl"
-  },
-  {
-   "fieldname": "calib_block",
+   "fieldname": "test_method",
    "fieldtype": "Select",
-   "label": "Calib. Block"
+   "label": "Test Method"
   },
   {
-   "fieldname": "minimum",
-   "fieldtype": "Data",
-   "label": "Minimum"
+   "fieldname": "etchant",
+   "fieldtype": "Select",
+   "label": "Etchant"
   },
   {
-   "fieldname": "maximum",
-   "fieldtype": "Data",
-   "label": "maximum"
+   "fieldname": "supply_duration",
+   "fieldtype": "Select",
+   "label": "Supply Duration"
+  },
+  {
+   "fieldname": "etching_condition",
+   "fieldtype": "Select",
+   "label": "Etching Condition"
   },
   {
    "fieldname": "column_break_znyl",
@@ -214,7 +216,7 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Ferrite Micro FE And Micro Test",
+   "options": "Ferrite Micro FE Test",
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
@@ -239,21 +241,27 @@
    "options": "Sales Order Department Remark"
   },
   {
-   "fieldname": "section_break_gvzh",
+   "fieldname": "section_break_elpl",
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "column_break_uvmk",
+   "fieldname": "column_break_mpvh",
    "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "grade.grade_name",
+   "fieldname": "grade_name",
+   "fieldtype": "Data",
+   "label": "Grade Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-19 12:38:16.355447",
+ "modified": "2025-03-26 11:15:43.930472",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
- "name": "Ferrite Micro FE And Micro Test",
+ "name": "Micro Test",
  "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [

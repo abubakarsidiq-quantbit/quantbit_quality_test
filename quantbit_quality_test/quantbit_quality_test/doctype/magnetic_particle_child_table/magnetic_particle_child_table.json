@@ -7,29 +7,25 @@
  "engine": "InnoDB",
  "field_order": [
   "srl",
+  "max_thick",
+  "remark",
   "column_break_azzq",
-  "p_o_no",
+  "item_name",
+  "qty",
+  "result",
   "column_break_irne",
   "heat_no",
-  "column_break_edoj",
-  "description",
-  "column_break_juir",
-  "qty",
-  "column_break_utjr",
   "mp_nos",
-  "column_break_lswd",
-  "max_thick",
-  "column_break_uiev",
-  "cast_srl",
-  "column_break_hdgj",
-  "result",
-  "column_break_fdtk",
-  "remark"
+  "description",
+  "column_break_xrth",
+  "p_o_no",
+  "cast_srl"
  ],
  "fields": [
   {
    "fieldname": "srl",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Srl"
   },
   {
@@ -39,6 +35,7 @@
   {
    "fieldname": "p_o_no",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "P O No"
   },
   {
@@ -47,77 +44,66 @@
   },
   {
    "fieldname": "heat_no",
-   "fieldtype": "Data",
-   "label": "Heat No"
-  },
-  {
-   "fieldname": "column_break_edoj",
-   "fieldtype": "Column Break"
+   "fieldtype": "Link",
+   "label": "Heat No.",
+   "options": "Daily Heat Planning"
   },
   {
    "fieldname": "description",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Description"
-  },
-  {
-   "fieldname": "column_break_juir",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "qty",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Qty"
-  },
-  {
-   "fieldname": "column_break_utjr",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "mp_nos",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "MP Nos"
-  },
-  {
-   "fieldname": "column_break_lswd",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "max_thick",
    "fieldtype": "Data",
-   "label": "max Thick"
-  },
-  {
-   "fieldname": "column_break_uiev",
-   "fieldtype": "Column Break"
+   "in_list_view": 1,
+   "label": "Max Thick"
   },
   {
    "fieldname": "cast_srl",
-   "fieldtype": "Datetime",
-   "label": "Cast srl"
-  },
-  {
-   "fieldname": "column_break_hdgj",
-   "fieldtype": "Column Break"
+   "fieldtype": "Data",
+   "label": "Cast Srl"
   },
   {
    "fieldname": "result",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Result"
   },
   {
-   "fieldname": "column_break_fdtk",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "column_break_xrth",
    "fieldtype": "Column Break"
   },
   {
    "fieldname": "remark",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Remark"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-03-19 12:27:54.490531",
+ "modified": "2025-04-08 17:04:32.791177",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Magnetic Particle Child Table",

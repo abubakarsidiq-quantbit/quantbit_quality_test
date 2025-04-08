@@ -1,6 +1,6 @@
 // Copyright (c) 2025, Quantbit Technologies Pvt. Ltd. and contributors
 // For license information, please see license.txt
-let sales_order = []
+// let sales_order = []
 frappe.ui.form.on("Mechanical Test Result Entry", {
 	grade: function(frm) {
 
@@ -94,23 +94,23 @@ function calculate_average(frm, cdt, cdn) {
     frm.refresh_field("temperature_details"); 
 }
 
-frappe.ui.form.on("Mechanical Test Result Entry", {
-    sales_order_sheet: function(frm) {
-        frm.call({
-            method: "update_remark",
-            doc: frm.doc,
-            callback: function(r) {
-                if (r.message) {
-                    frm.set_df_property("department_remark", "value", r.message); // Set remarks dynamically
-                }
-            }
-        });
-    },
+// frappe.ui.form.on("Mechanical Test Result Entry", {
+//     sales_order_sheet: function(frm) {
+//         frm.call({
+//             method: "update_dept_remark",
+//             doc: frm.doc,
+//             callback: function(r) {
+//                 if (r.message) {
+//                     frm.set_df_property("department_remark", "value", r.message); // Set remarks dynamically
+//                 }
+//             }
+//         });
+//     },
     
-    before_save: function(frm) {
-        frm.set_value("department_remark", ""); // Clear remarks before saving
-    }
-});
+//     before_save: function(frm) {
+//         frm.set_value("department_remark", ""); // Clear remarks before saving
+//     }
+// });
 
 frappe.ui.form.on("Mechanical Test Result Entry", {
     onload: function(frm) {
@@ -221,6 +221,55 @@ function calculate_average(frm, cdt, cdn) {
 
     frm.refresh_field("temperature_details"); 
 }
+
+
+frappe.ui.form.on("Mechanical Test Result Entry Temperature Details", {
+    lateral_expansion_1: calculate_average_lateral,
+    lateral_expansion_2: calculate_average_lateral,
+    lateral_expansion_3: calculate_average_lateral
+});
+
+function calculate_average_lateral(frm, cdt, cdn) {
+    let row = locals[cdt][cdn]; 
+    let sum = 0, count = 0;
+
+    ["lateral_expansion_1", "lateral_expansion_2", "lateral_expansion_3"].forEach(field => {
+        let value = parseFloat(row[field]);
+        if (!isNaN(value)) {
+            sum += value;
+            count++;
+        }
+    });
+
+    row.lateral_avg = count ? (sum / count) : 0;
+
+    frm.refresh_field("temperature_details"); 
+}
+
+
+frappe.ui.form.on("Mechanical Test Result Entry Temperature Details", {
+    shear_area_1: calculate_average_shear,
+    shear_area_2: calculate_average_shear,
+    shear_area_3: calculate_average_shear
+});
+
+function calculate_average_shear(frm, cdt, cdn) {
+    let row = locals[cdt][cdn]; 
+    let sum = 0, count = 0;
+
+    ["shear_area_1", "shear_area_2", "shear_area_3"].forEach(field => {
+        let value = parseFloat(row[field]);
+        if (!isNaN(value)) {
+            sum += value;
+            count++;
+        }
+    });
+
+    row.shear_avg = count ? (sum / count) : 0;
+
+    frm.refresh_field("temperature_details"); 
+}
+
 
 
 frappe.ui.form.on("Mechanical Test Result Entry", {
@@ -259,3 +308,33 @@ frappe.ui.form.on("Mechanical Test Result Entry", {
                 frm.set_value("department_remark", ""); 
             }
 });
+
+
+
+frappe.ui.form.on("Mechanical Test Result Entry", {
+    before_save: function(frm) {
+        calculate_average_hardness(frm);
+    }
+});
+
+frappe.ui.form.on("Hardness Test Details", {
+    hardness: function(frm, cdt, cdn) {
+        calculate_average_hardness(frm);
+    }
+});
+
+function calculate_average_hardness(frm) {
+    let total = 0, count = 0;
+
+    frm.doc.hardness_details.forEach(row => {
+        if (!isNaN(parseFloat(row.hardness))) {
+            total += parseFloat(row.hardness);
+            count++;
+        }
+    });
+
+    frm.set_value("hardness_average", count ? (total / count).toFixed(3) : "0.000");
+}
+
+
+

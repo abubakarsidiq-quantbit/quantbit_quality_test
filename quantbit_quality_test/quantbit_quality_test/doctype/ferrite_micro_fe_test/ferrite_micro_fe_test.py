@@ -5,7 +5,7 @@ import frappe
 from frappe.model.document import Document
 
 
-class FerriteMicroFEAndMicroTest(Document):
+class FerriteMicroFETest(Document):
 #fetch department remark from sales order sheet
 
 	@frappe.whitelist()

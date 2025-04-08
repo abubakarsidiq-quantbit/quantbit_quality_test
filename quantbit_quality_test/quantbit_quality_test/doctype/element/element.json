@@ -8,7 +8,10 @@
  "field_order": [
   "element_name",
   "column_break_fjjy",
-  "element_symbol"
+  "element_symbol",
+  "section_break_jzne",
+  "special_element",
+  "formula"
  ],
  "fields": [
   {
@@ -24,12 +27,30 @@
   {
    "fieldname": "element_symbol",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Element Symbol"
+  },
+  {
+   "default": "0",
+   "fieldname": "special_element",
+   "fieldtype": "Check",
+   "label": "Special Element"
+  },
+  {
+   "fieldname": "section_break_jzne",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "special_element",
+   "fieldname": "formula",
+   "fieldtype": "Small Text",
+   "label": "Formula"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-19 12:27:57.434222",
+ "modified": "2025-03-25 14:17:27.714808",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Element",

@@ -13,6 +13,8 @@
   "density",
   "no_of_films",
   "remarks",
+  "exposure_time",
+  "check_gnvf",
   "column_break_lwzu",
   "source",
   "trick_1",
@@ -20,14 +22,19 @@
   "sfd",
   "filmsize_width",
   "film_sqr",
-  "check_gnvf",
+  "source_strength",
+  "back_screen",
+  "front_screen",
   "column_break_ywke",
   "designation",
   "trick_2",
   "time_type",
   "ug",
   "filmsize_length",
-  "observation"
+  "observation",
+  "film_make",
+  "technique",
+  "group"
  ],
  "fields": [
   {
@@ -157,12 +164,47 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Observation"
+  },
+  {
+   "fieldname": "exposure_time",
+   "fieldtype": "Data",
+   "label": "Exposure time"
+  },
+  {
+   "fieldname": "source_strength",
+   "fieldtype": "Data",
+   "label": "Source Strength"
+  },
+  {
+   "fieldname": "film_make",
+   "fieldtype": "Data",
+   "label": "Film Make"
+  },
+  {
+   "fieldname": "technique",
+   "fieldtype": "Data",
+   "label": "Technique"
+  },
+  {
+   "fieldname": "back_screen",
+   "fieldtype": "Data",
+   "label": "Back Screen"
+  },
+  {
+   "fieldname": "front_screen",
+   "fieldtype": "Data",
+   "label": "Front Screen"
+  },
+  {
+   "fieldname": "group",
+   "fieldtype": "Data",
+   "label": "IQI Group"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-03-19 12:27:53.872887",
+ "modified": "2025-03-24 19:28:59.038056",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Radiography Evaluation Details",

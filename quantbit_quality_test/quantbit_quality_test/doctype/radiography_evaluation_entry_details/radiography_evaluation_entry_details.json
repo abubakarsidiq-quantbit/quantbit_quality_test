@@ -12,6 +12,7 @@
   "width",
   "total_sq_inch",
   "test_date",
+  "source_strength",
   "column_break_nctz",
   "location",
   "sensitivity",
@@ -19,12 +20,14 @@
   "length",
   "oberservation",
   "report_date",
+  "exposure_time",
   "column_break_qywv",
   "thickness",
   "sfd",
   "source",
   "no_of_films",
   "status",
+  "technique",
   "check_xxtm"
  ],
  "fields": [
@@ -144,12 +147,27 @@
    "fieldtype": "Check",
    "in_list_view": 1,
    "label": "Check"
+  },
+  {
+   "fieldname": "source_strength",
+   "fieldtype": "Data",
+   "label": "Source Strength"
+  },
+  {
+   "fieldname": "technique",
+   "fieldtype": "Data",
+   "label": "Technique"
+  },
+  {
+   "fieldname": "exposure_time",
+   "fieldtype": "Data",
+   "label": "Exposure Time"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-03-19 12:27:53.085733",
+ "modified": "2025-03-24 19:07:35.171222",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Radiography Evaluation Entry Details",

@@ -6,23 +6,24 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "section_break_9vrq",
   "company",
-  "customer",
-  "sales_order_sheet",
+  "grade",
   "daily_heat_planning",
+  "customer",
   "start_time",
   "column_break_axgk",
   "posting_date",
-  "customer_name",
-  "sales_order",
+  "grade_name",
   "heat_no",
+  "customer_name",
   "end_time",
   "column_break_vtfa",
-  "grade",
+  "sales_order",
+  "sales_order_sheet",
   "temp",
   "report_no",
-  "naming_series",
   "duration",
   "section_break_eiia",
   "pitting_corrosion_details",
@@ -30,19 +31,30 @@
   "pitting_multiple_temp",
   "section_break_ecxe",
   "testing_standard",
-  "report_type",
   "note",
-  "for_tpi",
-  "unit",
+  "initial_weight",
+  "length",
+  "area",
+  "corrosion_rate_unit",
   "column_break_hkgw",
   "accpt_crit",
   "samp_prep",
+  "final_weight",
+  "width",
+  "for_tpi",
+  "corrosion_rate",
+  "column_break_nndj",
+  "report_type",
   "end_cust",
-  "amended_from",
+  "weight_loss",
+  "height",
+  "unit",
+  "corrossion_rate_mdd",
   "section_break_dkmp",
   "remark",
   "section_break_ckog",
-  "department_remark"
+  "department_remark",
+  "amended_from"
  ],
  "fields": [
   {
@@ -111,13 +123,15 @@
   },
   {
    "fieldname": "testing_standard",
-   "fieldtype": "Select",
-   "label": "Testing Standard"
+   "fieldtype": "Link",
+   "label": "Testing Standard",
+   "options": "IGC Practice Test Details"
   },
   {
    "fieldname": "report_type",
    "fieldtype": "Select",
-   "label": "Report Type"
+   "label": "Report Type",
+   "options": "\nRegular\nCritical\nCrewise"
   },
   {
    "fieldname": "note",
@@ -131,8 +145,9 @@
   },
   {
    "fieldname": "unit",
-   "fieldtype": "Select",
-   "label": "Unit"
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
   },
   {
    "fieldname": "column_break_hkgw",
@@ -152,16 +167,6 @@
    "fieldname": "end_cust",
    "fieldtype": "Data",
    "label": "End Cust"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Pitting Corrosion Test",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
   },
   {
    "fieldname": "section_break_eiia",
@@ -225,7 +230,7 @@
    "fieldname": "daily_heat_planning",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Daily Heat Planning",
+   "label": "Heat Number",
    "options": "Daily Heat Planning",
    "reqd": 1
   },
@@ -251,11 +256,87 @@
    "fieldname": "remark",
    "fieldtype": "Text Editor",
    "label": "Remark"
+  },
+  {
+   "fetch_from": "grade.grade_name",
+   "fieldname": "grade_name",
+   "fieldtype": "Data",
+   "label": "Grade Name"
+  },
+  {
+   "fieldname": "initial_weight",
+   "fieldtype": "Float",
+   "label": "Initial Weight"
+  },
+  {
+   "fetch_from": "testing_standard.length",
+   "fieldname": "length",
+   "fieldtype": "Float",
+   "label": "Length"
+  },
+  {
+   "fetch_from": "testing_standard.area",
+   "fieldname": "area",
+   "fieldtype": "Float",
+   "label": "Area"
+  },
+  {
+   "fieldname": "final_weight",
+   "fieldtype": "Float",
+   "label": "Final Weight"
+  },
+  {
+   "fetch_from": "testing_standard.width",
+   "fieldname": "width",
+   "fieldtype": "Float",
+   "label": "Width"
+  },
+  {
+   "fieldname": "column_break_nndj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "weight_loss",
+   "fieldtype": "Float",
+   "label": "Weight Loss"
+  },
+  {
+   "fetch_from": "testing_standard.height",
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "label": "Height"
+  },
+  {
+   "fieldname": "corrosion_rate",
+   "fieldtype": "Float",
+   "label": "Corrosion Rate"
+  },
+  {
+   "fieldname": "corrosion_rate_unit",
+   "fieldtype": "Select",
+   "label": "Corrosion Rate Unit",
+   "options": "\ng/cm\u00b2\ng/m\u00b2\nmg/cm\u00b2\nMDD"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Pitting Corrosion Test",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "corrossion_rate_mdd",
+   "fieldtype": "Float",
+   "label": "Corrosion Rate MDD"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
+ "modified": "2025-04-05 10:45:22.520781",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "Pitting Corrosion Test",

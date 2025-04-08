@@ -1,36 +1,53 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-01-14 16:29:29.709079",
+ "creation": "2025-03-17 10:18:23.577519",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "item",
-  "discription",
+  "sino",
+  "dc_no",
   "drawing",
-  "grade",
+  "product",
+  "description",
+  "temp_of_item",
+  "thickness",
+  "result",
+  "date_of_test",
+  "column_break_osrs",
+  "po_date",
+  "dc_date",
   "heat_no",
-  "column_break_zjta",
+  "gain",
+  "grade",
+  "range",
   "ut_no",
   "cast_srl",
-  "range",
-  "gain"
+  "observation",
+  "typewave"
  ],
  "fields": [
   {
-   "fieldname": "item",
-   "fieldtype": "Link",
+   "fieldname": "sino",
+   "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Item",
-   "options": "Item"
+   "label": "PO No."
   },
   {
-   "fetch_from": "item.item_name",
-   "fieldname": "discription",
+   "fieldname": "column_break_osrs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Discription"
+   "label": "Product Code"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
   },
   {
    "fieldname": "drawing",
@@ -41,50 +58,87 @@
   {
    "fieldname": "grade",
    "fieldtype": "Link",
-   "in_list_view": 1,
    "label": "Grade",
-   "options": "Grade"
+   "options": "Grade Master"
   },
   {
    "fieldname": "heat_no",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Heat No.",
-   "options": "Pouring"
-  },
-  {
-   "fieldname": "column_break_zjta",
-   "fieldtype": "Column Break"
+   "label": "Heat No",
+   "options": "Daily Heat Planning"
   },
   {
    "fieldname": "ut_no",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "UT No."
   },
   {
    "fieldname": "cast_srl",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Cast Srl"
   },
   {
    "fieldname": "range",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Range"
   },
   {
    "fieldname": "gain",
    "fieldtype": "Data",
+   "label": "Scanning Gain"
+  },
+  {
+   "fieldname": "dc_no",
+   "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Gain"
+   "label": "DC No."
+  },
+  {
+   "fieldname": "temp_of_item",
+   "fieldtype": "Data",
+   "label": "Temp. Of Item"
+  },
+  {
+   "fieldname": "thickness",
+   "fieldtype": "Data",
+   "label": "Thickness"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Data",
+   "label": "Result"
+  },
+  {
+   "fieldname": "observation",
+   "fieldtype": "Data",
+   "label": "Observation"
+  },
+  {
+   "fieldname": "typewave",
+   "fieldtype": "Data",
+   "label": "Type/Wave"
+  },
+  {
+   "fieldname": "date_of_test",
+   "fieldtype": "Date",
+   "label": "Date Of Test"
+  },
+  {
+   "fieldname": "po_date",
+   "fieldtype": "Date",
+   "label": "PO Date"
+  },
+  {
+   "fieldname": "dc_date",
+   "fieldtype": "Date",
+   "label": "DC Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-03-19 12:27:59.256566",
+ "modified": "2025-04-08 15:33:52.522636",
  "modified_by": "Administrator",
  "module": "Quantbit Quality Test",
  "name": "UT Inspection Details",
